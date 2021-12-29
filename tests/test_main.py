@@ -13,6 +13,7 @@ import app.main
         "my_favourite_films",
         "profile_info",
         "marks",
+        "collection_of_coins",
         "sorted_variables",
     ],
 )
@@ -41,6 +42,7 @@ def test_variables_should_be_defined(variable_name):
         ),
         ("profile_info", ("michel", "michel@gmail.com", "12345678")),
         ("marks", {"John": 4, "Sergio": 3}),
+        ("collection_of_coins", {1, 2, 25}),
     ],
 )
 def test_variables_values(variable, value):
@@ -59,24 +61,19 @@ def test_variables_values(variable, value):
         "my_favourite_films",
         "profile_info",
         "marks",
+        "collection_of_coins",
     ],
 )
 def test_variables_should_be_added_to_sorted_variables(variable_name):
     sorted_variables = getattr(app.main, "sorted_variables")
     assert (
-        getattr(app.main, variable_name) in sorted_variables["mutable"]
-        or getattr(app.main, variable_name) in sorted_variables["immutable"]
+        getattr(app.main, variable_name) in sorted_variables["mutable"] or
+        getattr(app.main, variable_name) in sorted_variables["immutable"]
     ), f"Variable '{variable_name}' should be added to 'sorted_variables'"
 
 
 def is_immutable(obj):
-    if (
-        isinstance(obj, int) or
-        isinstance(obj, str) or
-        isinstance(obj, bool) or
-        isinstance(obj, float) or
-        isinstance(obj, tuple)
-    ):
+    if isinstance(obj, (int, str, bool, float, tuple)):
         return True
     return False
 
