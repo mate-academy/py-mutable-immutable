@@ -1,1 +1,20 @@
-# Python boilerplate for GitHub tasks
+# Mutable and Immutable
+
+There are seven variables of different data types in the main module.
+
+Your task is to create dictionary `sorted_variables` with two keys: 
+`"mutable"` and `"immutable"`.
+Each value should be equal to a list that contains all variables of corresponding type.
+
+Example with other variables:
+```python
+a = 123
+b = []
+c = "Hi!"
+d = [1, 2]
+
+sorted_variables = {
+    "mutable": [b, d],
+    "immutable": [a, c]
+}
+```
