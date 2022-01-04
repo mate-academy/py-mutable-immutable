@@ -15,3 +15,5 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
+
+# write your code here
