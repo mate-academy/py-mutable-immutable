@@ -1,6 +1,6 @@
 # Mutable and Immutable
 
-There are seven variables of different data types in the main module.
+There are 8 variables of different data types in the main module.
 
 Your task is to create dictionary `sorted_variables` with two keys: 
 `"mutable"` and `"immutable"`.
