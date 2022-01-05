@@ -1,5 +1,8 @@
 # Mutable and Immutable
 
+- Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
+- Implement the task:
+
 There are 8 variables of different data types in the main module.
 
 Your task is to create dictionary `sorted_variables` with two keys: 
