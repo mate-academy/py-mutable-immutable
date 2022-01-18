@@ -6,40 +6,41 @@ You own a car washing station. Washing cost calculation
 takes a lot of time, and you decide to automate this
 calculation. The washing cost will depend on car comfort 
 class, car cleanness degree, wash station average rating
-and car wash distance from the center of the city.
+and wash station distance from the center of the city.
 
 Create class `Car`, its constructor takes and stores
 3 arguments:
 1. `comfort_class` - comfort class of a car, from 1 to 7
-3. `clean_mark` - car cleanness mark, from very 
+2. `clean_mark` - car cleanness mark, from very 
 dirty - 1 to absolute clean - 10
-4. `brand` - brand of the car
+3. `brand` - brand of the car
 
 Create class `CarWashStation`, its constructor takes and
 stores 4 arguments:
-1. `distance_from_cite_center` - how far station from
+1. `distance_from_city_center` - how far station from
 the city center, from 1.0 to 10.0
 2. `clean_power` - `clean_mark` to which this car wash station
-washes
+washes (yes, not all stations can clean your car completely)
 3. `average_rating` - average rating of the station,
 from 1.0 to 5.0, rounded to 1 decimal
 4. `count_of_ratings` - number of people who rated
 
 `CarWashStation` should have such methods: 
-1. `serve_cars` Method that takes a list of `Car`'s, washes only
+1. `serve_cars` - method, that takes a list of `Car`'s, washes only
 cars with `clean_mark` < `clean_power` of wash station
-and returns total wash cost, rounded to 1 decimal
-2. `calculate_washing_price` Method that calculates cost for a 
+and returns income of CarWashStation for serving this list of Car's, 
+rounded to 1 decimal
+2. `calculate_washing_price` - method, that calculates cost for a 
 single car wash,
-cost is calculated as: car's comfort class * difference of car's 
-clean mark and wash station's clean power * car wash station 
+cost is calculated as: car's comfort class * difference between
+wash station's clean power and car's clean mark * car wash station 
 rating / car wash station 
 distance to the center of the city, returns number rounded 
 to 1 decimal
-3. `wash_single_car` Every car after wash is clean, so it should 
+3. `wash_single_car` - every car after wash is clean, so it should 
 have `clean_mark` equals wash station's `clean_power`, 
 make individual method for this.
-4. `rate_service` Method to add a single rate.
+4. `rate_service` - method to add a single rate.
 
 You can add own methods if you need.
 

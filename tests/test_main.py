@@ -11,7 +11,7 @@ def test_car():
 
 
 @pytest.mark.parametrize(
-    "cars,washstation,total_cost",
+    "cars,wash_station,total_cost",
     [
         ([], CarWashStation(3, 9, 4.4, 144), 0),
         ([Car(2, 1, "Ford")], CarWashStation(3, 9, 4.2, 11), 22.4),
@@ -33,13 +33,13 @@ def test_car():
         ),
     ],
 )
-def test_car_wash_station(cars, washstation, total_cost):
-    income = washstation.serve_cars(cars)
+def test_car_wash_station(cars, wash_station, total_cost):
+    income = wash_station.serve_cars(cars)
     assert income == total_cost, f"Income should equal to {total_cost}"
 
 
 @pytest.mark.parametrize(
-    "cars,washstation,cars_clean_marks",
+    "cars,wash_station,cars_clean_marks",
     [
         ([Car(2, 1, "Ford")], CarWashStation(3, 9, 4.2, 11), [9]),
         ([Car(2, 9, "Ford")], CarWashStation(3, 8, 4.2, 11), [9]),
@@ -55,8 +55,8 @@ def test_car_wash_station(cars, washstation, total_cost):
         ),
     ],
 )
-def test_car_is_washed(cars, washstation, cars_clean_marks):
-    income = washstation.serve_cars(cars)
+def test_car_is_washed(cars, wash_station, cars_clean_marks):
+    wash_station.serve_cars(cars)
     assert [car.clean_mark for car in cars] == cars_clean_marks, (
         f"Car should keep his 'clear_mark' if it >= 'clear_power' of wash station, "
         f"otherwise it should equal to 'clear_power'"
@@ -64,15 +64,15 @@ def test_car_is_washed(cars, washstation, cars_clean_marks):
 
 
 @pytest.mark.parametrize(
-    "car,washstation,mark",
+    "car,wash_station,mark",
     [
         (Car(2, 1, "Ford"), CarWashStation(3, 10, 4.2, 11), 1),
         (Car(4, 5, "Audi"), CarWashStation(6, 8, 3.9, 11), 5),
         (Car(3, 3, "BMW"), CarWashStation(2, 9, 4.8, 13), 3),
     ],
 )
-def test_car_cost_check_not_washed(car, washstation, mark):
-    cost = washstation.calculate_washing_price(car)
+def test_car_cost_check_not_washed(car, wash_station, mark):
+    wash_station.calculate_washing_price(car)
     assert car.clean_mark == mark, (
         f"Method 'calculate_washing_price' should not change" f"'car.clean_mark'"
     )
@@ -96,4 +96,8 @@ def test_rate_service(
         f"'average_rating' should equal to {result_avg_rating}, "
         f"when initial 'average_rating' was {init_avg_rating}, "
         f"and initial 'count_of_ratings' was {init_num_ratings}"
+    )
+    assert ws.count_of_ratings == result_num_ratings, (
+        f"'count_of_ratings' should equal to {result_num_ratings}, "
+        f"when initial 'count_of_ratings' was {init_num_ratings}"
     )
