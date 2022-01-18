@@ -1,3 +1,8 @@
-# TODO: add initial code
-def hello_world():
-    return "Hello, world!"
+class Car:
+    # write your code here
+    pass
+
+
+class CarWashStation:
+    # write your code here
+    pass
