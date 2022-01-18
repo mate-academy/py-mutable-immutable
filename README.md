@@ -12,7 +12,7 @@ Create class `Car`, its constructor takes and stores
 3 arguments:
 1. `comfort_class` - comfort class of a car, from 1 to 7
 2. `clean_mark` - car cleanness mark, from very 
-dirty - 1 to absolute clean - 10
+dirty - 1 to absolutely clean - 10
 3. `brand` - brand of the car
 
 Create class `CarWashStation`, its constructor takes and
@@ -37,9 +37,9 @@ wash station's clean power and car's clean mark * car wash station
 rating / car wash station 
 distance to the center of the city, returns number rounded 
 to 1 decimal
-3. `wash_single_car` - every car after wash is clean, so it should 
-have `clean_mark` equals wash station's `clean_power`, 
-make individual method for this.
+3. `wash_single_car` - method, that washes a single car, so it should 
+have `clean_mark` equals wash station's `clean_power`, if 
+`wash_station.clean_power` is greater than `car.clean_mark`
 4. `rate_service` - method to add a single rate.
 
 You can add own methods if you need.
