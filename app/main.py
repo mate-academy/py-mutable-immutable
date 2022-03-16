@@ -17,3 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+list_variable = [pi, lucky_number, one_is_a_prime_number,
+                 name, my_favourite_films, profile_info, marks,
+                 collection_of_coins]
+mutb_type = [set, list, dict]
+sorted_variables = {}
+mutable, immutable = [], []
+for var in list_variable:
+    if type(var) in mutb_type:
+        mutable.append(var)
+        sorted_variables["mutable"] = mutable
+    else:
+        immutable.append(var)
+        sorted_variables["immutable"] = immutable
+
+print(sorted_variables)
