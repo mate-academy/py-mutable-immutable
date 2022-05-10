@@ -1,4 +1,4 @@
 {
-  "Interpreter": "env\\Scripts\\python.exe",
-  "TestFramework": "Pytest"
+  "TestFramework": "Pytest",
+  "Interpreter": "Workspace|Workspace|venv"
 }
