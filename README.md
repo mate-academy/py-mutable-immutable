@@ -50,7 +50,7 @@ bmw = Car(3, 3, 'BMW')
 audi = Car(4, 9, 'Audi')
 mercedes = Car(7, 1, 'Mercedes')
 
-ws = CarWashingStation(6, 8, 3.9, 11)
+ws = CarWashStation(6, 8, 3.9, 11)
 
 income = ws.serve_cars([
     bmw,
@@ -58,7 +58,7 @@ income = ws.serve_cars([
     mercedes
 ])
 
-income == 41.6
+income == 41.7
 
 bmw.clean_mark == 8
 audi.clean_mark == 9  
@@ -69,7 +69,7 @@ mercedes.clean_mark == 8
 ford = Car(2, 1, 'Ford')
 wash_cost = ws.calculate_washing_price(ford)  
 # only calculating cost, not washing
-wash_cost == 11.7
+wash_cost == 9.1
 ford.clean_mark == 1 
 
 ws.rate_service(5)
