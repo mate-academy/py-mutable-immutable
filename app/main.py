@@ -15,8 +15,6 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-print(type(collection_of_coins))
-
 
 # write your code here
 
