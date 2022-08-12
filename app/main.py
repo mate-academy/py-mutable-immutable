@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variable = {
+    "mutable": [],
+    "immutable": [],
+}
+
+
+def determine_type_variable(var) -> dict:
+
+    if type(var) in [set, dict, list]:
+        sorted_variable["mutable"].append(var)
+    else:
+        sorted_variable["immutable"].append(var)
+
+    return sorted_variable
