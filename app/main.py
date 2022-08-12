@@ -16,17 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variable = {
-    "mutable": [],
-    "immutable": [],
+
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-
-def determine_type_variable(var) -> dict:
-
-    if type(var) in [set, dict, list]:
-        sorted_variable["mutable"].append(var)
-    else:
-        sorted_variable["immutable"].append(var)
-
-    return sorted_variable
