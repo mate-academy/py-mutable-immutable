@@ -26,9 +26,9 @@ all_types = [pi,
              collection_of_coins
              ]
 
-sorted_variables = {"mutable": [i for i in all_types
+sorted_variables = {"mutable": [type for type in all_types
                                 if isinstance(i, (list, set, dict))
                                 ],
-                    "immutable": [i for i in all_types
-                                  if isinstance(i, (list, set, dict)) is False]
+                    "immutable": [type for type in all_types
+                                  if not isinstance(i, (list, set, dict))]
                     }
