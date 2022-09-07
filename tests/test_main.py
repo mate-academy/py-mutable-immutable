@@ -1,4 +1,5 @@
 import pytest
+import re
 
 import app.main
 
@@ -89,3 +90,12 @@ def test_variables_added_to_the_correct_list():
         assert is_immutable(variable) is True, (
             f"{variable} should be in 'mutable' list"
         )
+
+
+def test_removed_comment():
+    with open(app.main.__file__, "r") as f:
+        file_content = f.read()
+        comment = re.compile('# write your code here')
+        assert not comment.search(
+            file_content
+        ), "You have to remove the unnecessary comment '# write your code here'"
