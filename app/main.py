@@ -27,8 +27,8 @@ all_types = [pi,
              ]
 
 sorted_variables = {"mutable": [type for type in all_types
-                                if isinstance(i, (list, set, dict))
+                                if isinstance(type, (list, set, dict))
                                 ],
                     "immutable": [type for type in all_types
-                                  if not isinstance(i, (list, set, dict))]
+                                  if not isinstance(type, (list, set, dict))]
                     }
