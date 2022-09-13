@@ -17,8 +17,6 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-# -------- Solution --------
-
 sorted_variables = {
     "immutable": [
         lucky_number,
