@@ -1,6 +1,6 @@
 from unittest.mock import patch
-
 import pytest
+import os
 
 from app.main import Car, CarWashStation
 
