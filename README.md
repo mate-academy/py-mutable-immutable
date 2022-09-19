@@ -143,3 +143,5 @@ ws.rate_service(5)
 ws.count_of_ratings == 12
 ws.average_rating == 4.0
 ```
+
+### Note: Check your code using this [checklist](checklist.md) before pushing your solution.

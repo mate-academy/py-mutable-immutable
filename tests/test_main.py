@@ -1,3 +1,5 @@
+from unittest.mock import patch
+
 import pytest
 
 from app.main import Car, CarWashStation
@@ -36,6 +38,12 @@ def test_car():
 def test_car_wash_station(cars, wash_station, total_cost):
     income = wash_station.serve_cars(cars)
     assert income == total_cost, f"Income should equal to {total_cost}"
+
+def test_wash_single_car_is_called():
+    with patch.object(CarWashStation, 'wash_single_car') as mock_method:
+        CarWashStation(3, 9, 4, 11).serve_cars([Car(2, 1, "Ford")])
+        assert mock_method.called, "Expected 'wash_single_car' to have " \
+                                   "been called inside 'serve_cars' method"
 
 
 @pytest.mark.parametrize(
@@ -101,3 +109,17 @@ def test_rate_service(
         f"'count_of_ratings' should equal to {result_num_ratings}, "
         f"when initial 'count_of_ratings' was {init_num_ratings}"
     )
+
+
+def test_unnecessary_comment():
+    if os.path.exists(os.path.join(os.pardir, "app", "main.py")):
+        main_path = os.path.join(os.pardir, "app", "main.py")
+    else:
+        main_path = os.path.join("app", "main.py")
+
+    with open(main_path, "r") as main:
+        main_content = main.read()
+
+        assert (
+                "# write your code here" not in main_content
+        ), "Remove unnecessary comment"
