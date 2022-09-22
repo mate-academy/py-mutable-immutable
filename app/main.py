@@ -16,4 +16,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+def sort_vareibles(*args):
+    sorted_variables = {"mutable": [], "immutable": []}
+    if type(args) == str or type(args) == int or type(args) == float or type(args) == tuple or type(args) == bool:
+        sorted_variables["immutable"].append(args)
+    else:
+        sorted_variables["mutable"].append(args)
+    return sorted_variables
