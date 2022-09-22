@@ -16,10 +16,15 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-def sort_vareibles(*args):
-    sorted_variables = {"mutable": [], "immutable": []}
-    if type(args) == str or type(args) == int or type(args) == float or type(args) == tuple or type(args) == bool:
-        sorted_variables["immutable"].append(args)
+list_of_variables = [lucky_number, pi, one_is_a_prime_number, name,
+                     my_favourite_films, profile_info, marks,
+                     collection_of_coins]
+sorted_variables = {"mutable": [], "immutable": []}
+for i in list_of_variables:
+    if type(i) == str or type(i) == int or type(i) \
+            == float or type(i) == tuple or type(i) == bool:
+        sorted_variables["immutable"].append(i)
     else:
-        sorted_variables["mutable"].append(args)
-    return sorted_variables
+        sorted_variables["mutable"].append(i)
+
+print(sorted_variables)
