@@ -16,4 +16,35 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def make_dict(*args):
+    mutable_immutable_dict = {
+        "mutable": [],
+        "immutable": []
+    }
+
+    for arg in args:
+        if (
+                isinstance(arg, str)
+                or isinstance(arg, int)
+                or isinstance(arg, float)
+                or isinstance(arg, tuple)
+                or isinstance(arg, bool)
+        ):
+            mutable_immutable_dict["immutable"].append(arg)
+        else:
+            mutable_immutable_dict["mutable"].append(arg)
+
+    return mutable_immutable_dict
+
+
+sorted_variables = make_dict(
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+)
