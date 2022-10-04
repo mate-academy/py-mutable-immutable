@@ -1,5 +1,5 @@
 import pytest
-import re
+import inspect
 
 import app.main
 
@@ -94,8 +94,5 @@ def test_variables_added_to_the_correct_list():
 
 def test_removed_comment():
     with open(app.main.__file__, "r") as f:
-        file_content = f.read()
-        comment = re.compile('# write your code here')
-        assert not comment.search(
-            file_content
-        ), "You have to remove the unnecessary comment '# write your code here'"
+        lines = inspect.getsource(app.main)
+        assert "# write your code here" not in lines
