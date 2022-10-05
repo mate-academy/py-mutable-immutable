@@ -16,11 +16,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
 sorted_variables = {}
 
-def sorted(*args) -> dict:
 
+def sorted(*args) -> dict:
     for i in args:
         group = "immutable"
         if type(i) == set or type(i) == dict or type(i) == list:
@@ -32,4 +31,7 @@ def sorted(*args) -> dict:
             sorted_variables[group].append(i)
     return sorted_variables
 
-print(sorted(pi,lucky_number,collection_of_coins,marks,profile_info,my_favourite_films,name,one_is_a_prime_number))
+
+print(
+    sorted(pi, lucky_number, collection_of_coins, marks, profile_info,
+           my_favourite_films, name, one_is_a_prime_number))
