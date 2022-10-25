@@ -31,3 +31,5 @@ for each in variables:
         sorted_variables["immutable"].append(each)
     else:
         sorted_variables["mutable"].append(each)
+
+print("sorted_variables = ", sorted_variables)
