@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+types = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name, my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for el in types:
+    if isinstance(el, (list, set, dict)):
+        sorted_variables["mutable"].append(el)
+    else:
+        sorted_variables["immutable"].append(el)
