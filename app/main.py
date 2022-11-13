@@ -16,4 +16,32 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variable_mass = \
+    [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        my_favourite_films,
+        profile_info,
+        marks,
+        collection_of_coins,
+    ]
+
+
+def sorted_variables(mass: list) -> dict:
+    result = {
+        "mutable": [],
+        "immutable": [],
+    }
+
+    for arg in mass:
+        if isinstance(arg, (list, set, dict)):
+            result["mutable"].append(arg)
+        if isinstance(arg, (int, float, bool, str, tuple)):
+            result["immutable"].append(arg)
+
+    return result
+
+
+sorted_variables = sorted_variables(variable_mass)
