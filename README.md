@@ -21,3 +21,8 @@ sorted_variables = {
     "immutable": [a, c]
 }
 ```
+def sorted_variables(*args) -> dict:
+    
+    for i in args:
+        if 
+    
