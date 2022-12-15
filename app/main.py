@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+mutable = set, dict, list
+immutable = str, bool, float, int, tuple
+
+sorted_variables = {}
+ls = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
+
+
+for i in ls:
+    if type(i) in mutable:
+        sorted_variables["mutable"] = sorted_variables.get("mutable", []) + [i]
+    else:
+        sorted_variables["immutable"] = sorted_variables.get("immutable", []) + [i]
+print(sorted_variables)
