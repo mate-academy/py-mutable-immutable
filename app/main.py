@@ -19,14 +19,12 @@ collection_of_coins = {1, 2, 25}
 mutable = set, dict, list
 immutable = str, bool, float, int, tuple
 
-sorted_variables = {}
+sorted_variables = {"mutable": [], "immutable": []}
 ls = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
       profile_info, marks, collection_of_coins]
 
 for i in ls:
     if type(i) in mutable:
-        sorted_variables["mutable"] = sorted_variables.get("mutable", []) + [i]
+        sorted_variables["mutable"].append(i)
     else:
-        sorted_variables["immutable"] = sorted_variables.get("immutable",
-                                                             []) + [i]
-print(sorted_variables)
+        sorted_variables["immutable"].append(i)
