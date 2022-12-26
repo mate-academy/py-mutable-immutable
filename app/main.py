@@ -16,7 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-result = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, collection_of_coins, profile_info, marks]
+result = [lucky_number, pi, one_is_a_prime_number, name,
+          my_favourite_films, collection_of_coins, profile_info, marks]
 cheng = []
 no_cheng = []
 for variable_name in result:
