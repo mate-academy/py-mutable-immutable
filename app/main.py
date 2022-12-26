@@ -16,4 +16,14 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+result = [lucky_number, pi, one_is_a_prime_number, name,
+          my_favourite_films, collection_of_coins, profile_info, marks]
+chang = []
+no_chang = []
+for variable_name in result:
+    if isinstance(variable_name, (list, set, dict)):
+        chang.append(variable_name)
+    elif isinstance(variable_name, (int, float, bool, str, tuple)):
+        no_chang.append(variable_name)
+
+sorted_variables = {"mutable": chang, "immutable": no_chang}
