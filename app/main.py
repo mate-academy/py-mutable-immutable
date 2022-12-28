@@ -15,5 +15,20 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
-# write your code here
+collection = [lucky_number, pi, one_is_a_prime_number, name,
+              my_favourite_films, profile_info, marks, collection_of_coins]
+immutable_types = [int, float, bool, str, tuple]
+sorted_variables = {
+}
+for member in collection:
+    if type(member) in immutable_types:
+        if "immutable" in sorted_variables:
+            sorted_variables["immutable"].append(member)
+        else:
+            sorted_variables["immutable"] = [member]
+    else:
+        if "mutable" in sorted_variables:
+            sorted_variables["mutable"].append(member)
+        else:
+            sorted_variables["mutable"] = [member]
+print(sorted_variables)
