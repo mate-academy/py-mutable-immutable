@@ -25,4 +25,3 @@ for i in all_data:
         sorted_variables["mutable"].append(i)
     else:
         sorted_variables["immutable"].append(i)
-print(sorted_variables)
