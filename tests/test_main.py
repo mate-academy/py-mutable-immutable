@@ -73,7 +73,7 @@ def test_variables_should_be_added_to_sorted_variables(variable_name):
     ), f"Variable '{variable_name}' should be added to 'sorted_variables'"
 
 
-def is_immutable(obj):
+def is_immutable(obj: object) -> object:
     if isinstance(obj, (int, str, bool, float, tuple)):
         return True
     return False
