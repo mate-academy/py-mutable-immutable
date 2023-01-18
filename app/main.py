@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+
+
+def sort_element(variables_dict: dict, *elements) -> None:
+    for el in elements:
+        if (
+                isinstance(el, list)
+                or isinstance(el, dict)
+                or isinstance(el, set)
+        ):
+            variables_dict["mutable"].append(el)
+            continue
+        variables_dict["immutable"].append(el)
+
+
+sort_element(sorted_variables, lucky_number,
+             pi, one_is_a_prime_number,
+             name, my_favourite_films, profile_info, marks,
+             collection_of_coins, sorted_variables)
