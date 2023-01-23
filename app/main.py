@@ -16,4 +16,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+types_to_sort = [lucky_number, pi, one_is_a_prime_number,
+                 name, my_favourite_films, profile_info,
+                 marks, collection_of_coins]
+
+sorted_variables = {"mutable": [], "immutable": []}
+
+for current_type in types_to_sort:
+    if type(current_type) == bool or type(current_type) == int or \
+            type(current_type) == float or type(current_type) == tuple or \
+            type(current_type) == str or type(current_type) == frozenset:
+        sorted_variables["immutable"].append(current_type)
+    else:
+        sorted_variables["mutable"].append(current_type)
