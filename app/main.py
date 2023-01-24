@@ -15,9 +15,7 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
 sorted_variables = {"mutable": [], "immutable": []}
-
 if isinstance (lucky_number, (list , set , dict)):
     sorted_variables["mutable"].append("lucky_number")
 else:
@@ -57,5 +55,4 @@ if isinstance (collection_of_coins, (list , set , dict)):
     sorted_variables["mutable"].append("collection_of_coins")
 else:
     sorted_variables["immutable"].append("collection_of_coins")
-    
 print(sorted_variables)
