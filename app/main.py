@@ -27,12 +27,6 @@ types = [
 ]
 
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "mutable": [el for el in types if isinstance(el, (list, set, dict))],
+    "immutable": [el for el in types if not isinstance(el, (list, set, dict))]
 }
-
-for el in types:
-    if isinstance(el, (list, set, dict)):
-        sorted_variables["mutable"].append(el)
-    else:
-        sorted_variables["immutable"].append(el)
