@@ -16,17 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-types = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name, my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins
-]
-
 sorted_variables = {
-    "mutable": [el for el in types if isinstance(el, (list, set, dict))],
-    "immutable": [el for el in types if not isinstance(el, (list, set, dict))]
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, one_is_a_prime_number, pi, name, profile_info]
 }
