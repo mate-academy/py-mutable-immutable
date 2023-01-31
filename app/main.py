@@ -18,6 +18,5 @@ collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
     "mutable": [marks, my_favourite_films, collection_of_coins],
-    "immutable": [lucky_number, profile_info, one_is_a_prime_number,
-                  profile_info, name, pi]
+    "immutable": [lucky_number, one_is_a_prime_number, profile_info, name, pi]
 }
