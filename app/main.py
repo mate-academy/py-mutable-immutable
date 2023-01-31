@@ -33,21 +33,21 @@ else:
 if type(name) in mutable:
     sorted_variables["mutable"].append(name)
 else:
-    sorted_variables["immutable"].append(name) 
+    sorted_variables["immutable"].append(name)
 if type(my_favourite_films) in mutable:
     sorted_variables["mutable"].append(my_favourite_films)
 else:
-    sorted_variables["immutable"].append(my_favourite_films) 
+    sorted_variables["immutable"].append(my_favourite_films)
 if type(profile_info) in mutable:
     sorted_variables["mutable"].append(profile_info)
 else:
-    sorted_variables["immutable"].append(profile_info)    
+    sorted_variables["immutable"].append(profile_info)
 if type(marks) in mutable:
     sorted_variables["mutable"].append(marks)
 else:
-    sorted_variables["immutable"].append(marks)    
+    sorted_variables["immutable"].append(marks)
 if type(collection_of_coins) in mutable:
     sorted_variables["mutable"].append(collection_of_coins)
 else:
-    sorted_variables["immutable"].append(collection_of_coins)         
+    sorted_variables["immutable"].append(collection_of_coins)
 print(sorted_variables)
