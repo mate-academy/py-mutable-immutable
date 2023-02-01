@@ -16,4 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+all_types = [pi,
+             lucky_number,
+             one_is_a_prime_number,
+             name,
+             my_favourite_films,
+             profile_info,
+             marks,
+             collection_of_coins
+             ]
+
+sorted_variables = {"mutable": [type for type in all_types
+                                if isinstance(type, (list, set, dict))
+                                ],
+                    "immutable": [type for type in all_types
+                                  if not isinstance(type, (list, set, dict))]
+                    }
