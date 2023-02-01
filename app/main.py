@@ -37,4 +37,3 @@ sorted_variables = create_sorted_dictionary(lucky_number, pi,
                                             name, my_favourite_films,
                                             profile_info, marks,
                                             collection_of_coins)
-print(sorted_variables)
