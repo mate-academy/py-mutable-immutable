@@ -8,14 +8,14 @@ calculation. The washing cost will depend on car comfort
 class, car cleanness degree, wash station average rating
 and wash station distance from the center of the city.
 
-Create class `Car`, its constructor takes and stores
+Create class `Car`, its `__init__` method takes and stores
 3 arguments:
 1. `comfort_class` - comfort class of a car, from 1 to 7
 2. `clean_mark` - car cleanness mark, from very 
 dirty - 1 to absolutely clean - 10
 3. `brand` - brand of the car
 
-Create class `CarWashStation`, its constructor takes and
+Create class `CarWashStation`, its `__init__` method takes and
 stores 4 arguments:
 1. `distance_from_city_center` - how far station from
 the city center, from 1.0 to 10.0
