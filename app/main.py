@@ -24,9 +24,9 @@ sorted_variables = {"mutable": [], "immutable": []}
 datas = [lucky_number, pi, one_is_a_prime_number, name,
          my_favourite_films, profile_info, marks, collection_of_coins]
 
-for i in datas:
-    if type(i) in mutable:
-        sorted_variables["mutable"].append(i)
-    if type(i) in immutable:
-        sorted_variables["immutable"].append(i)
+for elem in datas:
+    if type(elem) in mutable:
+        sorted_variables["mutable"].append(elem)
+    if type(elem) in immutable:
+        sorted_variables["immutable"].append(elem)
 print(sorted_variables)
