@@ -16,4 +16,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+
+sorted_variables["mutable"].extend([my_favourite_films, marks, collection_of_coins])
+sorted_variables["immutable"].extend([lucky_number, pi, one_is_a_prime_number, name, profile_info])
+
+print("Mutable variables:", sorted_variables["mutable"])
+print("Immutable variables:", sorted_variables["immutable"])
