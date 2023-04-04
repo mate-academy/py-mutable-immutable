@@ -3,7 +3,6 @@ import inspect
 
 import app.main
 
-
 @pytest.mark.parametrize(
     "variable_name",
     [
