@@ -14,10 +14,10 @@ marks = {
     "John": 4,
     "Sergio": 3,
 }
-col_of_coins = {1, 2, 25}
+collection_of_coins = {1, 2, 25}
 
 variables_list = [lucky_number, pi, one_is_a_prime_number, name,
-                  my_favourite_films, profile_info, marks, col_of_coins]
+                  my_favourite_films, profile_info, marks, collection_of_coins]
 sorted_variables = {}
 mutable_type = []
 immutable_type = []
