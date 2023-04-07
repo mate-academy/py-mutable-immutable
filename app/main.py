@@ -22,11 +22,11 @@ sorted_variables = {}
 mutable_type = []
 immutable_type = []
 
-for char in variables_list:
-    if isinstance(char, (list, dict, set)):
-        mutable_type.append(char)
+for variable in variables_list:
+    if isinstance(variable, (list, dict, set)):
+        mutable_type.append(variable)
     else:
-        immutable_type.append(char)
+        immutable_type.append(variable)
 sorted_variables["mutable"] = mutable_type
 sorted_variables["immutable"] = immutable_type
 print(sorted_variables)
