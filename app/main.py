@@ -21,7 +21,7 @@ def sorted_(*args) -> dict:
 
     sorted_dt = {"mutable": [], "immutable": []}
 
-    for index, element in enumerate(args):
+    for element in args:
         if isinstance(element, (list, set, dict)):
             sorted_dt["mutable"].append(element)
         else:
