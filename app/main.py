@@ -16,4 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+vars_dict = locals().copy()
+sorted_variables = {"mutable": [], "immutable": []}
+mutable_types = [list, set, dict]
+for key, value in vars_dict.items():
+    if not key.startswith("__"):
+        category = ("mutable"
+                    if type(vars_dict[key]) in mutable_types
+                    else "immutable")
+        sorted_variables[category].append(vars_dict[key])
