@@ -31,7 +31,7 @@ unsorted_variables = [
 immutable = []
 mutable = []
 for i in unsorted_variables:
-    if isinstance(i, (int, float, complex, str, tuple, frozenset)):
+    if isinstance(i, (int, float, str, tuple)):
         immutable.append(i)
     else:
         mutable.append(i)
