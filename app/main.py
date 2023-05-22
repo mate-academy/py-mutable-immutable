@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+unsorted_variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+
+immutable = []
+mutable = []
+for i in unsorted_variables:
+    if isinstance(i, (int, float, complex, str, tuple, frozenset)):
+        immutable.append(i)
+    else:
+        mutable.append(i)
+sorted_variables = {"immutable": immutable, "mutable": mutable}
