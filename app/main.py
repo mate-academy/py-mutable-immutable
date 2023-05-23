@@ -25,7 +25,7 @@ sorted_variables = {
 }
 
 for obj in arr:
-    if type(obj) in (int, str, bool, float, tuple):
-        sorted_variables["immutable"] += [obj]
-    else:
+    if type(obj) in (set, dict, list):
         sorted_variables["mutable"] += [obj]
+    else:
+        sorted_variables["immutable"] += [obj]
