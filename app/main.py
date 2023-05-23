@@ -16,4 +16,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+arr = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+       profile_info, marks, collection_of_coins]
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for obj in arr:
+    if type(obj) in (int, str, bool, float, tuple):
+        sorted_variables["immutable"] += [obj]
+    else:
+        sorted_variables["mutable"] += [obj]
