@@ -34,7 +34,7 @@ def dict_create(variables: list) -> dict:
     return sorted_variables
 
 
-li = [
+list_of_variables = [
     lucky_number,
     pi,
     one_is_a_prime_number,
@@ -44,4 +44,4 @@ li = [
     collection_of_coins
 ]
 
-sorted_variables = dict_create(li)
+sorted_variables = dict_create(list_of_variables)
