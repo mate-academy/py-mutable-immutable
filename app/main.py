@@ -16,4 +16,20 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+
+
+def func(*args) -> dict:
+
+    check_list = [list, dict, set]
+
+    for i in args:
+        if type(i) in check_list:
+            sorted_variables["mutable"].append(i)
+        else:
+            sorted_variables["immutable"].append(i)
+    return sorted_variables
+
+
+func(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+     profile_info, marks, collection_of_coins)
