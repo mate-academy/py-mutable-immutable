@@ -21,8 +21,8 @@ sorted_variables = {
     "mutable": [],
     "immutable": []
 }
-for char in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks,
-             collection_of_coins]:
+for char in [lucky_number, pi, one_is_a_prime_number, name,
+             my_favourite_films, profile_info, marks, collection_of_coins]:
     if isinstance(char, (list, set, dict)):
         sorted_variables["mutable"].append(char)
     else:
