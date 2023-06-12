@@ -21,7 +21,7 @@ sorted_variables = {
     "immutable": []
 }
 
-for i in (
+for variable_name in (
         lucky_number,
         pi,
         one_is_a_prime_number,
@@ -31,9 +31,9 @@ for i in (
         marks,
         collection_of_coins
 ):
-    if isinstance(i, (list, set, dict)):
-        sorted_variables["mutable"].append(i)
+    if isinstance(variable_name, (list, set, dict)):
+        sorted_variables["mutable"].append(variable_name)
     else:
-        sorted_variables["immutable"].append(i)
+        sorted_variables["immutable"].append(variable_name)
 
 print(sorted_variables)
