@@ -25,11 +25,12 @@ def sorted_var(name_of_variable: list) -> dict:
         "mutable": [],
         "immutable": []
     }
-    for i in name_of_variable:
-        if type(i) is list or type(i) is set or type(i) is dict:
-            sorted_v["mutable"] += [i]
+    element_list = [list, set, dict]
+    for var_name in name_of_variable:
+        if type(var_name) in element_list:
+            sorted_v["mutable"] += [var_name]
         else:
-            sorted_v["immutable"] += [i]
+            sorted_v["immutable"] += [var_name]
 
     return sorted_v
 
