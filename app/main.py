@@ -19,20 +19,7 @@ collection_of_coins = {1, 2, 25}
 list_name = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
              profile_info, marks, collection_of_coins]
 
-
-def sorted_var(name_of_variable: list) -> dict:
-    sorted_v = {
-        "mutable": [],
-        "immutable": []
-    }
-    element_list = [list, set, dict]
-    for var_name in name_of_variable:
-        if type(var_name) in element_list:
-            sorted_v["mutable"] += [var_name]
-        else:
-            sorted_v["immutable"] += [var_name]
-
-    return sorted_v
-
-
-sorted_variables = sorted_var(list_name)
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [profile_info, lucky_number, pi, one_is_a_prime_number, name]
+}
