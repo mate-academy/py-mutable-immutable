@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+list_name = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+             profile_info, marks, collection_of_coins]
+
+
+def sorted_var(name_of_variable: list) -> dict:
+    sorted_v = {
+        "mutable": [],
+        "immutable": []
+    }
+    for i in name_of_variable:
+        if type(i) is list or type(i) is set or type(i) is dict:
+            sorted_v["mutable"] += [i]
+        else:
+            sorted_v["immutable"] += [i]
+
+    return sorted_v
+
+
+sorted_variables = sorted_var(list_name)
