@@ -20,7 +20,6 @@ collection_of_coins = {1, 2, 25}
 mutuable = []
 immutuable = []
 
-
 def mut_immut(my_dict: dict) -> list:
     for key, value in my_dict.items():
         if type(value) == set or type(value) == dict or type(value) == list:
