@@ -22,26 +22,17 @@ sorted_variables = {
     "immutable": []
 }
 
-
-# "змінний"
-sorted_variables["mutable"].append([
-    "The Shawshank Redemption",
-    "The Lord of the Rings: The Return of the King",
-    "Pulp Fiction",
-    "The Good, the Bad and the Ugly",
-    "The Matrix"
-])
-
-sorted_variables["mutable"].append({
-    "John": 4,
-    "Sergio": 3
-})
-
-sorted_variables["mutable"].append({1, 2, 25})
-
-# "незмінний"
-sorted_variables["immutable"].append(777)
-sorted_variables["immutable"].append(3.14)
-sorted_variables["immutable"].append(False)
-sorted_variables["immutable"].append("Richard")
-sorted_variables["immutable"].append(("michel", "michel@gmail.com", "12345678"))
+sorted_variables = {
+    "mutable": [
+        my_favourite_films,
+        collection_of_coins,
+        marks
+    ],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        profile_info
+    ]
+}
