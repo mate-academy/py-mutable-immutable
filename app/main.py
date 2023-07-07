@@ -17,10 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-sorted_variables = {
-    "mutable": [],
-    "immutable": []
-}
+
 
 sorted_variables = {
     "mutable": [
