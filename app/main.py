@@ -23,4 +23,3 @@ sorted_variables = {
     "mutable": mutable_var,
     "immutable": immutable_var
 }
-print(sorted_variables)
