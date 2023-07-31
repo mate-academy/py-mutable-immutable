@@ -21,19 +21,3 @@ sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
     "immutable": [lucky_number, pi, name, profile_info, one_is_a_prime_number],
 }
-
-
-def check_mutability(*args) -> dict:
-    sorted_variables1 = {"mutable": [], "immutable": []}
-
-    for variable_name in args:
-        if isinstance(
-            variable_name, (int, bool, float, str, tuple)
-        ):  # to check if variable_name is immutable
-            sorted_variables1["immutable"].append(variable_name)
-
-        # to check if variable_name is mutable
-        elif isinstance(variable_name, (list, dict, set)):
-            sorted_variables1["mutable"].append(variable_name)
-
-    return sorted_variables1
