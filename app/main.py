@@ -25,9 +25,9 @@ sorted_variables = {
     "immutable": []
 }
 
-for i in list_name_variables:
-    if isinstance(i, (list, dict, set)):
-        sorted_variables["mutable"].append(i)
+for name_variable in list_name_variables:
+    if isinstance(name_variable, (list, dict, set)):
+        sorted_variables["mutable"].append(name_variable)
     else:
-        sorted_variables["immutable"].append(i)
+        sorted_variables["immutable"].append(name_variable)
 print(sorted_variables)
