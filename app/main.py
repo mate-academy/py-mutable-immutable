@@ -23,8 +23,7 @@ sorted_variables = {
 
 
 def is_mutable(test_variable: any) -> bool:
-    return (type(test_variable) is list or type(test_variable) is dict
-            or type(test_variable) is set)
+    return isinstance((test_variable), (list, dict, set))
 
 
 all_variables = [lucky_number, pi, one_is_a_prime_number, name,
