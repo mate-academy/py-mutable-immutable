@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"immutable": [],
+                    "mutable": []}
+
+
+def separate_mutable_immutable(*args) -> None:
+    for item in args:
+        if not isinstance(item, (list, set, dict)):
+            sorted_variables["immutable"].append(item)
+        else:
+            sorted_variables["mutable"].append(item)
+
+
+separate_mutable_immutable(lucky_number,
+                           pi,
+                           one_is_a_prime_number,
+                           name,
+                           my_favourite_films,
+                           profile_info,
+                           marks, collection_of_coins)
