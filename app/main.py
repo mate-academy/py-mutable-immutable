@@ -16,9 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
 mutable = [list, dict, set]
-immutable = [int, float, str, tuple, bool]
 
 list_of_final_object_mut = []
 list_of_final_object_immut = []
@@ -29,11 +27,14 @@ all_objects = [
     marks, collection_of_coins
 ]
 
-
 for obj in all_objects:
-    if type(obj) in [list, dict, set]:
-        list_of_final_object_mut.append(obj)
-    elif type(obj) in [int, float, str, tuple, bool]:
+    we_go_to_loop = False
+    for obj_type in mutable:
+        if isinstance(obj, obj_type):
+            list_of_final_object_mut.append(obj)
+            we_go_to_loop = True
+            break
+    if we_go_to_loop is False:
         list_of_final_object_immut.append(obj)
 
 sorted_variables = {
