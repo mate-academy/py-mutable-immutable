@@ -16,18 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
- def sorted_variables = {
-    "mutable": mutable,\
-    "immutable": immutable
-}:
-variable_name = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks,collection_of_coins]
+sorted_variables = [lucky_number, pi, one_is_a_prime_number, name,
+                    my_favourite_films, profile_info, marks,
+                    collection_of_coins]
 immutable = []
 mutable = []
-for char in "variable_name:
-    if type(char) == int or type(char) == float or type(char) == tuple or type(char) == bool:
+for char in sorted_variables:
+    if type(char) == int or type(char) == float or type(char) == tuple\
+            or type(char) == bool or type(char) == str:
         immutable.append(char)
     else:
         mutable.append(char)
-
-return sorted_variables
+sorted_variables = {
+    "mutable": mutable,
+    "immutable": immutable
+}
+print(sorted_variables)
