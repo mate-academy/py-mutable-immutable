@@ -16,10 +16,13 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-mutable = [list, dict, set]
-
 list_of_final_object_mut = []
 list_of_final_object_immut = []
+
+sorted_variables = {
+    "mutable": list_of_final_object_mut,
+    "immutable": list_of_final_object_immut
+}
 
 all_objects = [
     lucky_number, pi, one_is_a_prime_number,
@@ -28,16 +31,7 @@ all_objects = [
 ]
 
 for obj in all_objects:
-    we_go_to_loop = False
-    for obj_type in mutable:
-        if isinstance(obj, obj_type):
-            list_of_final_object_mut.append(obj)
-            we_go_to_loop = True
-            break
-    if we_go_to_loop is False:
+    if isinstance(obj, dict) or isinstance(obj, set) or isinstance(obj, list):
+        list_of_final_object_mut.append(obj)
+    else:
         list_of_final_object_immut.append(obj)
-
-sorted_variables = {
-    "mutable": list_of_final_object_mut,
-    "immutable": list_of_final_object_immut
-}
