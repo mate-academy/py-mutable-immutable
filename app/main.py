@@ -22,15 +22,13 @@ sorted_variables = {
 }
 
 
-def add_dictionary_by_type(*args) -> None:
-    for argument in args:
-        if type(argument) in (int, str, bool, float, tuple):
-            sorted_variables["immutable"].append(argument)
-        else:
-            sorted_variables["mutable"].append(argument)
+sorted_variables["immutable"].append(lucky_number)
+sorted_variables["immutable"].append(pi)
+sorted_variables["immutable"].append(one_is_a_prime_number)
+sorted_variables["immutable"].append(name)
+sorted_variables["mutable"].append(my_favourite_films)
+sorted_variables["immutable"].append(profile_info)
+sorted_variables["mutable"].append(marks)
+sorted_variables["mutable"].append(collection_of_coins)
+sorted_variables["mutable"].append(sorted_variables)
 
-
-add_dictionary_by_type(lucky_number, pi, one_is_a_prime_number, name)
-add_dictionary_by_type(my_favourite_films, profile_info, marks)
-add_dictionary_by_type(collection_of_coins)
-print(sorted_variables)
