@@ -16,22 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-list_of_final_object_mut = []
-list_of_final_object_immut = []
-
 sorted_variables = {
-    "mutable": list_of_final_object_mut,
-    "immutable": list_of_final_object_immut
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-all_objects = [
-    lucky_number, pi, one_is_a_prime_number,
-    name, my_favourite_films, profile_info,
-    marks, collection_of_coins
-]
-
-for obj in all_objects:
-    if isinstance(obj, dict) or isinstance(obj, set) or isinstance(obj, list):
-        list_of_final_object_mut.append(obj)
-    else:
-        list_of_final_object_immut.append(obj)
