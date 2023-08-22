@@ -4,7 +4,7 @@ one_is_a_prime_number = False
 name = 'Richard'
 my_favourite_films = [
     'The Shawshank Redemption',
-    'The Lord of the Rings: The Return of the King,
+    'The Lord of the Rings: The Return of the King',
     'Pulp Fiction',
     'The Good, the Bad and the Ugly',
     'The Matrix',
