@@ -1,4 +1,5 @@
 lucky_number = 777
+
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
@@ -9,6 +10,7 @@ my_favourite_films = [
     "The Good, the Bad and the Ugly",
     "The Matrix",
 ]
+
 profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
     "John": 4,
@@ -16,4 +18,28 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info, marks,
+    collection_of_coins
+]
+
+sorted_variables = {
+    "mutable" : [],
+    "immutable" : []
+}
+
+
+def sorting_vars(variables : list) -> None:
+    for current_var in variables:
+        if isinstance(current_var, (list, dict, set)):
+            sorted_variables["mutable"].append(current_var)
+        else:
+            sorted_variables["immutable"].append(current_var)
+
+
+sorting_vars(variables)
