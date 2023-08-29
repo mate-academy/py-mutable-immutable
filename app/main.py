@@ -30,5 +30,3 @@ for key, value in my_dict.items():
         sorted_variables["mutable"] += [key]
     else:
         sorted_variables["immutable"] += [key]
-
-print(sorted_variables)
