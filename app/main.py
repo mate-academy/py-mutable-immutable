@@ -16,21 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-data_list = [lucky_number, pi, one_is_a_prime_number, name,
-             my_favourite_films, profile_info, marks, collection_of_coins]
 sorted_variables = {
-    "mutable" : [],
-    "immutable" : []
+    "mutable" : [collection_of_coins, marks, my_favourite_films],
+    "immutable" : [lucky_number, pi, one_is_a_prime_number, profile_info, name]
 }
-
-
-def resorted(data: list) -> dict:
-    for item in data_list:
-        if isinstance(item, (list, dict, set)):
-            sorted_variables["mutable"].append(item)
-        else:
-            sorted_variables["immutable"].append(item)
-    return sorted_variables
-
-
-resorted(data_list)
