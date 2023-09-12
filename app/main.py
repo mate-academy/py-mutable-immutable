@@ -16,19 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
-             profile_info, marks, collection_of_coins]
-
-mutable = []
-immutable = []
-
-for index in variables:
-    if type(index) in (list, dict, set):
-        mutable.append(index)
-    else:
-        immutable.append(index)
-
 sorted_variables = {
-    "mutable": mutable,
-    "immutable": immutable
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
