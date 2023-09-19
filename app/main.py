@@ -20,8 +20,8 @@ sorted_variables = {"immutable": [lucky_number,
                                   pi,
                                   name,
                                   profile_info,
-                                  collection_of_coins,
                                   one_is_a_prime_number],
                     "mutable": [marks,
                                 my_favourite_films,
+                                collection_of_coins
                                 ]}
