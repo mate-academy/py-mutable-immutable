@@ -16,13 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-sorted_variables = {"mutable": [],
-                    "immutable": []}
-
-
-def sort_variable(item):
-    if isinstance(item, (int, str, bool, float, tuple)):
-        sorted_variables["immutable"].append(item)
-    else:
-        sorted_variables["mutable"].append(item)
+sorted_variables = {"immutable": [lucky_number,
+                                  pi,
+                                  name,
+                                  profile_info,
+                                  collection_of_coins,
+                                  one_is_a_prime_number],
+                    "mutable": [marks,
+                                my_favourite_films,
+                                ]}
