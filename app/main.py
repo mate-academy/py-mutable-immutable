@@ -38,4 +38,3 @@ sorted_variables = {
         collection_of_coins,
     ],
 }
-
