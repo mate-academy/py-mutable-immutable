@@ -1,4 +1,3 @@
-from builtins import isinstance
 
 lucky_number = 777
 pi = 3.14
@@ -20,13 +19,6 @@ collection_of_coins = {1, 2, 25}
 
 
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, name, one_is_a_prime_number, profile_info]
 }
-all1 = lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,\
-    profile_info, marks, collection_of_coins
-for element in all1:
-    if isinstance(element, (list, set, dict)):
-        sorted_variables["mutable"].append(element)
-    else:
-        sorted_variables["immutable"].append(element)
