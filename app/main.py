@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+initial_list = [lucky_number, pi, one_is_a_prime_number, name,
+                my_favourite_films, profile_info, marks, collection_of_coins]
+immutable = [int, float, str, bool, tuple]
+mutable = [list, dict, set]
+immutable_values = []
+mutable_values = []
+
+for i in range(len(initial_list)):
+    if type(initial_list[i]) in immutable:
+        immutable_values.append(initial_list[i])
+        print(initial_list[i])
+    else:
+        mutable_values.append(initial_list[i])
+sorted_variables["immutable"] = immutable_values
+sorted_variables["mutable"] = mutable_values
+print(sorted_variables)
