@@ -16,7 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-types = (lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)
+types = (lucky_number, pi, one_is_a_prime_number, name,
+         my_favourite_films, profile_info, marks, collection_of_coins)
 sorted_variables = {"mutable": [], "immutable": []}
 
 for obj in types:
