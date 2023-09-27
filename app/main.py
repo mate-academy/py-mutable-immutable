@@ -20,7 +20,7 @@ types = (lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, prof
 sorted_variables = {"mutable": [], "immutable": []}
 
 for obj in types:
-    if isinstance(obj, dict) or isinstance(obj, set) or isinstance(obj, list):
+    if isinstance(obj, set) or isinstance(obj, dict) or isinstance(obj, list):
         sorted_variables["mutable"].append(obj)
     else:
         sorted_variables["immutable"].append(obj)
