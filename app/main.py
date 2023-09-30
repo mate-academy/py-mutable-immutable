@@ -16,4 +16,15 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+for_mutable = []
+for_immutable = []
+general_lst = [profile_info, marks]
+sorted_variables = {}
+for elem in general_lst:
+    if type(elem) is int or type(elem) is str or type(elem) is tuple or type(elem) is float:
+        for_immutable.append(elem)
+    else:
+        for_mutable.append(elem)
+sorted_variables['mutable'] = for_mutable
+sorted_variables['immutable'] = for_immutable
+print(sorted_variables)
