@@ -21,7 +21,7 @@ for_immutable = []
 general_lst = [profile_info, marks]
 sorted_variables = {}
 for elem in general_lst:
-    if type(elem) is int or type(elem) is str or type(elem) is tuple or type(elem) is float:
+    if isistance(type(elem(int,str,tuple,float))):
         for_immutable.append(elem)
     else:
         for_mutable.append(elem)
