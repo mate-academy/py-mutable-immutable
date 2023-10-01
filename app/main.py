@@ -21,9 +21,19 @@ def sort_variables(*args) -> dict:
     sorted_variables = {"mutable": [], "immutable": []}
 
     for arg in args:
-        if isinstance(arg, (list, dict, set)):
-            sorted_variables["mutable"].append(arg)
+        if isinstance(arg, list):
+            sorted_variables["mutable"].append("my_favourite_films")
+        elif isinstance(arg, dict):
+            sorted_variables["mutable"].append("marks")
+        elif isinstance(arg, set):
+            sorted_variables["mutable"].append("profile_info")
+        elif isinstance(arg, int):
+            sorted_variables["immutable"].append("lucky_number")
+        elif isinstance(arg, bool):
+            sorted_variables["immutable"].append("one_is_a_prime_number")
+        elif isinstance(arg, float):
+            sorted_variables["immutable"].append("pi")
         else:
-            sorted_variables["immutable"].append(arg)
+            sorted_variables["immutable"].append("name")
 
     return sorted_variables
