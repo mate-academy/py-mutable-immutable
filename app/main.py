@@ -15,10 +15,10 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-a = "collection_of_coins"
+a_a_A = "collection_of_coins"
 mu = ["my_favourite_films", "profile_info", "marks"]
 
 im = ["lucky_number", "pi", "one_is_a_prime_number", "name"]
-im.append(a)
+im.append(a_a_A)
 
 sorted_variables = {"mutable": mu, "immutable": im}
