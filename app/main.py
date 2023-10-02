@@ -16,24 +16,5 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-def sort_variables(*args) -> dict:
-    sorted_variables = {"mutable": [], "immutable": []}
-
-    for arg in args:
-        if isinstance(arg, list):
-            sorted_variables["mutable"].append("my_favourite_films")
-        elif isinstance(arg, dict):
-            sorted_variables["mutable"].append("marks")
-        elif isinstance(arg, set):
-            sorted_variables["mutable"].append("profile_info")
-        elif isinstance(arg, int):
-            sorted_variables["immutable"].append("lucky_number")
-        elif isinstance(arg, bool):
-            sorted_variables["immutable"].append("one_is_a_prime_number")
-        elif isinstance(arg, float):
-            sorted_variables["immutable"].append("pi")
-        else:
-            sorted_variables["immutable"].append("name")
-
-    return sorted_variables
+sorted_variables = {"mutable": ["my_favourite_films", "profile_info", "marks"],
+                    "immutable": ["lucky_number", "pi", "one_is_a_prime_number", "name", "collection_of_coins"]}
