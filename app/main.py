@@ -16,16 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# Create an empty dictionary to store the sorted variables
-sorted_variables = {"mutable": [], "immutable": []}
 
-# Categorize the variables based on mutability
-variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
-             profile_info, marks, collection_of_coins]
-mutable = [list, dict, set]
-
-for item in variables:
-    if type(item) in mutable:
-        sorted_variables["mutable"].append(item)
-    else:
-        sorted_variables["immutable"].append(item)
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
