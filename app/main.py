@@ -20,10 +20,11 @@ collection_of_coins = {1, 2, 25}
 sorted_variables = {"mutable": [], "immutable": []}
 
 # Categorize the variables based on mutability
-vars = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
+variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+             profile_info, marks, collection_of_coins]
 mutable = [list, dict, set]
 
-for item in vars:
+for item in variables:
     if type(item) in mutable:
         sorted_variables["mutable"].append(item)
     else:
