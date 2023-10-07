@@ -7,6 +7,7 @@ def check_type(list_elem : list) -> dict:
             for_immutable.append(elem)
         else:
             for_mutable.append(elem)
-    sorted_variables['mutable'] = for_mutable
-    sorted_variables['immutable'] = for_immutable
+    sorted_variables["mutable"] = for_mutable
+    sorted_variables["immutable"] = for_immutable
     return sorted_variables
+
