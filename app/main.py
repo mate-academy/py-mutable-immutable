@@ -9,22 +9,16 @@ my_favourite_films = [
     "The Good, the Bad and the Ugly",
     "The Matrix",
 ]
-profile_info = ("michel", "michel@gmail.com", "12345678")
-marks = {
-    "John": 4,
-    "Sergio": 3,
-}
-collection_of_coins = {1, 2, 25}
 
-for_mutable = []
-for_immutable = []
-general_lst = [profile_info, marks]
-sorted_variables = {}
-for elem in general_lst:
-    if isistance(type(elem(int,str,tuple,float))):
-        for_immutable.append(elem)
-    else:
-        for_mutable.append(elem)
-sorted_variables['mutable'] = for_mutable
-sorted_variables['immutable'] = for_immutable
-print(sorted_variables)
+def check_type(list_elem : list) -> dict:
+    for_mutable = []
+    for_immutable = []
+    sorted_variables = {}
+    for elem in list_elem:
+        if isinstance(elem,(int,str,tuple,float)):
+            for_immutable.append(elem)
+        else:
+            for_mutable.append(elem)
+    sorted_variables['mutable'] = for_mutable
+    sorted_variables['immutable'] = for_immutable
+    return sorted_variables
