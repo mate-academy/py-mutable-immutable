@@ -10,4 +10,3 @@ def check_type(list_elem : list) -> dict:
     sorted_variables["mutable"] = for_mutable
     sorted_variables["immutable"] = for_immutable
     return sorted_variables
-
