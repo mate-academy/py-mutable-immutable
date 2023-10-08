@@ -1,6 +1,6 @@
 lucky_number = 777
 pi = 3.14
-asda = False
+one_is_a_prime_number = False
 name = "Richard"
 my_favourite_films = [
     "The Shawshank Redemption",
@@ -18,6 +18,7 @@ collection_of_coins = {1, 2, 25}
 
 mu = [my_favourite_films, marks]
 
-im = [lucky_number, pi, asda, name, profile_info, collection_of_coins]
+im = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+im.append(collection_of_coins)
 
 sorted_variables = {"mutable": mu, "immutable": im}
