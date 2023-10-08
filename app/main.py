@@ -16,7 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-mu = [my_favourite_films, marks, profile_info]
+mu = [my_favourite_films, profile_info, marks]
 
 im = [lucky_number, pi, one_is_a_prime_number, name, collection_of_coins]
 
