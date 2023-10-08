@@ -20,6 +20,4 @@ mu = [my_favourite_films, marks, profile_info]
 
 im = [lucky_number, pi, one_is_a_prime_number, name, collection_of_coins]
 
-
-
 sorted_variables = {"mutable": mu, "immutable": im}
