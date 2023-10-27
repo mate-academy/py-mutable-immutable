@@ -23,11 +23,11 @@ variables_to_check = [lucky_number, pi, one_is_a_prime_number, name,
                       my_favourite_films, profile_info,
                       marks, collection_of_coins]
 
-for var in variables_to_check:
-    if isinstance(var, (list, dict, set)):
-        mutable_vars.append(var)
+for variable_to_check in variables_to_check :
+    if isinstance(variable_to_check, (list, dict, set)):
+        mutable_vars.append(variable_to_check)
     else:
-        immutable_vars.append(var)
+        immutable_vars.append(variable_to_check)
 
 sorted_variables = {
     "mutable": mutable_vars,
