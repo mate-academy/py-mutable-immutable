@@ -16,22 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-mutable_vars = []
-immutable_vars = []
-
-variables_to_check = [lucky_number, pi, one_is_a_prime_number, name,
-                      my_favourite_films, profile_info,
-                      marks, collection_of_coins]
-
-for variable_to_check in variables_to_check :
-    if isinstance(variable_to_check, (list, dict, set)):
-        mutable_vars.append(variable_to_check)
-    else:
-        immutable_vars.append(variable_to_check)
-
 sorted_variables = {
-    "mutable": mutable_vars,
-    "immutable": immutable_vars
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, profile_info, name]
 }
-
-print(sorted_variables)
