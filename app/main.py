@@ -17,25 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def create_dictionary(*args) -> dict:
-
-    sorted_variables: dict = {}
-    immu_list = []
-    mu_list = []
-
-    for arg in args:
-
-        if isinstance(arg, (list, set, dict)):
-            mu_list.append(arg)
-            sorted_variables["mutable"] = mu_list
-        else:
-            immu_list.append(arg)
-            sorted_variables["immutable"] = immu_list
-
-    return sorted_variables
-
-
-sorted_variables = create_dictionary(lucky_number, pi,
-                                     one_is_a_prime_number, name,
-                                     my_favourite_films, profile_info,
-                                     marks, collection_of_coins)
+sorted_variables = {"mutable": [my_favourite_films, marks,
+                                collection_of_coins],
+                    "immutable": [lucky_number, pi, one_is_a_prime_number,
+                                  name, profile_info]}
