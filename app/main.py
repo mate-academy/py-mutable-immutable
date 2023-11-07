@@ -31,16 +31,10 @@ variables = [
     marks,
     collection_of_coins,
 ]
-
-sorted_variables = {
-    "mutable": [],
-    "immutable": [],
-}
-
-for let in variables:
-    if isinstance(let, (list, dict, set)):
-        sorted_variables["mutable"].append(let)
+for sort_variable in variables:
+    if isinstance(sort_variable, (list, dict, set)):
+        sorted_variables["mutable"].append(sort_variable)
     else:
-        sorted_variables["immutable"].append(let)
+        sorted_variables["immutable"].append(sort_variable)
 
 print(sorted_variables)
