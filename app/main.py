@@ -17,28 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "mutable": [
+        my_favourite_films,
+        marks,
+        collection_of_coins
+    ],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        profile_info
+    ]
 }
-
-variables = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins,
-]
-
-sorted_variables["mutable"].append(my_favourite_films)
-sorted_variables["immutable"].append(lucky_number)
-sorted_variables["immutable"].append(pi)
-sorted_variables["immutable"].append(one_is_a_prime_number)
-sorted_variables["immutable"].append(name)
-sorted_variables["immutable"].append(profile_info)
-sorted_variables["mutable"].append(marks)
-sorted_variables["mutable"].append(collection_of_coins)
 
 print(sorted_variables)
