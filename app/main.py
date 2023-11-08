@@ -31,6 +31,7 @@ variables = [
     marks,
     collection_of_coins,
 ]
+
 sorted_variables["mutable"].append(my_favourite_films)
 sorted_variables["immutable"].append(lucky_number)
 sorted_variables["immutable"].append(pi)
