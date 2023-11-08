@@ -31,10 +31,13 @@ variables = [
     marks,
     collection_of_coins,
 ]
-for sort_variable in variables:
-    if isinstance(sort_variable, (list, dict, set)):
-        sorted_variables["mutable"].append(sort_variable)
-    else:
-        sorted_variables["immutable"].append(sort_variable)
+sorted_variables["mutable"].append(my_favourite_films)
+sorted_variables["immutable"].append(lucky_number)
+sorted_variables["immutable"].append(pi)
+sorted_variables["immutable"].append(one_is_a_prime_number)
+sorted_variables["immutable"].append(name)
+sorted_variables["immutable"].append(profile_info)
+sorted_variables["mutable"].append(marks)
+sorted_variables["mutable"].append(collection_of_coins)
 
 print(sorted_variables)
