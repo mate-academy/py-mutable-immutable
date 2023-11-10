@@ -28,9 +28,4 @@ sorted_variables = {
         one_is_a_prime_number,
         name,
         profile_info
-    ]
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> 8f8d8b60fe9ec920884d9ff03c6531e4ca5c58a7
+    ]}
