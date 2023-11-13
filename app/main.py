@@ -16,23 +16,15 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 # write code below this line
-list_of_all_variable = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins
-]
-sorted_variables = {}
-mutable_variable_list = []
-immutable_variable_list = []
-for element in list_of_all_variable:
-    if isinstance(element, (int, str, bool, float, tuple)):
-        immutable_variable_list.append(element)
-    else:
-        mutable_variable_list.append(element)
-sorted_variables["mutable"] = mutable_variable_list
-sorted_variables["immutable"] = immutable_variable_list
+sorted_variables = {
+    "mutable": [
+        my_favourite_films,
+        marks,
+        collection_of_coins],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        profile_info]
+}
