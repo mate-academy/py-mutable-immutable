@@ -16,4 +16,20 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+massive = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+           profile_info, marks, collection_of_coins]
+
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for i in range(len(massive)):
+    if type(massive[i]) == list or type(massive[i]) == dict or\
+            type(massive[i]) == set:
+        sorted_variables["mutable"].append(massive[i])
+    else:
+        sorted_variables["immutable"].append(massive[i])
+
+print(sorted_variables)
