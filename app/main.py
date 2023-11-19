@@ -9,7 +9,6 @@ my_favourite_films = [
     "The Good, the Bad and the Ugly",
     "The Matrix",
 ]
-
 profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
     "John": 4,
@@ -34,6 +33,6 @@ def sorted_variables(variables : list) -> dict:
     return result
 
 
-print(sorted_variables([lucky_number, pi, one_is_a_prime_number, name,
-                       my_favourite_films, profile_info, marks, collection_of_coins]))
-
+print(sorted_variables([lucky_number, pi, one_is_a_prime_number,
+                        name, my_favourite_films, profile_info,
+                        marks, collection_of_coins]))
