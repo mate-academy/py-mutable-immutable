@@ -15,17 +15,7 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-name_of_variables = [
-    "lucky_number",
-    "pi",
-    "one_is_a_prime_number",
-    "name",
-    "my_favourite_films",
-    "profile_info",
-    "marks",
-    "collection_of_coins",
-    "sorted_variables",
-]
+
 variables = [lucky_number, pi, one_is_a_prime_number,
              name, my_favourite_films, profile_info,
              marks, collection_of_coins
