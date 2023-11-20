@@ -23,11 +23,11 @@ variables = [lucky_number, pi, one_is_a_prime_number,
 immutable_var = (int, float, str, bool, tuple)
 immutable_list = []
 mutable_list = []
-for i in variables:
-    if type(i) in immutable_var:
-        immutable_list.append(i)
+for variable in variables:
+    if type(variable) in immutable_var:
+        immutable_list.append(variable)
     else:
-        mutable_list.append(i)
+        mutable_list.append(variable)
 sorted_variables = {
     "mutable": mutable_list,
     "immutable": immutable_list
