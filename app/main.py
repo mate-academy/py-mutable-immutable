@@ -1,19 +1,16 @@
-lucky_number = 777
-pi = 3.14
-one_is_a_prime_number = False
-name = "Richard"
-my_favourite_films = [
-    "The Shawshank Redemption",
-    "The Lord of the Rings: The Return of the King",
-    "Pulp Fiction",
-    "The Good, the Bad and the Ugly",
-    "The Matrix",
-]
-profile_info = ("michel", "michel@gmail.com", "12345678")
-marks = {
-    "John": 4,
-    "Sergio": 3,
-}
-collection_of_coins = {1, 2, 25}
+import types
 
-# write your code here
+
+def categorize_variables() -> str:
+    mutable_types = [list, set, dict]
+    immutable_types = [int, float, str, bool, tuple]
+    sorted_variables = {"mutable": [], "immutable": []}
+    main_module = types.ModuleType("__main__")
+    main_vars = vars(main_module)
+    for var_name, var_value in main_vars.items():
+        if any(isinstance(var_value, t) for t in mutable_types):
+            sorted_variables["mutable"].append(var_value)
+        elif any(isinstance(var_value, t) for t in immutable_types):
+            sorted_variables["immutable"].append(var_value)
+
+    return sorted_variables
