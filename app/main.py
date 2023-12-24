@@ -18,12 +18,12 @@ collection_of_coins = {1, 2, 25}
 
 sorted_variables = {"mutable": [], "immutable": []}
 
-q1 = {'lucky_number': lucky_number, 'lucky_number': lucky_number,
-      'one_is_a_prime_number': one_is_a_prime_number,
-      'name': name, 'my_favourite_films': my_favourite_films,
-      'profile_info': profile_info, 'marks': marks,
-      'collection_of_coins': collection_of_coins,
-      'sorted_variables': sorted_variables}
+q1 = {"lucky_number": lucky_number, "lucky_number": lucky_number,
+      "one_is_a_prime_number": one_is_a_prime_number,
+      "name": name, "my_favourite_films": my_favourite_films,
+      "profile_info": profile_info, "marks": marks,
+      "collection_of_coins": collection_of_coins,
+      "sorted_variables": sorted_variables}
 
 for i in q1:
     if type(q1[i]) == int or type(q1[i]) == str or type(q1[i]) == bool or type(q1[i]) == float or type(q1[i]) == tuple:
