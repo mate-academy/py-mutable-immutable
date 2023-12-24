@@ -30,4 +30,3 @@ for i in q1:
         sorted_variables["immutable"].append(i)
     else:
         sorted_variables["mutable"].append(i)
-
