@@ -16,19 +16,18 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {}
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
 
 
 def sorting_variables(*args) -> dict:
-    mutable_list = []
-    immutable_list = []
     for value in args:
         if isinstance(value, (list, set, dict)):
-            mutable_list.append(value)
+            sorted_variables["mutable"].append(value)
         else:
-            immutable_list.append(value)
-    sorted_variables["mutable"] = mutable_list
-    sorted_variables["immutable"] = immutable_list
+            sorted_variables["immutable"].append(value)
     return sorted_variables
 
 
