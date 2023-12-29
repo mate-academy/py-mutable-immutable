@@ -20,7 +20,6 @@ sorted_variables = {
 
     "immutable": [777, 3.14, False, "Richard",
                   ("michel", "michel@gmail.com", "12345678")],
-
     "mutable": [["The Shawshank Redemption",
                  "The Lord of the Rings: The Return of the King",
                  "Pulp Fiction",
