@@ -16,17 +16,4 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {"mutable": [], "immutable": []}
-
-q1 = {"lucky_number": lucky_number, "lucky_number": lucky_number,
-      "one_is_a_prime_number": one_is_a_prime_number,
-      "name": name, "my_favourite_films": my_favourite_films,
-      "profile_info": profile_info, "marks": marks,
-      "collection_of_coins": collection_of_coins,
-      "sorted_variables": sorted_variables}
-
-for i in q1:
-    if isinstance(i, (int, str, bool, float, tuple)):
-        sorted_variables["immutable"].append(i)
-    else:
-        sorted_variables["mutable"].append(i)
+sorted_variables = {'mutable': ['my_favourite_films', 'marks', 'collection_of_coins', 'sorted_variables'], 'immutable': ['lucky_number', 'one_is_a_prime_number', 'name', 'profile_info']}
