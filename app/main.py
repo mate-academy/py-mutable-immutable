@@ -17,18 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def is_immutable(candidate):
+def is_immutable(candidate: Any) -> bool:
     return isinstance(candidate, (int, float, str, bool, tuple))
 
 
 # Add two blank lines before the function definition
-def example_function():
+def example_function() -> None:
     pass
 
 
 class ExampleClass:
-    def __init__(self):
+    def __init__(self) -> None:
         pass
 
-    def example_method(self):
+    def example_method(self) -> None:
         pass
