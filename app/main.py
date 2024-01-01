@@ -1,5 +1,5 @@
 lucky_number = 777
-lucky_number = 3.14
+pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
 my_favourite_films = [
