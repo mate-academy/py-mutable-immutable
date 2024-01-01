@@ -1,5 +1,3 @@
-def is_immutable(variable):
-    return isinstance(variable, tuple)
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
