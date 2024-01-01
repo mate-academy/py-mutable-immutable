@@ -26,7 +26,7 @@ q1 = {"lucky_number": lucky_number, "lucky_number": lucky_number,
       "sorted_variables": sorted_variables}
 
 for i in q1:
-    if type(q1[i]) == int or type(q1[i]) == str or type(q1[i]) == bool or type(q1[i]) == float or type(q1[i]) == tuple:
+    if isinstance(q1[i], (int, str, bool, float, tuple)):
         sorted_variables["immutable"].append(i)
     else:
         sorted_variables["mutable"].append(i)
