@@ -15,12 +15,12 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-a = my_favourite_films
-b = marks
-c = collection_of_coins
-d = lucky_number
-e = one_is_a_prime_number
-r = pi
-t = name
-y = profile_info
-sorted_variables = {"mutable": [a, b, c], "immutable": [d, e, r, t, y]}
+a_a = my_favourite_films
+b_b = marks
+c_c = collection_of_coins
+d_d = lucky_number
+e_e = one_is_a_prime_number
+r_r = pi
+t_t = name
+y_y = profile_info
+sorted_variables = {"mutable": [a_a, b_b, c_c], "immutable": [d_d, e_e, r_r, t_t, y_y]}
