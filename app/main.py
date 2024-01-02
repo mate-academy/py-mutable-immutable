@@ -23,4 +23,5 @@ e_ = one_is_a_prime_number
 r_ = pi
 t_ = name
 y_ = profile_info
-sorted_variables = {"mutable": [a_, b_, c_], "immutable": [d_, e_, r_, t_, y_]}
+sorted_variables = {"mutable": [my_favourite_films, marks, collection_of_coins],
+                    "immutable": [lucky_number, one_is_a_prime_number, pi, name, profile_info]}
