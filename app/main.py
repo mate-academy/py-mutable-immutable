@@ -17,17 +17,8 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
-    "mutable": [],
-    "immutable": [],
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-for variable_name in dir():
-    if not variable_name.startswith("__"):
-        if variable_name not in ["sorted_variables", "variable_name"]:
-            current_variable = locals()[variable_name]
-            if isinstance(current_variable, (list, dict, set)):
-                sorted_variables["mutable"].append(current_variable)
-            else:
-                sorted_variables["immutable"].append(current_variable)
 
 print(sorted_variables)
