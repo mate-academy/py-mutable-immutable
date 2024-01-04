@@ -16,7 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+<<<<<<< HEAD
 sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
     "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
 }
+=======
+# Separate mutable and immutable variables
+mutable_variables = [my_favourite_films, marks, collection_of_coins]
+immutable_variables = [lucky_number, pi, one_is_a_prime_number,
+                       name, profile_info]
+
+# Create the sorted_variables dictionary
+sorted_variables = {
+    "mutable": mutable_variables,
+    "immutable": immutable_variables
+}
+
+# Print the result
+print(sorted_variables)
+>>>>>>> 4787421b453e96fb537eb283429ed1d0ad196e1a
