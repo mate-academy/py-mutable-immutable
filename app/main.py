@@ -17,25 +17,8 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-variables_to_classify = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins,
-]
-
-for current_variable in variables_to_classify:
-    if isinstance(current_variable, (list, dict, set)):
-        sorted_variables["mutable"].append(current_variable)
-    else:
-        sorted_variables["immutable"].append(current_variable)
 
 print(sorted_variables)
