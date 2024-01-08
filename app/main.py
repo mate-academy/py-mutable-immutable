@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+list_of_different_type_variable = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+sorted_variables = {"mutable": [], "immutable": []}
+mutable_data = [dict, list, set]
+for data in list_of_different_type_variable:
+    type_of_variable = type(data)
+    if type_of_variable in mutable_data:
+        sorted_variables["mutable"].append(data)
+        continue
+    sorted_variables["immutable"].append(data)
