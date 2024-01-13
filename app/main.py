@@ -30,4 +30,3 @@ sorted_variables = {
         name
     ]
 }
-print(sorted_variables)
