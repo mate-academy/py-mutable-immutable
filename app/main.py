@@ -35,4 +35,3 @@ for item in collection:
         sorted_variables["mutable"].append(item)
     else:
         sorted_variables["immutable"].append(item)
-
