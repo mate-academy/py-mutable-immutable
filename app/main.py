@@ -16,4 +16,18 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {}
+immutable = []
+mutable = []
+
+variables = [
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins]
+for ele in variables:
+    if isinstance(ele, (list, dict, set)):
+        mutable.append(ele)
+    else:
+        immutable.append(ele)
+sorted_variables["mutable"] = mutable
+sorted_variables["immutable"] = immutable
+print(sorted_variables)
