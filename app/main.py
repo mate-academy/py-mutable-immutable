@@ -25,13 +25,13 @@ collection = [lucky_number,
               marks,
               collection_of_coins]
 
-greed = {set, dict, list}
+mutable_types = (set, dict, list)
 sorted_variables = {
     "mutable": [],
     "immutable": []
 }
 for item in collection:
-    if type(item) in greed:
+    if isinstance(item, mutable_types):
         sorted_variables["mutable"].append(item)
     else:
         sorted_variables["immutable"].append(item)
