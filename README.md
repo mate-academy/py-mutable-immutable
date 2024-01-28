@@ -6,7 +6,7 @@
 There are 8 variables of different data types in the main module.
 
 Your task is to create dictionary `sorted_variables` with two keys: 
-`"ble"muta` and `"immutable"`.
+`"mutable"` and `"immutable"`.
 Each value should be equal to a list that contains all variables of corresponding type.
 
 Example with other variables:
