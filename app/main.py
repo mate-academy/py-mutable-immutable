@@ -16,4 +16,20 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+mutable = []
+immutable = []
+variables = (lucky_number, pi, one_is_a_prime_number, name,
+             my_favourite_films, profile_info, marks, collection_of_coins)
+# print(type(vars))
+for key in variables:
+    # if "__" not in key and "mutable" not in key:
+    # print(key, type(key))
+    if isinstance(key, (int, str, bool, float, tuple)):
+        immutable.append(key)
+    else:
+        mutable.append(key)
+sorted_variables = {
+    "mutable": mutable,
+    "immutable": immutable
+}
+# print(sorted_variables)
