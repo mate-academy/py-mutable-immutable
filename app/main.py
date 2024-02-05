@@ -29,7 +29,9 @@ sorted_variables = {
 for key, value in local_variables.items():
     if key.startswith("__") and key.endswith("__"):
         continue
-    if isinstance(value, list) or isinstance(value, dict) or isinstance(value, set):
+    if (isinstance(value, list)
+            or isinstance(value, dict)
+            or isinstance(value, set)):
         mutable_list.append(value)
     else:
         immutable_list.append(value)
