@@ -16,24 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-local_variables = locals().copy()
-mutable_list = []
-immutable_list = []
-
 sorted_variables = {
-    "mutable": mutable_list,
-    "immutable": immutable_list
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-for key, value in local_variables.items():
-    if key.startswith("__") and key.endswith("__"):
-        continue
-    if (isinstance(value, list)
-            or isinstance(value, dict)
-            or isinstance(value, set)):
-        mutable_list.append(value)
-    else:
-        immutable_list.append(value)
-
-print(sorted_variables)
