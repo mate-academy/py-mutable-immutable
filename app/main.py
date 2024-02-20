@@ -16,11 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {
-        "mutable": [collection_of_coins, my_favourite_films,],
-        "immutable": [profile_info, name, one_is_a_prime_number, pi, lucky_number]
-    }
-
 # def create_dictionary(*args) -> dict:
 #     sorted_variables = {
 #         "mutable": [],
@@ -34,5 +29,8 @@ sorted_variables = {
 #             sorted_variables["immutable"].append(arg)
 #
 #     return sorted_variables
-#
-# create_dictionary(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)
+
+sorted_variables = {
+    "mutable": [collection_of_coins, my_favourite_films],
+    "immutable": [profile_info, name, one_is_a_prime_number, pi, lucky_number],
+}
