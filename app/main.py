@@ -16,19 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-variables_tuple = (lucky_number, pi, one_is_a_prime_number,
-                   name, my_favourite_films,
-                   profile_info, marks,
-                   collection_of_coins)
-mutable = [dict, list, set]
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-for i in variables_tuple:
-    if type(i) in mutable:
-        sorted_variables["mutable"].append(i)
-    else:
-        sorted_variables["immutable"].append(i)
-
-print(sorted_variables)
