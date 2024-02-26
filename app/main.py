@@ -15,11 +15,11 @@ sorted_variables = {
 }
 
 # Sort variables into mutable and immutable categories
-for var in [a, b, c, d, e, f, g, h]:
-    if isinstance(var, (list, dict, set)):
-        sorted_variables["mutable"].append(var)
+for var_name, var_value in locals().items():
+    if isinstance(var_value, (list, dict, set)):
+        sorted_variables["mutable"].append(var_value)
     else:
-        sorted_variables["immutable"].append(var)
+        sorted_variables["immutable"].append(var_value)
 
 # Output the sorted variables
 print(sorted_variables)
