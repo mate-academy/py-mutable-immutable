@@ -23,10 +23,10 @@ sorted_variables = {
 
 for var_name in dir():
     if not var_name.startswith("__"):
-        var = eval(var_name)
-        if isinstance(var, (list, dict, set)):
-            sorted_variables["mutable"].append(var)
+        variable_value = eval(var_name)
+        if isinstance(variable_value, (list, dict, set)):
+            sorted_variables["mutable"].append(variable_value)
         else:
-            sorted_variables["immutable"].append(var)
+            sorted_variables["immutable"].append(variable_value)
 
 print(sorted_variables)
