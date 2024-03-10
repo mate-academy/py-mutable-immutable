@@ -21,8 +21,8 @@ mutable = [type(list()), type(set()), type(dict())]
 variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films]
 variables += [profile_info, marks, collection_of_coins]
 
-for var in variables:
-    if type(var) in mutable:
-        sorted_variables["mutable"].append(var)
+for variable in variables:
+    if type(variable) in mutable:
+        sorted_variables["mutable"].append(variable)
     else:
-        sorted_variables["immutable"].append(var)
+        sorted_variables["immutable"].append(variable)
