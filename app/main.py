@@ -17,9 +17,11 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 sorted_variables = {"mutable": [], "immutable": []}
-mutable = [type(list()), type(set()), type(dict())]
-variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films]
-variables += [profile_info, marks, collection_of_coins]
+mutable = [list, set, dict]
+variables = [
+    lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+    profile_info, marks, collection_of_coins
+    ]
 
 for elem in variables:
     if type(elem) in mutable:
