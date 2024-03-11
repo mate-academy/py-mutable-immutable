@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+all_variables = [lucky_number, pi, one_is_a_prime_number, name,
+                 my_favourite_films, profile_info, marks, collection_of_coins]
+
+mutable_variables = []
+immutable_variables = []
+
+for obj in all_variables:
+    if isinstance(obj, (list, dict, set)):
+        mutable_variables.append(obj)
+    else:
+        immutable_variables.append(obj)
+
+sorted_variables = {"mutable": mutable_variables,
+                    "immutable": immutable_variables}
