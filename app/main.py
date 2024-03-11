@@ -16,24 +16,14 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-unsorted_vars = {
-    "lucky_number": lucky_number,
-    "pi": pi,
-    "one_is_a_prime_number": one_is_a_prime_number,
-    "name": name,
-    "my_favourite_films": my_favourite_films,
-    "profile_info": profile_info,
-    "marks": marks,
-    "collection_of_coins": collection_of_coins,
-}
-sorted_variables = {
-    "mutable": [],
-    "immutable": [],
-}
+unsorted_variables = [lucky_number, pi, one_is_a_prime_number,
+                      name, my_favourite_films, profile_info,
+                      marks, collection_of_coins]
+sorted_variables = {"mutable": [], "immutable": [], }
 mutable_types = [set, list, dict]
 
-for key, value in unsorted_vars.items():
-    if type(value) in mutable_types:
-        sorted_variables["mutable"].append(value)
+for unsort_var in unsorted_variables:
+    if type(unsort_var) in mutable_types:
+        sorted_variables["mutable"].append(unsort_var)
     else:
-        sorted_variables["immutable"].append(value)
+        sorted_variables["immutable"].append(unsort_var)
