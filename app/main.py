@@ -16,16 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-#  write your code here
-sorted_variables = {"mutable": [], "immutable": []}
-
 mutable_vars = [my_favourite_films, marks, collection_of_coins]
 immutable_vars = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
-
-for element in mutable_vars:
-    sorted_variables["mutable"].append(element)
-
-for element in immutable_vars:
-    sorted_variables["immutable"].append(element)
-
+sorted_variables = {"mutable": mutable_vars, "immutable": immutable_vars}
 print(sorted_variables)
