@@ -18,14 +18,23 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
  #write your code here
+def is_immutable(var):
+    return not isinstance(var, (list, dict, set)) and var is not None
+
 sorted_variables = {"mutable": [], "immutable": []}
 
 globals_copy = dict(globals())
 
 for var_name, var_value in globals_copy.items():
-    if isinstance(var_value, (list, dict, set)):
-        sorted_variables["mutable"].append(var_value)
-    else:
+    if is_immutable(var_value):
         sorted_variables["immutable"].append(var_value)
+    else:
+        sorted_variables["mutable"].append(var_value)
 
 print(sorted_variables)
+
+
+
+
+
+
