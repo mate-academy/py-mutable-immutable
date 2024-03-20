@@ -18,15 +18,14 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
  #write your code here
-# Create an empty dictionary to store sorted variables
 sorted_variables = {"mutable": [], "immutable": []}
 
-# Iterate through the variables and categorize them as mutable or immutable
-for var in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]:
-    if isinstance(var, (list, dict, set)):
-        sorted_variables["mutable"].append(var)
-    else:
-        sorted_variables["immutable"].append(var)
+globals_copy = dict(globals())
 
-# Print the sorted variables
+for var_name, var_value in globals_copy.items():
+    if isinstance(var_value, (list, dict, set)):
+        sorted_variables["mutable"].append(var_value)
+    else:
+        sorted_variables["immutable"].append(var_value)
+
 print(sorted_variables)
