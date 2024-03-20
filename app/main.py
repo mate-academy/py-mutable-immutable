@@ -1,3 +1,4 @@
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+ #write your code here
+# Create an empty dictionary to store sorted variables
+sorted_variables = {"mutable": [], "immutable": []}
+
+# Iterate through the variables and categorize them as mutable or immutable
+for var in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]:
+    if isinstance(var, (list, dict, set)):
+        sorted_variables["mutable"].append(var)
+    else:
+        sorted_variables["immutable"].append(var)
+
+# Print the sorted variables
+print(sorted_variables)
