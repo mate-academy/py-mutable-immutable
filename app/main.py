@@ -9,6 +9,7 @@ my_favourite_films = [
     "The Good, the Bad and the Ugly",
     "The Matrix",
 ]
+
 profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
     "John": 4,
@@ -16,4 +17,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [collection_of_coins, marks, my_favourite_films],
+    "immutable": [profile_info, name, one_is_a_prime_number, pi, lucky_number]
+}
