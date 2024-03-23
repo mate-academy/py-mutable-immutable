@@ -24,6 +24,3 @@ sorted_variables["mutable"].extend(
 sorted_variables["immutable"].extend(
     [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 )
-
-print("Mutable variables:", sorted_variables["mutable"])
-print("Immutable variables:", sorted_variables["immutable"])
