@@ -17,21 +17,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
- #write your code here
-def is_immutable(var):
-    return not isinstance(var, (list, dict, set)) and var is not None
-
-sorted_variables = {"mutable": [], "immutable": []}
-
-globals_copy = dict(globals())
-
-for var_name, var_value in globals_copy.items():
-    if is_immutable(var_value):
-        sorted_variables["immutable"].append(var_value)
-    else:
-        sorted_variables["mutable"].append(var_value)
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
 
 print(sorted_variables)
+
+
+
+
 
 
 
