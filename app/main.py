@@ -16,4 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def _variable_sorter(*args) -> dict:
+
+    result = {"mutable": [], "immutable": [], }
+
+    for var_name in [_ for _ in args[0] if not _.startswith("_")]:
+        if (type(eval(var_name)) is dict or type(eval(var_name)) is list
+                or type(eval(var_name)) is set):
+            result["mutable"].append(eval(var_name))
+            continue
+        result["immutable"].append(eval(var_name))
+
+    return result
+
+
+sorted_variables = _variable_sorter(dir())
