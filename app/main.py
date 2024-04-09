@@ -16,18 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-global_vars_snapshot = dict(globals())
-
-mutable_variables = []
-immutable_variables = []
-
-for var_name, var_value in global_vars_snapshot.items():
-    if var_name != "sorted_variables" and not var_name.startswith("__"):
-        if isinstance(var_value, (list, dict, set)):
-            mutable_variables.append(var_value)
-        else:
-            immutable_variables.append(var_value)
-
 sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
     "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
