@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+
+# Перевіряємо тип змінних і додаємо їх до відповідних списків
+for variable in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films]:
+    if isinstance(variable, (list, dict, set)):
+        sorted_variables["mutable"].append(variable)
+    else:
+        sorted_variables["immutable"].append(variable)
+
+# Додаємо кортеж profile_info до списку "immutable"
+sorted_variables["immutable"].append(profile_info)
+
+# Додаємо marks та collection_of_coins до списку "mutable"
+sorted_variables["mutable"].extend([marks, collection_of_coins])
