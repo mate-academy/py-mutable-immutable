@@ -35,5 +35,7 @@ for var_value in variables:
     else:
         sorted_variables["immutable"].append(var_value)
 
-for category, variables in sorted_variables.items():
-    print(f"{category}{variables}:")
+print("sorted_variables = {")
+print(f'    "mutable": {sorted_variables["mutable"]},')
+print(f'    "immutable": {sorted_variables["immutable"]}')
+print("}")
