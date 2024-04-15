@@ -16,4 +16,25 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def sort_dict(*args) -> dict:
+    sorted_variables = {"immutable": [], "mutable": []}
+    for vl in args:
+        if (isinstance(vl, (int, float, bool, str, tuple)) or vl is None
+                or callable(vl)):
+            sorted_variables["immutable"].append(vl)
+        else:
+            sorted_variables["mutable"].append(vl)
+    return sorted_variables
+
+
+sorted_variables = sort_dict(
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    my_favourite_films,
+    name,
+    profile_info,
+    marks,
+    collection_of_coins
+)
