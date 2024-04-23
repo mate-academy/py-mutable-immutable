@@ -21,7 +21,7 @@ def classify_variables(*args) -> dict:
     mutable = []
     immutable = []
     for arg in args:
-        if isinstance(arg, (list,dict, set)):
+        if isinstance(arg, (list, dict, set)):
             mutable.append(arg)
         else:
             immutable.append(arg)
