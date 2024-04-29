@@ -16,22 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-def filter_variables(variables: dict) -> dict:
-    sorted_variables = {
-        "mutable": [],
-        "immutable": []
-    }
-
-    for var_name, value in variables.items():
-        if isinstance(value, (list, dict, set)):
-            sorted_variables["mutable"].append(value)
-        elif isinstance(value, (int, str, tuple, float, bool)):
-            sorted_variables["immutable"].append(value)
-
-    return sorted_variables
-
-
 variables = {
     "lucky_number": lucky_number,
     "pi": pi,
@@ -43,5 +27,15 @@ variables = {
     "collection_of_coins": collection_of_coins
 }
 
-sorted_variables = (filter_variables(variables))
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for var_name, value in variables.items():
+    if isinstance(value, (list, dict, set)):
+        sorted_variables["mutable"].append(value)
+    elif isinstance(value, (int, str, tuple, float, bool)):
+        sorted_variables["immutable"].append(value)
+
 print(sorted_variables)
