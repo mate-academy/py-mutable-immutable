@@ -16,4 +16,32 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def filter_variables(variables: dict) -> dict:
+    sorted_variables = {
+        "mutable": [],
+        "immutable": []
+    }
+
+    for var_name, value in variables.items():
+        if isinstance(value, (list, dict, set)):
+            sorted_variables["mutable"].append(value)
+        elif isinstance(value, (int, str, tuple, float, bool)):
+            sorted_variables["immutable"].append(value)
+
+    return sorted_variables
+
+
+variables = {
+    "lucky_number": lucky_number,
+    "pi": pi,
+    "one_is_a_prime_number": one_is_a_prime_number,
+    "name": name,
+    "my_favourite_films": my_favourite_films,
+    "profile_info": profile_info,
+    "marks": marks,
+    "collection_of_coins": collection_of_coins
+}
+
+sorted_variables = (filter_variables(variables))
+print(sorted_variables)
