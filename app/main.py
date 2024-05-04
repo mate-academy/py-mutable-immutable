@@ -32,17 +32,20 @@ def sorted_variables(*args, **kwargs) -> dict:
             elif isinstance(el, str):
                 result_dict.setdefault("immutable", []).append("name")
             elif isinstance(el, bool):
-                result_dict.setdefault("immutable", []).append("one_is_a_prime_number")
+                (result_dict.setdefault("immutable", []).append
+                 ("one_is_a_prime_number"))
             if isinstance(el, tuple):
                 result_dict.setdefault("immutable", []).append("profile_info")
 
         else:
             if isinstance(el, list):
-                result_dict.setdefault("mutable", []).append("my_favourite_films")
+                (result_dict.setdefault("mutable", []).append
+                 ("my_favourite_films"))
             elif isinstance(el, dict):
                 result_dict.setdefault("mutable", []).append("marks")
             elif isinstance(el, set):
-                result_dict.setdefault("mutable", []).append("collection_of_coins")
+                (result_dict.setdefault("mutable", []).
+                 append("collection_of_coins"))
     return sorted(result_dict)
 
 
