@@ -36,5 +36,3 @@ def sorting_variables(*args) -> None:
 sorted_variables = {}
 sorting_variables(lucky_number, pi, one_is_a_prime_number, name,
                   my_favourite_films, profile_info, marks, collection_of_coins)
-
-print(sorted_variables)
