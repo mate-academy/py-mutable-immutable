@@ -15,5 +15,13 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
-# write your code here
+is_mutable = {"mutable": [], "immutable": []}
+variables = [lucky_number, pi, one_is_a_prime_number, name,
+             my_favourite_films, profile_info, marks, collection_of_coins]
+for i in range(len(variables)):
+    if (isinstance(variables[i], set)
+            or isinstance(variables[i], dict)
+            or isinstance(variables[i], list)):
+        is_mutable["mutable"].append(variables[i])
+    else:
+        is_mutable["immutable"].append(variables[i])
