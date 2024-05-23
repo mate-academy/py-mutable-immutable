@@ -19,9 +19,7 @@ sorted_variables = {"mutable": [], "immutable": []}
 variables = [lucky_number, pi, one_is_a_prime_number, name,
              my_favourite_films, profile_info, marks, collection_of_coins]
 for i in range(len(variables)):
-    if (isinstance(variables[i], set)
-            or isinstance(variables[i], dict)
-            or isinstance(variables[i], list)):
+    if isinstance(variables[i], (set, dict, list)):
         sorted_variables["mutable"].append(variables[i])
     else:
         sorted_variables["immutable"].append(variables[i])
