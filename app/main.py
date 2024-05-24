@@ -18,7 +18,6 @@ collection_of_coins = {1, 2, 25}
 
 # noinspection PyInterpreter
 sorted_variables = {
-    "mutable": [lucky_number, pi, name, profile_info, marks],
-    "immutable": [my_favourite_films, one_is_a_prime_number,
-                  collection_of_coins]
+    "mutable": [my_favourite_films, collection_of_coins, marks],
+    "immutable": [lucky_number, pi, name, profile_info, one_is_a_prime_number]
 }
