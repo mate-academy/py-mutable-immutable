@@ -17,31 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def is_mutable(var_name: any) -> dict:
-    mutable_types = (list, set, dict)
-    return isinstance(var_name, mutable_types)
-
-
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-variables = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins
-]
-
-for varname in variables:
-    if is_mutable(varname):
-        sorted_variables["mutable"].append(varname)
-    else:
-        sorted_variables["immutable"].append(varname)
-
-print(sorted_variables)
