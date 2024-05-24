@@ -16,4 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# noinspection PyInterpreter
+sorted_variables = {
+    "mutable": [lucky_number, pi, name, one_is_a_prime_number,  marks],
+    "immutable": [my_favourite_films, collection_of_coins]
+}
