@@ -15,5 +15,21 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
+sorted_variables = {'mutable': [], 'immutable': []}
 
-# write your code here
+from typing import Any
+def sort_category(*args):
+    sorted_vars = {
+        'mutable': sorted_variables['mutable'][:],
+        'immutable': sorted_variables['immutable'][:]
+    }
+    for arg in args:
+        if isinstance(arg, (list, dict, set)):
+            sorted_vars['mutable'].append(arg)
+        else:
+            sorted_vars['immutable'].append(arg)
+    return sorted_vars
+
+sorted_variables = sort_category(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)
+
+
