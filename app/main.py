@@ -1,4 +1,3 @@
-# Дані змінні
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -17,6 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+
 def classify_variables(*args) -> dict:
     mutable_types = (list, set, dict)
     immutable_types = (int, float, str, bool, type(None), tuple)
@@ -33,6 +33,7 @@ def classify_variables(*args) -> dict:
             result["immutable"].append(arg)
 
     return result
+
 
 sorted_variables = classify_variables(
     lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
