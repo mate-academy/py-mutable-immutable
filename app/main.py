@@ -19,10 +19,9 @@ collection_of_coins = {1, 2, 25}
 variables = [lucky_number, pi, one_is_a_prime_number, name,
              my_favourite_films, profile_info, marks, collection_of_coins]
 mutable_types = (list, dict, set, bytearray)
-sorted_variables = {}
+immutable_types = (int, float, str, tuple)
 
-for variabl in variables:
-    if isinstance(variabl, mutable_types):
-        sorted_variables.setdefault("mutable", []).append(variabl)
-    else:
-        sorted_variables.setdefault("immutable", []).append(variabl)
+sorted_variables = {
+    "mutable": [variabl for variabl in variables if isinstance(variabl, mutable_types)],
+    "immutable": [variabl for variabl in variables if isinstance(variabl, immutable_types)]
+}
