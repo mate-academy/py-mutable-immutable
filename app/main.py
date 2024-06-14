@@ -21,8 +21,8 @@ variables = [lucky_number, pi, one_is_a_prime_number, name,
 mutable_types = (list, dict, set, bytearray)
 sorted_variables = {}
 
-for var in variables:
-    if isinstance(var, mutable_types):
-        sorted_variables.setdefault("mutable", []).append(var)
+for variabl in variables:
+    if isinstance(variabl, mutable_types):
+        sorted_variables.setdefault("mutable", []).append(variabl)
     else:
-        sorted_variables.setdefault("immutable", []).append(var)
+        sorted_variables.setdefault("immutable", []).append(variabl)
