@@ -22,6 +22,8 @@ mutable_types = (list, dict, set, bytearray)
 immutable_types = (int, float, str, tuple)
 
 sorted_variables = {
-    "mutable": [variabl for variabl in variables if isinstance(variabl, mutable_types)],
-    "immutable": [variabl for variabl in variables if isinstance(variabl, immutable_types)]
+    "mutable": [variabl for variabl in variables if isinstance(variabl,
+                                                               mutable_types)],
+    "immutable": [variabl for variabl in variables if isinstance(variabl,
+                                                                 immutable_types)]
 }
