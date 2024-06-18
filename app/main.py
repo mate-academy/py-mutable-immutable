@@ -31,11 +31,11 @@ def is_mutable(obj: Any) -> bool:
 
 variables = [var1, var2, var3, var4, var5, var6, var7, var8]
 
-for variable in variables:
-    if is_mutable(variable):
-        sorted_variables["mutable"].append(variable)
+for data_item in variables:
+    if is_mutable(data_item):
+        sorted_variables["mutable"].append(data_item)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(data_item)
 
-# Результат
+
 print(sorted_variables)
