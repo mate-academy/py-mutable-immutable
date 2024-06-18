@@ -1,3 +1,5 @@
+from typing import Dict, List, Any
+
 var1 = lucky_number = 777
 var2 = pi = 3.14
 var3 = one_is_a_prime_number = False
@@ -16,21 +18,24 @@ var7 = marks = {
 }
 var8 = collection_of_coins = {1, 2, 25}
 
-sorted_variables = {
+sorted_variables: Dict[str, List[Any]] = {
     "mutable": [],
     "immutable": []
 }
 
 
-def is_mutable(obj):
+def is_mutable(obj: Any) -> bool:
     mutable_types = (list, dict, set)
     return isinstance(obj, mutable_types)
 
 
-for var in (var1, var2, var3, var4, var5, var6, var7, var8):
-    if is_mutable(var):
-        sorted_variables["mutable"].append(var)
-    else:
-        sorted_variables["immutable"].append(var)
+variables = [var1, var2, var3, var4, var5, var6, var7, var8]
 
+for variable in variables:
+    if is_mutable(variable):
+        sorted_variables["mutable"].append(variable)
+    else:
+        sorted_variables["immutable"].append(variable)
+
+# Результат
 print(sorted_variables)
