@@ -16,6 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+# Присвоєння типів змінним
 int_ = int
 str_ = str
 list_ = list
