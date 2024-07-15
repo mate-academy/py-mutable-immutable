@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def sorted_values(values: list) -> dict:
+    sorted_v = {
+        "mutable": [],
+        "immutable": []
+    }
+
+    for value in values:
+        if isinstance(value, (int, str, float, tuple, bool)):
+            sorted_v["immutable"].append(value)
+        else:
+            sorted_v["mutable"].append(value)
+
+    return sorted_v
+
+
+test_values = [lucky_number, pi, one_is_a_prime_number, name,
+               my_favourite_films, profile_info, marks, collection_of_coins]
+sorted_variables = sorted_values(test_values)
