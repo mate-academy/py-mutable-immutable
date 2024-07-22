@@ -16,24 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-def audit(*args) -> dict:
-    global sorted_variables
-    mutable_types = [dict, list, set]
-    sorted_variables = {"mutable": [], "immutable": []}
-    for cur_var in args:
-        if type(cur_var) in mutable_types:
-            sorted_variables["mutable"].append(cur_var)
-        else:
-            sorted_variables["immutable"].append(cur_var)
-    print(sorted_variables)
-    return sorted_variables
-
-
-audit(lucky_number,
-      pi,
-      one_is_a_prime_number,
-      name,
-      my_favourite_films,
-      profile_info, marks,
-      collection_of_coins)
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
