@@ -17,15 +17,6 @@ marks = {
 collection_of_coins = {1, 2, 25}
 future_values = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks,
                  collection_of_coins]
-sorted_variables = {"mutable": [], "immutable": []}
-
-
-def is_mutable(element):
-    return isinstance(element, (list, dict, set))
-
-
-for value in future_values:
-    if is_mutable(value):
-        sorted_variables["mutable"].append(value)
-    else:
-        sorted_variables["immutable"].append(value)
+sorted_variables = {"mutable": [my_favourite_films, collection_of_coins, marks], "immutable": [lucky_number, pi,
+                                                                                               one_is_a_prime_number,
+                                                                                               name, profile_info]}
