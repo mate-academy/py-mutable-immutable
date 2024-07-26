@@ -29,7 +29,3 @@ for value in future_values:
         sorted_variables["mutable"].append(value)
     else:
         sorted_variables["immutable"].append(value)
-
-
-
-
