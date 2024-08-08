@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+list_of_variables = [lucky_number, pi, one_is_a_prime_number, name,
+                     my_favourite_films, profile_info, marks,
+                     collection_of_coins]
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+
+def mutable_or_immutable(item: object) -> None:
+    if isinstance(item, (list, dict, set)):
+        sorted_variables["mutable"].append(item)
+    else:
+        sorted_variables["immutable"].append(item)
+
+
+for item in list_of_variables:
+    mutable_or_immutable(item)
