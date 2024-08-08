@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def is_mutable(*args) -> list:
+    mutable_list = []
+    immutable_list = []
+
+    for arg in args:
+        if isinstance(arg, (list, set, dict)):
+            mutable_list.append(arg)
+            continue
+        immutable_list.append(arg)
+
+    return [mutable_list, immutable_list]
+
+
+result_list = (is_mutable(lucky_number, pi, one_is_a_prime_number,
+               name, my_favourite_films, profile_info,
+               marks, collection_of_coins))
+
+sorted_variables = {"mutable": result_list[0], "immutable": result_list[1]}
