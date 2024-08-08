@@ -26,13 +26,8 @@ sorted_variables = {
     "immutable": []
 }
 
-
-def mutable_or_immutable(item: object) -> None:
+for item in list_of_variables:
     if isinstance(item, (list, dict, set)):
         sorted_variables["mutable"].append(item)
     else:
         sorted_variables["immutable"].append(item)
-
-
-for item in list_of_variables:
-    mutable_or_immutable(item)
