@@ -16,4 +16,33 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def create_sorted_variables() -> dict[str, list]:
+    sort_variables = {
+        "mutable": [],
+        "immutable": []
+    }
+
+    variables = [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        my_favourite_films,
+        profile_info,
+        marks,
+        collection_of_coins
+    ]
+
+    for current in variables:
+        if isinstance(current, (list, dict, set)):
+            sort_variables["mutable"].append(current)
+        elif isinstance(current, (int, float, str, bool, tuple, type(None))):
+            sort_variables["immutable"].append(current)
+        else:
+            print(f"Cannot classify {current} into 'mutable' or 'immutable'")
+
+    return sort_variables
+
+
+sorted_variables = create_sorted_variables()
