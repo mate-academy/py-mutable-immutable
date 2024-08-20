@@ -41,4 +41,4 @@ for values_from_all_variables in all_variables.values():
     else:
         sorted_variables["mutable"].append(values_from_all_variables)
 
-print(f'{sorted_variables}')
+print(f"{sorted_variables}")
