@@ -15,8 +15,8 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-all_changers = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, collection_of_coins,
-                marks]
+all_changers = [lucky_number, pi, one_is_a_prime_number, name,
+                my_favourite_films, profile_info, collection_of_coins, marks]
 change_type = [list, dict, set]
 sorted_variables = {
     "mutable": [],
