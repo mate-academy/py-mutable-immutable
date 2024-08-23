@@ -15,5 +15,16 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
-# write your code here
+all_changers = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, collection_of_coins,
+                marks]
+change_type = [list, dict, set]
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+for changers in all_changers:
+    if type(changers) in change_type:
+        sorted_variables["mutable"].append(changers)
+    else:
+        sorted_variables["immutable"].append(changers)
+print(sorted_variables)
