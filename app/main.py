@@ -17,27 +17,25 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # Визначення списку відсортованих змінних
-sorted_variables = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins,
-]
+sorted_variables = {
+    "mutable": [
+        my_favourite_films,  # list
+        marks,  # dict
+        collection_of_coins,  # set
+    ],
+    "immutable": [
+        lucky_number,  # int
+        pi,            # float
+        one_is_a_prime_number, # bool
+        name,          # str
+        profile_info,  # tuple
+    ]
+}
+
+
 
 # Перевірка, чи 1 є простим числом
 is_prime = lambda n: n > 1 and all(n % i != 0 for i in range(2, int(n ** 0.5) + 1))
-
-# def is_prime(n):
-#     if n <= 1:
-#         return False
-#     for i in range(2, int(n ** 0.5) + 1):
-#         if n % i == 0:
-#             return False
-#     return True
 
 # Виконання перевірок і друк значень
 if is_prime(1):
