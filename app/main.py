@@ -16,7 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# Визначення списку відсортованих змінних
 sorted_variables = {
     "mutable": [
         my_favourite_films,  # list
@@ -26,7 +25,7 @@ sorted_variables = {
     "immutable": [
         lucky_number,  # int
         pi,            # float
-        one_is_a_prime_number, # bool
+        one_is_a_prime_number,  # bool
         name,          # str
         profile_info,  # tuple
     ]
