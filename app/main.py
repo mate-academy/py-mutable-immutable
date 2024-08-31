@@ -16,19 +16,9 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {"mutable": [], "immutable": []}
-sorted_variables["immutable"].extend([lucky_number, pi,
-                                      one_is_a_prime_number,
-                                      name, profile_info])
-sorted_variables["mutable"].extend([my_favourite_films,
-                                    marks, collection_of_coins])
-{
-    "mutable": [
-        ["The Shawshank Redemption",
-         "The Lord of the Rings: The Return of the King",
-         "Pulp Fiction", "The Good, the Bad and the Ugly", "The Matrix"],
-        {"John": 4, "Sergio": 3},
-    ],
-    "immutable": [777, 3.14, False, "Richard",
-                  ("michel", "michel@gmail.com", "12345678")]
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
+
+print(sorted_variables)
