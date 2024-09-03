@@ -16,4 +16,32 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def sort_variables_by_mutability(*args):
+  """Sorts variables by their mutability.
+
+  Args:
+    *args: A list of variables.
+
+  Returns:
+    A dictionary with two keys: "mutable" and "immutable". Each value is a list
+    containing variables of the corresponding type.
+  """
+
+  sorted_variables = {
+      "mutable": [],
+      "immutable": []
+  }
+
+  for variable in args:
+    if isinstance(variable, (list, dict, set)):
+      sorted_variables["mutable"].append(variable)
+    else:
+      sorted_variables["immutable"].append(variable)
+
+  return sorted_variables
+
+
+sorted_variables = sort_variables_by_mutability(lucky_number, pi, one_is_a_prime_number,
+                                                name, my_favourite_films, profile_info,
+                                                marks, collection_of_coins)
