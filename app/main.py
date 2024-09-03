@@ -17,31 +17,32 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def sort_variables_by_mutability(*args):
-  """Sorts variables by their mutability.
+def sort_variables_by_mutability(*args) -> dict[str, list]:
+    """Sort variables by their mutability.
 
-  Args:
-    *args: A list of variables.
+    Args:
+        *args: A list of variables.
 
-  Returns:
-    A dictionary with two keys: "mutable" and "immutable". Each value is a list
-    containing variables of the corresponding type.
-  """
+    Returns:
+        dict: A dictionary with two keys: "mutable" and "immutable".
+        Each value is a list containing variables of the corresponding type.
+    """
+    sorted_variables = {
+        "mutable": [],
+        "immutable": [],
+    }
 
-  sorted_variables = {
-      "mutable": [],
-      "immutable": []
-  }
+    for element in args:
+        if isinstance(element, (list, dict, set)):
+            sorted_variables["mutable"].append(element)
+        else:
+            sorted_variables["immutable"].append(element)
 
-  for variable in args:
-    if isinstance(variable, (list, dict, set)):
-      sorted_variables["mutable"].append(variable)
-    else:
-      sorted_variables["immutable"].append(variable)
-
-  return sorted_variables
+    return sorted_variables
 
 
-sorted_variables = sort_variables_by_mutability(lucky_number, pi, one_is_a_prime_number,
-                                                name, my_favourite_films, profile_info,
-                                                marks, collection_of_coins)
+sorted_variables = sort_variables_by_mutability(
+    lucky_number, pi, one_is_a_prime_number,
+    name, my_favourite_films, profile_info,
+    marks, collection_of_coins,
+)
