@@ -16,14 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-variables = [
-    lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
-    profile_info, marks, collection_of_coins]
-mutable_obj = ("list", "dict", "set")
-sorted_variables = {"mutable": [], "immutable": []}
 
-for var_def in variables:
-    if type(var_def).__name__ in mutable_obj:
-        sorted_variables["mutable"].append(var_def)
-    else:
-        sorted_variables["immutable"].append(var_def)
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
