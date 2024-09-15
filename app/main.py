@@ -1,4 +1,4 @@
-activate_lucky_number = 777
+lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
@@ -18,5 +18,7 @@ collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
-    "immutable": [activate_lucky_number, pi, one_is_a_prime_number, name, profile_info]
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
+
+print(sorted_variables)
