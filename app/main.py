@@ -16,6 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+
 test_variables = ([
     lucky_number,
     pi,
