@@ -17,7 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-vars = [
+variables = [
     lucky_number,
     pi,
     one_is_a_prime_number,
@@ -32,7 +32,7 @@ sorted_variables = {
     "mutable": [],
     "immutable": [],
 }
-for current_variable in vars:
+for current_variable in variables:
     if isinstance(current_variable, (list, dict, set)):
         sorted_variables["mutable"].append(current_variable)
     else:
