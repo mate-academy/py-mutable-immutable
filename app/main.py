@@ -17,13 +17,24 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
 sorted_variables = {
     "mutable": [],
     "immutable": [],
 }
-for var in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]:
-    if isinstance(var, (list, dict, set)):
-        sorted_variables["mutable"].append(var)
+for current_variable in variables:
+    if isinstance(current_variable, (list, dict, set)):
+        sorted_variables["mutable"].append(current_variable)
     else:
-        sorted_variables["immutable"].append(var)
+        sorted_variables["immutable"].append(current_variable)
 print(sorted_variables)
