@@ -16,29 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+# immutable (int, float, bool, str, tuple)
 sorted_variables = {
-    "mutable": [],
-    "immutable": []
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
+    "mutable": [my_favourite_films, marks, collection_of_coins]
 }
-
-all_variables = {}
-all_variables["lucky_number"] = lucky_number
-all_variables["pi"] = pi
-all_variables["one_is_a_prime_number"] = one_is_a_prime_number
-all_variables["name"] = name
-all_variables["my_favourite_films"] = my_favourite_films
-all_variables["profile_info"] = profile_info
-all_variables["marks"] = marks
-all_variables["collection_of_coins"] = collection_of_coins
-
-for values_from_all_variables in all_variables.values():
-    if type(values_from_all_variables) == int \
-            or type(values_from_all_variables) == float \
-            or type(values_from_all_variables) == bool \
-            or type(values_from_all_variables) == str \
-            or type(values_from_all_variables) == tuple:
-        sorted_variables["immutable"].append(values_from_all_variables)
-    else:
-        sorted_variables["mutable"].append(values_from_all_variables)
-
-print(f"{sorted_variables}")
