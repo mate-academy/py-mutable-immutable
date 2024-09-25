@@ -16,26 +16,9 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-variables_list = [
-    lucky_number,
-    pi,
-    one_is_a_prime_number,
-    name,
-    my_favourite_films,
-    profile_info,
-    marks,
-    collection_of_coins
-]
-
-mutable = [
-    variable for variable in variables_list
-    if isinstance(variable, (list, dict, set))
-]
-immutable = [
-    variable for variable in variables_list
-    if not isinstance(variable, (list, dict, set))
-]
-
-sorted_variables = {"mutable": mutable, "immutable": immutable}
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
 
 print(sorted_variables)
