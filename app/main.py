@@ -31,5 +31,3 @@ sorted_variables = {
         collection_of_coins,  # set
     ]
 }
-
-print(sorted_variables)
