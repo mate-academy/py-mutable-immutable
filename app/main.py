@@ -38,5 +38,3 @@ for name_of_var in variable_names:
         sorted_variables["mutable"].append(var_value)
     elif isinstance(var_value, (int, float, str, bool, tuple)):
         sorted_variables["immutable"].append(var_value)
-
-print(sorted_variables)
