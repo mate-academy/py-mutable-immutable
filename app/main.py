@@ -16,4 +16,27 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variable_names = [
+    "lucky_number",
+    "pi",
+    "one_is_a_prime_number",
+    "name",
+    "my_favourite_films",
+    "profile_info",
+    "marks",
+    "collection_of_coins",
+]
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for name_of_var in variable_names:
+    var_value = globals()[name_of_var]
+
+    if isinstance(var_value, (list, dict, set)):
+        sorted_variables["mutable"].append(var_value)
+    elif isinstance(var_value, (int, float, str, bool, tuple)):
+        sorted_variables["immutable"].append(var_value)
+
+print(sorted_variables)
