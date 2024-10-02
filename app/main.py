@@ -17,3 +17,14 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+
+def add_variable_to_category(variable):
+    if isinstance(variable, (list, dict, set)):
+        sorted_variables["mutable"].append(variable)
+    else:
+        sorted_variables["immutable"].append(variable)
