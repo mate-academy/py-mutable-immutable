@@ -1,3 +1,5 @@
+from typing import Any
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -17,8 +19,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def is_immutable(obj):
-
+def is_immutable(obj: Any) -> bool:
     return isinstance(obj, (int, str, bool, float, tuple))
 
 
@@ -30,8 +31,8 @@ sorted_variables = {
 variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
              profile_info, marks, collection_of_coins]
 
-for var in variables:
-    if is_immutable(var):
-        sorted_variables["immutable"].append(var)
+for element in variables:
+    if is_immutable(element):
+        sorted_variables["immutable"].append(element)
     else:
-        sorted_variables["mutable"].append(var)
+        sorted_variables["mutable"].append(element)
