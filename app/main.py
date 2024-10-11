@@ -21,10 +21,10 @@ def create_sorted_variables(*args) -> dict:
     sorted_variables = {"mutable": [], "immutable": []}
 
     for arg in args:
-        if isinstance(arg, (float, int, str, bool, tuple)):
-            sorted_variables["immutable"].append(arg)
-        else:
+        if isinstance(arg, (list, set, dict)):
             sorted_variables["mutable"].append(arg)
+        else:
+            sorted_variables["immutable"].append(arg)
 
     return sorted_variables
 
