@@ -17,7 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def create_sorted_variables(*args) -> dict:
+def sort_variables_by_mutability(*args) -> dict:
     sorted_variables = {"mutable": [], "immutable": []}
 
     for arg in args:
@@ -29,4 +29,4 @@ def create_sorted_variables(*args) -> dict:
     return sorted_variables
 
 
-sorted_variables = create_sorted_variables(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)
+sorted_variables = sort_variables_by_mutability(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)
