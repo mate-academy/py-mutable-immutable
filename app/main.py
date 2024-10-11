@@ -21,12 +21,10 @@ def sort_variables_by_mutability(*args) -> dict:
     sorted_variables = {"mutable": [], "immutable": []}
 
     for arg in args:
-        if isinstance(arg, (list, set, dict)):
-            sorted_variables["mutable"].append(arg)
-        else:
-            sorted_variables["immutable"].append(arg)
-
+        sorted_variables["mutable" if isinstance(arg, (list, set, dict)) else "immutable"].append(arg)
+        
     return sorted_variables
 
 
 sorted_variables = sort_variables_by_mutability(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)
+print(sorted_variables)
