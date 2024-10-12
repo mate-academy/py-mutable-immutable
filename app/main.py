@@ -18,22 +18,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-def sort_variables(*args) -> dict:
-
-    sorted_dict = {"mutable": [], "immutable": []}
-
-    for current_variable in args:
-        key = "immutable"
-        is_mutable = isinstance(current_variable, (dict, list, set))
-        if is_mutable:
-            key = "mutable"
-
-        sorted_dict[key].append(current_variable)
-
-    return sorted_dict
-
-
-sorted_variables = sort_variables(
-    lucky_number, pi, one_is_a_prime_number, name,
-    my_favourite_films, profile_info, marks, collection_of_coins)
+sorted_variables = {
+    "mutable": [marks, collection_of_coins, my_favourite_films],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
