@@ -25,5 +25,5 @@ for var in variables:
     else:
         sorted_variables["immutable"].append(var)
 
-# Output the result
+# Output the result develop
 print(sorted_variables)
