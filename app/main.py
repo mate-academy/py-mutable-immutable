@@ -1,10 +1,1 @@
-
-sorted_variables = {
-    "mutable": [b, d],
-    "immutable": [a, c]}
-a = 5
-b = ["jakow"]
-c = "Hello, worrld"
-d = "orange"
-mutable: [b, d]
-immutable: [a, c]
+sorted_variables = {"mutable": [a, 4]}, {"immutable": ["Welcome, World"]}
