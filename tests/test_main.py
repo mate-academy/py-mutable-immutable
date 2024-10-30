@@ -1,7 +1,5 @@
 import pytest
-import inspect
-
-import app.main
+import inspectimport app.main
 
 
 @pytest.mark.parametrize(
