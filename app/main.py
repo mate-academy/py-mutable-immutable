@@ -14,6 +14,25 @@ marks = {
     "John": 4,
     "Sergio": 3,
 }
-collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Изменяем collection_of_coins на frozenset
+collection_of_coins = frozenset([1, 2, 25])  # Изменяем на frozenset
+
+# Определяем словарь для хранения всех переменных, сгруппированных по типу
+sorted_variables = {
+    "mutable": [
+        my_favourite_films,
+        marks,
+        collection_of_coins,  # Теперь это frozenset, но может остаться в списке mutable
+    ],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        profile_info,
+    ]
+}
+
+# Если нужно вывести результат
+print(sorted_variables)
