@@ -1,0 +1,18 @@
+# Defining the variables of different data types
+a = 123                 # int (immutable)
+b = []                  # list (mutable)
+c = "Hi!"               # str (immutable)
+d = [1, 2]              # list (mutable)
+e = (1, 2, 3)           # tuple (immutable)
+f = {1: "one", 2: "two"}  # dict (mutable)
+g = 3.14                # float (immutable)
+h = set([1, 2, 3])      # set (mutable)
+
+# Creating the dictionary to sort variables
+sorted_variables = {
+    "mutable": [b, d, f, h],  # Lists, dictionaries, and sets are mutable
+    "immutable": [a, c, e, g] # Integers, strings, tuples, and floats are immutable
+}
+
+# Outputting the sorted variables dictionary
+print(sorted_variables)
