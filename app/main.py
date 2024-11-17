@@ -20,16 +20,29 @@ collection_of_coins = {1, 2, 25}
 # Словарь для классификации переменных
 sorted_variables = {
     "mutable": [],
-    "immutable": []
+    "immutable": [],
 }
 
+# Список переменных для классификации
+data_objects = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]
+
 # Проверка переменных и их классификация
-variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
-for var in variables:
-    if isinstance(var, (list, dict, set)):  # Если переменная изменяемая
-        sorted_variables["mutable"].append(var)
-    elif isinstance(var, (int, float, bool, str, tuple)):  # Если переменная неизменяемая
-        sorted_variables["immutable"].append(var)
+for data_item in data_objects:
+    if isinstance(data_item, (list, dict, set)):
+        # Если объект изменяемый
+        sorted_variables["mutable"].append(data_item)
+    elif isinstance(data_item, (int, float, bool, str, tuple)):
+        # Если объект неизменяемый
+        sorted_variables["immutable"].append(data_item)
 
 # Вывод результата
 print(sorted_variables)
