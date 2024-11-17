@@ -1,3 +1,4 @@
+# Заданные переменные
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Словарь для классификации переменных
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+# Проверка переменных и их классификация
+variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
+for var in variables:
+    if isinstance(var, (list, dict, set)):  # Если переменная изменяемая
+        sorted_variables["mutable"].append(var)
+    elif isinstance(var, (int, float, bool, str, tuple)):  # Если переменная неизменяемая
+        sorted_variables["immutable"].append(var)
+
+# Вывод результата
+print(sorted_variables)
