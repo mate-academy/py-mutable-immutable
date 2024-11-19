@@ -16,7 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
 variables = [
     lucky_number,
     pi,
