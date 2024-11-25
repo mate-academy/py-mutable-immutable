@@ -16,23 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-variable_names = [
-    "lucky_number",
-    "pi",
-    "one_is_a_prime_number",
-    "name",
-    "my_favourite_films",
-    "profile_info",
-    "marks",
-    "collection_of_coins"
+variable_values = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name, my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
 ]
 
-# get values by names
-variable_values = [globals()[name] for name in variable_names]
-
-# lists with corresponding types
-mutable = [list, dict, set]
-immutable = [int, float, str, bool, tuple]
+mutable = (list, dict, set)
 
 sorted_variables = {
     "mutable": [],
