@@ -34,10 +34,10 @@ variables = [
 ]
 
 # Classify each variable
-for variable in variables:
-    if isinstance(variable, (list, dict, set)):
-        sorted_variables["mutable"].append(variable)
+for i  in variables:
+    if isinstance(i, (list, dict, set)):
+        sorted_variables["mutable"].append(i)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(i)
 
 print(sorted_variables)
