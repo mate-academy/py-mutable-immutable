@@ -16,6 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+# Ініціалізація словника для результатів
 sorted_variables = {
     "mutable": [],
     "immutable": [],
