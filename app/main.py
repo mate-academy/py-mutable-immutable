@@ -34,7 +34,7 @@ variables = [
 ]
 
 # Classify each variable
-for i  in variables:
+for i in variables:
     if isinstance(i, (list, dict, set)):
         sorted_variables["mutable"].append(i)
     else:
