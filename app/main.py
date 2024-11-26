@@ -16,7 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-def types_variables(variables):
+def types_variables(variables: list) -> dict:
+
     sorted_variables = {
         "mutable": [],
         "immutable": []
