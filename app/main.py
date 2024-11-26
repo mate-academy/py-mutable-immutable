@@ -31,5 +31,15 @@ def types_variables(variables: list) -> dict:
                 sorted_variables["mutable"].append(variable)
         elif isinstance(variable, list):
             sorted_variables["mutable"].append(variable)
+        elif isinstance(variable, str):
+            sorted_variables["immutable"].append(variable)
+        elif isinstance(variable, int):
+            sorted_variables["immutable"].append(variable)
+        elif isinstance(variable, float):
+            sorted_variables["immutable"].append(variable)
+        elif isinstance(variable, dict):
+            sorted_variables["mutable"].append(variable)
+        elif isinstance(variable, set):
+            sorted_variables["mutable"].append(variable)
 
     return sorted_variables
