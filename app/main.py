@@ -16,30 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-def types_variables(variables: list) -> dict:
-
-    sorted_variables = {
-        "mutable": [],
-        "immutable": []
-    }
-
-    for variable in variables:
-        if isinstance(variable, tuple):
-            if all(not isinstance(el, list) for el in variable):
-                sorted_variables["immutable"].append(variable)
-            else:
-                sorted_variables["mutable"].append(variable)
-        elif isinstance(variable, list):
-            sorted_variables["mutable"].append(variable)
-        elif isinstance(variable, str):
-            sorted_variables["immutable"].append(variable)
-        elif isinstance(variable, int):
-            sorted_variables["immutable"].append(variable)
-        elif isinstance(variable, float):
-            sorted_variables["immutable"].append(variable)
-        elif isinstance(variable, dict):
-            sorted_variables["mutable"].append(variable)
-        elif isinstance(variable, set):
-            sorted_variables["mutable"].append(variable)
-
-    return sorted_variables
+sorted_variables = {
+    "mutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
+    "immutable": [my_favourite_films, collection_of_coins]
+}
