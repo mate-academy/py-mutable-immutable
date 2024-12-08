@@ -1,3 +1,4 @@
+# Given variables
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Sorting variables into mutable and immutable types
+sorted_variables = {
+    "mutable": [
+        var for var in [my_favourite_films, marks, collection_of_coins]
+    ],
+    "immutable": [
+        var for var in [
+            lucky_number, pi, one_is_a_prime_number, name, profile_info
+        ]
+    ]
+}
+
+# Display the sorted dictionary
+print(sorted_variables)
