@@ -17,3 +17,14 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number,
+                  # PEP8 also states that you should ignore PEP8
+                  # where it makes sense to do so
+                  name, profile_info]
+
+
+
+}
