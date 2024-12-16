@@ -16,10 +16,9 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {}
-
 
 def mutable_immutable(*args) -> dict:
+    sorted_variables = {}
     mutable = []
     immutable = []
     for element in args:
