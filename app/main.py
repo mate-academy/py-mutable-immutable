@@ -16,4 +16,11 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+ln = lucky_number
+nm = name
+ff = my_favourite_films
+pr = profile_info
+op = one_is_a_prime_number
+mk = marks
+cc = collection_of_coins
+sorted_variables = {"mutable": [ff, mk, cc], "immutable": [ln, pi, op, nm, pr]}
