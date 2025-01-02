@@ -15,7 +15,6 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
 ln = lucky_number
 nm = name
 ff = my_favourite_films
