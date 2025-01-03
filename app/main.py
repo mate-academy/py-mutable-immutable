@@ -16,4 +16,30 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+types_dictionary = {
+    "lucky_number" : lucky_number,
+    "pi" : pi,
+    "one_is_a_prime_number" : one_is_a_prime_number,
+    "name" : name,
+    "my_favourite_films" : my_favourite_films,
+    "profile_info" : profile_info,
+    "marks" : marks,
+    "collection_of_coins" : collection_of_coins
+}
+sorted_variables = {}
+
+for key in types_dictionary:
+    new_list = []
+    if type(types_dictionary[key]) in [str, int, float, tuple, bool]:
+        key_name = "immutable"
+    else:
+        key_name = "mutable"
+
+    if f"{key_name}" in sorted_variables :
+        new_list = sorted_variables[f"{key_name}"].copy()
+        new_list.append(types_dictionary[key])
+        sorted_variables.update({f"{key_name}" : new_list})
+    else:
+        new_list.append(types_dictionary[key])
+        sorted_variables.update({f"{key_name}" : new_list})
