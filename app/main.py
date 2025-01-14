@@ -20,7 +20,7 @@ sorted_variables = {
     "mutable": [],
     "immutable": []
 }
-for variable in [
+for data_type in [
     lucky_number,
     pi,
     one_is_a_prime_number,
@@ -30,9 +30,9 @@ for variable in [
     marks,
     collection_of_coins
 ]:
-    if type(variable) in [list, dict, set]:
-        sorted_variables["mutable"].append(variable)
+    if type(data_type) in [list, dict, set]:
+        sorted_variables["mutable"].append(data_type)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(data_type)
 
 print(sorted_variables)
