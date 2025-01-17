@@ -9,11 +9,25 @@ my_favourite_films = [
     "The Good, the Bad and the Ugly",
     "The Matrix",
 ]
+
+# Updated profile_info to be a tuple
 profile_info = ("michel", "michel@gmail.com", "12345678")
-marks = {
-    "John": 4,
-    "Sergio": 3,
-}
+
+marks = {"John": 4, "Sergio": 3}
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Categorize variables into 'mutable' and 'immutable'
+sorted_variables = {
+    "mutable": [
+        my_favourite_films,
+        profile_info,  # This should now be a tuple
+        marks,
+        collection_of_coins
+    ],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name
+    ]
+}
