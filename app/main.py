@@ -17,14 +17,20 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
-lucky_number = 888
-pi = 3.14159
-one_is_a_prime_number = True
-my_favourite_films.append("A Game of Thrones")
-profile_info = ("Maria", "mariya76om@gmail.com")
-marks["John"] = 5
-collection_of_coins.add(50)
-collection_of_coins.remove(1)
+mutable_variable = [1, 2, 3]
+immutable_variable = (1, 2, 3)
+
+sorted_variables = {
+    "mutable": mutable_variable,
+    "immutable": immutable_variable
+}
+profile_info = ("Maria", 48, "Teacher") # це кортеж
+profile_info = ["Maria", 48, "Teacher"] # це список, який можна змінювати
+
+
+
+
+
 
 
 
