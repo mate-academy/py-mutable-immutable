@@ -24,4 +24,3 @@ sorted_variables = {"mutable": [my_favourite_films,
                                   pi, one_is_a_prime_number,
                                   name,
                                   profile_info]}
-
