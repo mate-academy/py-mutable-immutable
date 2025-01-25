@@ -16,4 +16,28 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+
+def is_immutable(obj: object) -> bool:
+    """Hilfsfunktion, um zu prüfen, ob ein Objekt unveränderlich ist."""
+    return isinstance(obj, (int, str, bool, float, tuple))
+
+
+for var_value in [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]:
+    if is_immutable(var_value):
+        sorted_variables["immutable"].append(var_value)
+    else:
+        sorted_variables["mutable"].append(var_value)
