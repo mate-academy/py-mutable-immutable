@@ -1,4 +1,7 @@
+
 HEAD
+.idea
+venv/
 my-project
 hello-world
 me-page
