@@ -1,7 +1,10 @@
-.idea/
-.vscode/
-*.iml
-.env
-.DS_Store
+
+HEAD
+.idea
 venv/
-.pytest_cache/
+my-project
+hello-world
+me-page
+my-project1
+py-count-occurrences
+e67b5ea9f5ff235bcb076f2bf73ecc33ffce1813
