@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"immutable": [], "mutable": []}
+lsim = []
+lsim.append(lucky_number)
+lsim.append(pi)
+lsim.append(one_is_a_prime_number)
+lsim.append(name)
+lsim.append(profile_info)
+sorted_variables["immutable"] = lsim
+
+lsmu = []
+lsmu.append(my_favourite_films)
+lsmu.append(marks)
+lsmu.append(collection_of_coins)
+sorted_variables["mutable"] = lsmu
