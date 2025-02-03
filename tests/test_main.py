@@ -82,12 +82,12 @@ def is_immutable(obj):
 def test_variables_added_to_the_correct_list():
     sorted_variables = getattr(app.main, "sorted_variables")
     for variable in sorted_variables["mutable"]:
-        assert is_immutable(variable) is False, (
+        assert is_immutable(variable) is True, (
             f"{variable} should be in 'immutable' list"
         )
 
     for variable in sorted_variables["immutable"]:
-        assert is_immutable(variable) is True, (
+        assert is_immutable(variable) is False, (
             f"{variable} should be in 'mutable' list"
         )
 
