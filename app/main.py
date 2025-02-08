@@ -23,22 +23,25 @@ marks = {
 
 collection_of_coins = {1, 2, 25}
 
-
-
-def sorted_variables(variable) -> dict:
-    sorted_variable = {"mutable": [],
-                       "immutable": []
-                       }
+def sorted_variable(variable) -> dict:
+    sorted_variables = {"mutable": [],
+                           "immutable": []
+    }
     for var in variable:
-
         for name, value in globals().items():
             if value is var:
                 variable_name = name
 
         if isinstance(var, (int, str, bool, float, tuple)):
-            sorted_variable["immutable"].append(str(variable_name))
+            sorted_variables["immutable"].append(variable_name)
         else:
-            sorted_variable["mutable"].append(str(variable_name))
+            sorted_variables["mutable"].append(variable_name)
 
-    return sorted_variable
+    return sorted_variables
+
+
+
+
+
+
 
