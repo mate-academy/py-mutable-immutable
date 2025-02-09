@@ -29,12 +29,14 @@ sorted_variables = {
 }
 
 
-def sorted_variable(variable_mutable_immutable: str) -> dict:
+def sorted_variable(variable_mutable_immutable: any) -> dict:
 
     if isinstance(variable_mutable_immutable, (int, str, bool, float, tuple)):
         sorted_variables["immutable"].append(variable_mutable_immutable)
     else:
         sorted_variables["mutable"].append(variable_mutable_immutable)
+
+    return sorted_variables
 
 
 sorted_variable(lucky_number)
