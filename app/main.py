@@ -36,4 +36,3 @@ sorted_variables = {
 
 # Вывод результата
 print(sorted_variables)
-
