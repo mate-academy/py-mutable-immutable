@@ -1,14 +1,19 @@
-immutable_int = 10
-immutable_str = "Hello"
-immutable_tuple = (1, 2, 3)
+lucky_number = 777
+pi = 3.14
+one_is_a_prime_number = False
+name = "Richard"
+my_favourite_films = [
+    "The Shawshank Redemption",
+    "The Lord of the Rings: The Return of the King",
+    "Pulp Fiction",
+    "The Good, the Bad and the Ugly",
+    "The Matrix",
+]
+profile_info = ("michel", "michel@gmail.com", "12345678")
+marks = {"John": 4, "Sergio": 3}
+collection_of_coins = {1, 2, 25}
 
-immutable_int += 1
-immutable_str += " World"
-
-mutable_list = [1, 2, 3]
-mutable_dict = {"a": 1, "b": 2}
-mutable_set = {1, 2, 3}
-
-mutable_list.append(4)
-mutable_dict["c"] = 3
-mutable_set.add(4)
+sorted_variables = sorted(
+    [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins],
+    key=lambda x: str(x)
+)
