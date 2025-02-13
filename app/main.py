@@ -13,7 +13,7 @@ profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {"John": 4, "Sergio": 3}
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = sorted(
-    [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins],
-    key=lambda x: str(x)
-)
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
