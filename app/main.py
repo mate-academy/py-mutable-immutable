@@ -15,16 +15,13 @@ variables = [
     integer_value, empty_list, greeting_text, number_list,
     coordinates_tuple, unique_numbers_set, data_dictionary, pi_value
 ]
-
 for item in variables:
     if isinstance(item, (list, dict, set)):
         mutable_list.append(item)
     else:
         immutable_list.append(item)
-
 sorted_variables = {
     "mutable": mutable_list,
     "immutable": immutable_list
 }
-
 print(sorted_variables)
