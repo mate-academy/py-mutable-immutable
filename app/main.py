@@ -32,14 +32,13 @@ for item in variables:
         immutable_list.append(item)
 
 sorted_variables = {
-    "mutable": [profile_info, marks],
+    "mutable": [profile_info, marks, collection_of_coins],
     "immutable": [
         lucky_number,
         pi,
         one_is_a_prime_number,
         name,
-        my_favourite_films,
-        collection_of_coins]
+        my_favourite_films]
 }
 
 print(sorted_variables)
