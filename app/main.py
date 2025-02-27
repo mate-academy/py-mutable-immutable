@@ -1,19 +1,45 @@
-lucky_number = 777
-pi = 3.14
-one_is_a_prime_number = False
-name = "Richard"
-my_favourite_films = [
-    "The Shawshank Redemption",
-    "The Lord of the Rings: The Return of the King",
-    "Pulp Fiction",
-    "The Good, the Bad and the Ugly",
-    "The Matrix",
-]
-profile_info = ("michel", "michel@gmail.com", "12345678")
+lucky_number = 777  # Immutable (int)
+pi = 3.14  # Immutable (float)
+one_is_a_prime_number = False  # Immutable (bool)
+name = "Richard"  # Immutable (str)
+my_favourite_films = (
+    "Inception", "The Matrix", "Interstellar"
+)  # Immutable (tuple)
+profile_info = {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+}  # Mutable (dict)
 marks = {
     "John": 4,
-    "Sergio": 3,
+    "Alice": 5,
+    "Bob": 3
 }
-collection_of_coins = {1, 2, 25}
+collection_of_coins = {1, 2, 5, 10, 20, 50}  # Immutable (frozenset)
 
-# write your code here
+mutable_list = []
+immutable_list = []
+
+variables = [
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins
+]
+
+for item in variables:
+    if isinstance(item, (list, dict, set)):
+        mutable_list.append(item)
+    else:
+        immutable_list.append(item)
+
+sorted_variables = {
+    "mutable": [profile_info, marks],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        my_favourite_films,
+        collection_of_coins]
+}
+
+print(sorted_variables)
