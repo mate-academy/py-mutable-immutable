@@ -17,6 +17,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+
 def sorted_list(*args):
     sorted_variables = {"mutable": [], "immutable": []}
     for arg in args:
