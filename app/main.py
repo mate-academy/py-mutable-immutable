@@ -1,3 +1,4 @@
+# 8 variables of different data types
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,18 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+def sorted_list(*args):
+    sorted_variables = {"mutable": [], "immutable": []}
+    for arg in args:
+        if isinstance(arg, (list, dict, set)):
+            sorted_variables["mutable"].append(arg)
+        elif isinstance(arg, (int, float, str, bool, tuple)):
+            sorted_variables["immutable"].append(arg)
+    return sorted_variables
+
+sorted_variables = sorted_list(
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins
+)
+
+
