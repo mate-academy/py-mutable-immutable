@@ -16,4 +16,21 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Definição das variáveis de diferentes tipos
+a = 123
+b = []
+c = "Hi!"
+d = [1, 2]
+e = (10, 20)
+f = {"key": "value"}
+g = 3.14
+h = {1, 2, 3}
+
+# Classificação das variáveis como mutáveis ou imutáveis
+sorted_variables = {
+    "mutable": [b, d, f, h],  # Listas, dicionários e conjuntos são mutáveis
+    "immutable": [a, c, e, g]  # Inteiros, strings, tuplas e floats são imutáveis
+}
+
+print(sorted_variables)
+
