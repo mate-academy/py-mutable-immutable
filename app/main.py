@@ -16,12 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# create uk_key
+# Creating the dictionary
 sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
     "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
 
-# Перевірка результату
+# Verification
 print("Mutable:", sorted_variables["mutable"])
 print("Immutable:", sorted_variables["immutable"])
