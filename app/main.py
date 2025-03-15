@@ -17,13 +17,6 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def print_variable(valor: any) -> str:
-    for name, valor_name in globals().items():
-        if valor_name == valor and not name.startswith("__"):
-            return name
-    return None
-
-
 def variables_types(*args: any) -> dict:
     mutable_immutable = {
         "mutable": [],
@@ -37,14 +30,14 @@ def variables_types(*args: any) -> dict:
                             bool,
                             type(None),
                             tuple)) or callable(arg):
-            mutable_immutable["immutable"].append(print_variable(arg))
+            mutable_immutable["immutable"].append(arg)
         else:
-            mutable_immutable["mutable"].append(print_variable(arg))
+            mutable_immutable["mutable"].append(arg)
 
     return mutable_immutable
 
 
-variables_types(
+sorted_variables = variables_types(
     lucky_number,
     pi,
     one_is_a_prime_number,
@@ -54,3 +47,5 @@ variables_types(
     marks,
     collection_of_coins
 )
+
+print(sorted_variables)
