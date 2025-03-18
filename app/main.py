@@ -37,7 +37,7 @@ def is_mutable(variable_to_check: any) -> bool:
     :rtype: bool
     """
     return isinstance(variable_to_check,
-                      (MutableSet, MutableSequence, MutableMapping,
+                      (MutableSet, MutableMapping,
                        type(set()), type(dict()), type(list())))
 
 
