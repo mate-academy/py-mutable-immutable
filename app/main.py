@@ -16,4 +16,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# def sorted_variables(**kwargs):
+#     for key, value in kwargs.items():
+#         if value == int and value == float and value == bool:
+#             sorted_variables['immutable'] = list(value)
+#         else:
+#             sorted_variables['mutable'] = list(value)
+
+sorted_variables = {"mutable": [], "immutable": []}
+for value in sorted_variables:
+    if isinstance(value, (int, float, str, tuple, frozenset, bool)):
+        sorted_variables["immutable"].append(value)
+    else:
+        sorted_variables["mutable"].append(value)
