@@ -28,15 +28,14 @@ all_vars = [
 ]
 
 # Define mutable types
-mutable_types = (list, dict, set, bytearray)
+mutable_types = (list, dict, set)
+immutable_types = (int, float, str, bool, tuple)
 
 # Sort based on type
 sorted_variables = {
     "mutable": [var for var in all_vars
                 if isinstance(var, mutable_types)],
     "immutable": [var for var in all_vars
-                  if not isinstance(var, mutable_types)]
+                  if isinstance(var, immutable_types)]
 }
 
-# Optional: print result
-print(sorted_variables)
