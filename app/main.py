@@ -16,4 +16,27 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+all_vars = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]
+
+# Define mutable types
+mutable_types = (list, dict, set, bytearray)
+
+# Sort based on type
+sorted_variables = {
+    "mutable": [var for var in all_vars
+                if isinstance(var, mutable_types)],
+    "immutable": [var for var in all_vars
+                  if not isinstance(var, mutable_types)]
+}
+
+# Optional: print result
+print(sorted_variables)
