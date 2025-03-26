@@ -38,4 +38,3 @@ sorted_variables = {
     "immutable": [var for var in all_vars
                   if isinstance(var, immutable_types)]
 }
-
