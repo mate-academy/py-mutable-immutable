@@ -1,7 +1,7 @@
-lucky_number = 777
-pi = 3.14
-one_is_a_prime_number = False
-name = "Richard"
+lucky_number :int = 777
+pi :float = 3.14
+one_is_a_prime_number :bool = False
+name :str = "Richard"
 my_favourite_films = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
