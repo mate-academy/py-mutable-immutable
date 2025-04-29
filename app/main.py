@@ -1,13 +1,7 @@
-lucky_number = 777               # int – liczby całkowite są niemutowalne
-pi = 3.14                        # float – liczby zmiennoprzecinkowe są niemutowalne
-one_is_a_prime_number = False   # bool – wartości logiczne są niemutowalne
-name = "Richard"                # str – ciągi znaków są niemutowalne
-profile_info = (
-    "michel",
-    "michel@gmail.com",
-    "12345678",  # tuple – tuples are immutable
-)
-# Zmienne mutowalne (mutable)
+lucky_number = 777
+pi = 3.14
+one_is_a_prime_number = False
+name = "Richard"
 my_favourite_films = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
@@ -15,26 +9,13 @@ my_favourite_films = [
     "The Good, the Bad and the Ugly",
     "The Matrix",
 ]
+profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
     "John": 4,
     "Sergio": 3,
 }
-collection_of_coins = {1, 2, 25}  # set – zbiory są mutowalne
-
+collection_of_coins = {1, 2, 25}
 sorted_variables = {
-    "mutable": [
-        my_favourite_films,
-        marks,
-        collection_of_coins
-    ],
-    "immutable": [
-        lucky_number,
-        pi,
-        one_is_a_prime_number,
-        name,
-        profile_info
-    ]
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-
-
-
