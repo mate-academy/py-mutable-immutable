@@ -2,6 +2,7 @@ lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
+
 my_favourite_films = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
@@ -15,14 +16,17 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-alf = marks
-bra = my_favourite_films
-cha = collection_of_coins
-delt = profile_info
-ech = name
-foxt = one_is_a_prime_number
-gol = pi
-hot = lucky_number
 
-sorted_variables = {"mutable" : [alf, bra, cha],
-                    "immutable" : [delt, ech, foxt, gol, hot]}
+# marks mutable
+# my_favorite_films mutable
+# collection_of_coins mutable
+# profile_info immutable tuple
+# name immutable string
+# one_is_a_prime_number immutable boolean
+# pi immutable float lucky_number #immutable int
+# lucky_number int, float, string, boolean, tuple are immutable
+
+sorted_variables = {"mutable" : [marks, my_favourite_films,
+                                 collection_of_coins],
+                    "immutable" : [profile_info, name,
+                                   one_is_a_prime_number, pi, lucky_number]}
