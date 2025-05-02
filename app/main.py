@@ -26,7 +26,5 @@ collection_of_coins = {1, 2, 25}
 # pi immutable float lucky_number #immutable int
 # lucky_number int, float, string, boolean, tuple are immutable
 
-sorted_variables = {"mutable" : [marks, my_favourite_films,
-                                 collection_of_coins],
-                    "immutable" : [profile_info, name,
-                                   one_is_a_prime_number, pi, lucky_number]}
+sorted_variables = {"mutable" : [marks, my_favourite_films, collection_of_coins],
+                    "immutable" : [profile_info, name, one_is_a_prime_number, pi, lucky_number]}
