@@ -16,15 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-
-b = 3.14                    # float (immutable)
-c = "hello"                 # str (immutable)
-d = (1, 2, 3)               # tuple (immutable)
-e = [1, 2, 3]               # list (mutable)
-f = {1, 2, 3}               # set (mutable)
-g = {"key": "value"}        # dict (mutable)
-
-
 # Categorizing into mutable and immutable
 sorted_variables = {
     "immutable": [lucky_number,pi,one_is_a_prime_number,name, profile_info],
