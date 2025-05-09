@@ -13,6 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
+
       - name: Set Up Python 3.10
         uses: actions/setup-python@v2
         with:
@@ -28,4 +29,3 @@ jobs:
       - name: Run tests
         timeout-minutes: 5
         run: pytest tests/
-
