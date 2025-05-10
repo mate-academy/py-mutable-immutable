@@ -12,3 +12,6 @@ venv/
 AppData/
 Cookies/
 Templates/
+AppData/
+Local Settings/
+NTUSER.DAT*
