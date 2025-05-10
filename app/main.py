@@ -1,3 +1,15 @@
+class Car:
+    def __init__(self, brand: str, model: str, year: int) -> None:
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+
+class CarWashStation:
+    def wash_single_car(self, car: Car) -> float:
+        return 10.0
+
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +28,5 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+print(profile_info)
+print(collection_of_coins)

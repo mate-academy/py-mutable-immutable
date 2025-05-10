@@ -5,3 +5,13 @@
 .DS_Store
 venv/
 .pytest_cache/
+<<<<<<< HEAD
+**__pycache__/
+=======
+>>>>>>> upstream/master
+AppData/
+Cookies/
+Templates/
+AppData/
+Local Settings/
+NTUSER.DAT*
