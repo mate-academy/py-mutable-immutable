@@ -1,3 +1,10 @@
+class Car:
+    def __init__(self, brand: str, model: str, year: int) -> None:
+        self.brand = brand
+        self.model = model
+        self.year = year
+
+
 class CarWashStation:
     def __init__(
         self,
