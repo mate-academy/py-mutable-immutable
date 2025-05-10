@@ -6,17 +6,8 @@ class Car:
 
 
 class CarWashStation:
-    def __init__(
-        self,
-        slots: int,
-        max_cars: int,
-        water_usage: float,
-        operating_hours: int,
-    ) -> None:
-        self.slots = slots
-        self.max_cars = max_cars
-        self.water_usage = water_usage
-        self.operating_hours = operating_hours
+    def wash_single_car(self, car: Car) -> float:
+        return 10.0
 
 
 lucky_number = 777
