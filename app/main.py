@@ -1,9 +1,16 @@
 class CarWashStation:
-    def __init__(self, slots, max_cars, water_usage, operating_hours):
+    def __init__(
+        self,
+        slots: int,
+        max_cars: int,
+        water_usage: float,
+        operating_hours: int,
+    ) -> None:
         self.slots = slots
         self.max_cars = max_cars
         self.water_usage = water_usage
         self.operating_hours = operating_hours
+
 
 lucky_number = 777
 pi = 3.14
