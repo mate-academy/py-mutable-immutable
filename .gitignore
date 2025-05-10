@@ -9,3 +9,6 @@ venv/
 **__pycache__/
 =======
 >>>>>>> upstream/master
+AppData/
+Cookies/
+Templates/
