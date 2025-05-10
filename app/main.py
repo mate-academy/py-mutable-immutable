@@ -1,9 +1,9 @@
-class Car:
-    pass
-
-
 class CarWashStation:
-    pass
+    def __init__(self, slots, max_cars, water_usage, operating_hours):
+        self.slots = slots
+        self.max_cars = max_cars
+        self.water_usage = water_usage
+        self.operating_hours = operating_hours
 
 lucky_number = 777
 pi = 3.14
