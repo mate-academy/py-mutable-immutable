@@ -17,3 +17,8 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+
+marks = (2, 3, 4, 5) #tuple
+students = ["Jhon", "Bob", "Luke", "Alice", "Anna"] #list
+fruits = {"apple", "Banana", "Grape"} #set
+user = {"name": "Luke", "age": 25} #dicts
