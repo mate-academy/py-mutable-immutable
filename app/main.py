@@ -32,3 +32,4 @@ sorted_variables = {
     "mutable": [a_list, a_dict, a_set],
     "immutable": [a_int, a_str, a_tuple, a_float]
 }
+
