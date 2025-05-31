@@ -16,4 +16,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+my_favourite_films.append("Inception")
+marks["Anna"] = 5
+collection_of_coins.add(50)
+
+print("Films:", my_favourite_films)
+print("Marks:", marks)
+print("Coins:", collection_of_coins)
