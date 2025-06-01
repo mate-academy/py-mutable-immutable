@@ -25,10 +25,9 @@ variables = {
     "marks": marks,
     "collection_of_coins": collection_of_coins,
 }
-
-def categorize_variables(variables):
+def categorize_variables(vars_dict):
     result = {"mutable": [],'immutable': []}
-    for key, value in variables.items():
+    for key, value in vars_dict.items():
         if isinstance(value, (list, dict, set, bytearray)):
             result["mutable"].append(value)
         else:
