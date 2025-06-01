@@ -26,11 +26,11 @@ variables = {
     "collection_of_coins": collection_of_coins,
 }
 def categorize_variables(vars_dict):
-    result = {"mutable": [],'immutable': []}
+    result = {'mutable': [],'immutable': []}
     for key, value in vars_dict.items():
         if isinstance(value, (list, dict, set, bytearray)):
-            result["mutable"].append(value)
+            result['mutable'].append(value)
         else:
-            result["immutable"].append(value)
+            result['immutable'].append(value)
     return result
 sorted_variables = categorize_variables(variables)
