@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/py-count-occurrences" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/py-mutable-immutable" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/py-task-guideline" vcs="Git" />
   </component>
 </project>
