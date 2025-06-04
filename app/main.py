@@ -1,4 +1,3 @@
-
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,23 +15,6 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
-sorted_variables = {
-    "mutable": [],
-    "immutable": []
-}
-
-
-all_vars = {
-    "lucky_number": lucky_number,
-    "pi": pi,
-    "one_is_a_prime_number": one_is_a_prime_number,
-    "name": name,
-    "my_favourite_films": my_favourite_films,
-    "profile_info": profile_info,
-    "marks": marks,
-    "collection_of_coins": collection_of_coins
-}
 
 
 sorted_variables = {
