@@ -5,3 +5,8 @@
 .DS_Store
 venv/
 .pytest_cache/
+
+# Byte-compiled / optimized / DLL filesAdd commentMore actions
+__pycache__/
+*.py[cod]
+*$py.class
