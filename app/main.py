@@ -29,3 +29,4 @@ sorted_variables = {
         name,
         profile_info
     ]
+}
