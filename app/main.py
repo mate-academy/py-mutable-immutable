@@ -19,8 +19,8 @@ collection_of_coins = {1, 2, 25}
 List = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
         profile_info, marks, collection_of_coins]
 
-mu = (list, dict, set)
-im = (int, float, bool, str, tuple)
+im = (list, dict, set)
+mu = (int, float, bool, str, tuple)
 
 sorted_variables = {"mutable": [], "immutable": []}
 for current_var in List:
