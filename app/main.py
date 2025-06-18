@@ -20,12 +20,12 @@ List = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
         profile_info, marks, collection_of_coins]
 
 im = (list, dict, set)
-mu = (int, float, bool, str, tuple)
+mu= (int, float, bool, str, tuple)
 
-sorted_variables = {"mutable": [], "immutable": []}
+sorted_variables = {"immutable": [], "mutable": []}
 for current_var in List:
     var_type = type(current_var)
     if var_type in mu:
-        sorted_variables["mutable"].append(current_var)
-    if var_type in im:
         sorted_variables["immutable"].append(current_var)
+    if var_type in im:
+        sorted_variables["mutable"].append(current_var)
