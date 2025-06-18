@@ -16,13 +16,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-is_3_a_prime_number = False
+
 
 
 sorted_variables = {
     "mutable": [my_favourite_films, profile_info, marks, collection_of_coins],
-    "immutable": [lucky_number, pi, one_is_a_prime_number, name]
-
-    
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name]   
 }
-
