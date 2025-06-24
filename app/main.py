@@ -26,4 +26,4 @@ for element in all_vars:
     else:
         immutable.append(element)
 sorted_variables = {"mutable": mutable, "immutable": immutable}
-print(sorted)
+print(sorted_variables)
