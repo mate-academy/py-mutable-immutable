@@ -16,6 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+
 sorted_variables = {
     "mutable": [],
     "immutable": []
@@ -23,7 +24,7 @@ sorted_variables = {
 
 for version in [lucky_number, pi, one_is_a_prime_number, name,
                 my_favourite_films, profile_info, marks,
-                collection_of_coins, sorted_variables]:
+                collection_of_coins]:
     if isinstance(version, (list, dict, set)) :
         sorted_variables["mutable"].append(version)
     else:
