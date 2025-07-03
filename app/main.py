@@ -51,6 +51,6 @@ def sort_obj(obj: any) -> any:
 
 
 for key, value in obj.items():
-    if name in ["sort_variables", "sorted_variables"] or name.startswith("__"):
+    if key in ["sort_variables", "sorted_variables"] or name.startswith("__"):
         continue
     sort_obj(value)
