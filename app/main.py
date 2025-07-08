@@ -1,3 +1,5 @@
+from typing import Any
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +18,9 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {'mutable' : [collection_of_coins, marks, my_favourite_films],
+                    'immutable' : [name, one_is_a_prime_number, pi, lucky_number, profile_info] }
+
+
+
+
