@@ -25,7 +25,6 @@ sorted_variables = {
 
 
 
-
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -42,3 +41,4 @@ sorted_variables = {
     "mutable": [my_favourite_films, profile, unique_ids],
     "immutable": [lucky_number, pi, one_is_a_prime_number, name, coordinates]
 }
+
