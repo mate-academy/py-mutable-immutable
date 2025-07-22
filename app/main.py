@@ -17,6 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 mutable_types = (list, dict, set, bytearray)
+helper_names = {"mutable_types", "sorted_variables", "user_variables"}
 
 sorted_variables = {
     "mutable": [],
@@ -25,14 +26,11 @@ sorted_variables = {
 
 variables = {
     name: value for name, value in globals().items()
-    if not name.startswith("__")
+    if not name.startswith("__") and name not in helper_names
 }
-
 
 for value in variables.values():
     if isinstance(value, mutable_types):
         sorted_variables["mutable"].append(value)
     else:
         sorted_variables["immutable"].append(value)
-
-print(sorted_variables)
