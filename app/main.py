@@ -16,4 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+mutable_types = (list, dict, set)
+immutable_types = (int, float, str, tuple, bool)
+
+mutables = []
+immutables = []
+
+for var_name, value in list(globals().items()):
+    if isinstance(value, mutable_types):
+        mutables.append(value)
+    elif isinstance(value, immutable_types):
+        immutables.append(value)
+
+sorted_variables = {
+    "mutable": mutables,
+    "immutable": immutables
+}
