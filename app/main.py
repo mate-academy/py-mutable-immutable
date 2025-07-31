@@ -16,17 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-mutable_types = (list, dict, set)
-immutable_types = (int, float, str, tuple, bool)
-
-mutables = []
-immutables = []
-
-for var_name, value in list(globals().items()):
-    if isinstance(value, mutable_types):
-        mutables.append(value)
-    elif isinstance(value, immutable_types):
-        immutables.append(value)
+mutables = [my_favourite_films, marks, collection_of_coins]
+immutables = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 
 sorted_variables = {
     "mutable": mutables,
