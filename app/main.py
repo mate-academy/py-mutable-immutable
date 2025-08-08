@@ -22,8 +22,5 @@ sorted_variables = {"mutable": [], "immutable": []}
 for item in variables:
     if isinstance(item, (int, float, str, bool, tuple)):
         sorted_variables["immutable"].append(item)
-        print((item), "= immutable")
     else:
         sorted_variables["mutable"].append(item)
-        print((item), "= mutable")
-print(sorted_variables)
