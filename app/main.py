@@ -16,23 +16,25 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
+
 def sort_varibles(*args) -> dict:
     sorted_variables = {}
     mutable_types = (list, dict, set)
 
-    for var in args:
-        if type(var) in mutable_types:
-            if 'mutable' not in sorted_variables:
-                sorted_variables['mutable'] = [var]
+    for variable_to_check in args:
+        if type(variable_to_check) in mutable_types:
+            if "mutable" not in sorted_variables:
+                sorted_variables["mutable"] = [variable_to_check]
             else:
-                sorted_variables['mutable'].append(var)
+                sorted_variables["mutable"].append(variable_to_check)
         else:
-            if 'immutable' not in sorted_variables:
-                sorted_variables['immutable'] = [var]
+            if "immutable" not in sorted_variables:
+                sorted_variables["immutable"] = [variable_to_check]
             else:
-                sorted_variables['immutable'].append(var)
+                sorted_variables["immutable"].append(variable_to_check)
 
     return sorted_variables
+
 
 sorted_variables = sort_varibles(
     lucky_number,
@@ -42,7 +44,7 @@ sorted_variables = sort_varibles(
     my_favourite_films,
     profile_info,
     marks,
-    collection_of_coins
+    collection_of_coins,
 )
 
 print(sorted_variables)
