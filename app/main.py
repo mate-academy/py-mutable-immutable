@@ -29,6 +29,6 @@ sorted_variables = {
 
 for var_name, var in all_vars.items():
     if isinstance(var, (list, dict, set)):  # Mutable-типы
-        sorted_variables["mutable"].append(var_name)
+        sorted_variables["mutable"].append(var)
     elif isinstance(var, (int, float, str, bool, tuple)):  # Immutable-типы
-        sorted_variables["immutable"].append(var_name)
+        sorted_variables["immutable"].append(var)
