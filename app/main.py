@@ -32,4 +32,3 @@ for var_name, var in all_vars.items():
         sorted_variables["mutable"].append(var_name)
     elif isinstance(var, (int, float, str, bool, tuple)):  # Immutable-типы
         sorted_variables["immutable"].append(var_name)
-print(sorted_variables)
