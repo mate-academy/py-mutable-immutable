@@ -16,4 +16,15 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+resultado = {
+    "mutable": [],
+    "immutable": []
+}
+
+for idx, var in enumerate(resultado["mutable"], start=1):
+    letra = chr(96 + idx)  # 97 é 'a' na tabela ASCII
+    print(f"  {letra}) {var[0]} = {var[1]} ({var[2]})")
+
+for idx, var in enumerate(resultado["immutable"], start=1):
+    letra = chr(96 + idx)
+    print(f"  {letra}) {var[0]} = {var[1]} ({var[2]})")
