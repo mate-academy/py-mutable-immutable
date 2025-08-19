@@ -21,7 +21,7 @@ all_vars = {
     if not name.startswith('_') and name != 'sorted_variables'
 }
 
-# Разделение на mutable и immutable
+# Разделение  на mutable и immutable
 sorted_variables = {
     "mutable": [],
     "immutable": []
