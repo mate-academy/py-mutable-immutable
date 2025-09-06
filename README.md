@@ -11,7 +11,7 @@ Each value should be equal to a list that contains all variables of correspondin
 
 Example with other variables:
 ```python
-a = 123
+a = 12
 b = []
 c = "Hi!"
 d = [1, 2]
