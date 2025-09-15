@@ -16,7 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {
-    "mutable": [my_favourite_films, marks, collection_of_coins],
-    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
-}
+mutable_types = (list, dict, set, bytearray)
+
+sorted_variables = {"mutable": [], "immutable": []}
+
+for _name, _value in globals().items():
+    if (_name.startswith("__") and _name.endswith("__")) or _name.startswith("_") or _name == "sorted_variables":
+        continue
+    category = "mutable" if isinstance(_value, mutable_types) else "immutable"
+    sorted_variables[category].append(_value)
