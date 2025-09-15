@@ -24,10 +24,13 @@ mutable_list = []
 immutable_list = []
 
 for _name, _value in _items_snapshot:
-    if (_name.startswith("__") and _name.endswith("__")) or \
-    _name.startswith("_") or _name == "sorted_variables":
+    if (
+        (_name.startswith("__") and _name.endswith("__"))
+        or _name.startswith("_")
+        or _name == "sorted_variables"
+    ):
         continue
-    (mutable_list if isinstance(_value, _mutable_types) 
-     else immutable_list).append(_value)
+    target = mutable_list if isinstance(_value, _mutable_types) else immutable_list
+    target.append(_value)
 
 sorted_variables = {"mutable": mutable_list, "immutable": immutable_list}
