@@ -1,3 +1,5 @@
+"""Classify module-level variables into mutable vs immutable."""
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +18,29 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+_mutable_types = (list, dict, set, bytearray)
+
+_items_snapshot = list(globals().items())
+
+mutable_list: list = []
+immutable_list: list = []
+
+for _name, _value in _items_snapshot:
+    if (
+        (_name.startswith("__") and _name.endswith("__"))
+        or _name.startswith("_")
+        or _name == "sorted_variables"
+    ):
+        continue
+
+    if isinstance(_value, _mutable_types):
+        target = mutable_list
+    else:
+        target = immutable_list
+
+    target.append(_value)
+
+sorted_variables = {
+    "mutable": mutable_list,
+    "immutable": immutable_list,
+}
