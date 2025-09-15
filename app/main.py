@@ -1,3 +1,5 @@
+"""Classify module-level variables into mutable vs immutable."""
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -33,4 +35,7 @@ for _name, _value in _items_snapshot:
     target = mutable_list if isinstance(_value, _mutable_types) else immutable_list
     target.append(_value)
 
-sorted_variables = {"mutable": mutable_list, "immutable": immutable_list}
+sorted_variables = {
+    "mutable": mutable_list,
+    "immutable": immutable_list,
+}
