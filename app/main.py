@@ -32,7 +32,8 @@ for _name, _value in _items_snapshot:
         or _name == "sorted_variables"
     ):
         continue
-    target = mutable_list if isinstance(_value, _mutable_types) else immutable_list
+    target = (mutable_list if isinstance(_value, _mutable_types) 
+              else immutable_list)
     target.append(_value)
 
 sorted_variables = {
