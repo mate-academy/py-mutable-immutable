@@ -5,10 +5,10 @@ d = [1, 2]
 
 e = (1,"dsfghgdf",3.5)
 f = { 1, "dfhgdhfghd", 3.5}
-g = true
-h = [false]
+g = True
+h = [False]
 
 sorted_variables = {
-    "mutable": [b, d,f,h],
+    "mutable": [b, d, f, h],
     "immutable": [a, c, e, g]
 }
