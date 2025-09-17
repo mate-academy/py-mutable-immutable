@@ -8,12 +8,11 @@ my_int = 1
 my_string = "hello!"
 my_tuple = ( 1, "hello!", 3.5, False, 1, 2)
 my_bool = True
+my_float = 3.5
 
 my_set_from_tuple = set(my_tuple)
-my_set_from_tuple.append("Exit")
-my_tuple[0] = 0
 
 sorted_variables = {
     "mutable" : [ my_list, my_dict, my_set_from_list, my_set_from_tuple],
-    "immutable" : [ my_int,  my_string, my_tuple, my_bool]
+    "immutable" : [ my_int,  my_string, my_tuple, my_bool, my_float]
 }
