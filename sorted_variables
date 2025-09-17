@@ -6,7 +6,7 @@ d = [1, 2]
 e = (1,"dsfghgdf",3.5)
 f = { 1, "dfhgdhfghd", 3.5}
 g = True
-h = [False]
+h = [1, False, {1,2,3}]
 
 sorted_variables = {
     "mutable": [b, d, f, h],
