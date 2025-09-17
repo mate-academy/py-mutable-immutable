@@ -1,16 +1,12 @@
-
-my_list = [ 1, "hello!", 3.5, False, 1]
-my_dict = { "a":1, "b":"hello!", "c":3.5, "d":False }
-my_set_from_list = set(my_list)
-
-
-my_int = 1
-my_string = "hello!"
-my_tuple = ( 1, "hello!", 3.5, False, 1, 2)
-my_bool = True
-my_float = 3.5
-
+lucky_number = 6
+pi = 3.17
+one_is_a_prime_number = True
+name = "lovely"
+my_favourite_films = ["a", "b", "c"]
+profile_info = { "name": "lovely", "age":40 }
+marks = ( 100, 90, 20 )
+collection_of_coins = { "dollar", "quarter", 10, 20, 100 }
 sorted_variables = {
-    "mutable" : [ my_list, my_dict, my_set_from_list],
-    "immutable" : [ my_int,  my_string, my_tuple, my_bool, my_float]
+    "mutable" : [my_favourite_films, profile_info, collection_of_coins ],
+    "immutable" : [lucky_number, pi, one_is_a_prime_number, marks]
 }
