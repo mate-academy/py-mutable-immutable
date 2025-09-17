@@ -1,9 +1,9 @@
-'mutables
+
 my_list = [ 1, "hello!", 3.5, False, 1]
 my_dict = { "a":1, "b":"hello!", "c":3.5, "d":False }
 my_set_from_list = set(my_list)
 
-'immutables
+
 my_ints = 1
 my_strings = "hello!"
 my_tuples = ( 1, "hello!", 3.5, False, 1, 2)
@@ -12,6 +12,6 @@ bools = True
 my_set_from_tuple = set(my_tuples)
 
 sorted_variables = {
-    "mutables" = [ my_list, my_dict, my_set_from_list, my_set_from_tuple]
-    "immutables" = [ my_ints,  my_strings, my_tuples, bools]
+    "mutables" : [ my_list, my_dict, my_set_from_list, my_set_from_tuple]
+    "immutables" : [ my_ints,  my_strings, my_tuples, bools]
 }
