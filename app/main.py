@@ -1,34 +1,40 @@
 # app/main.py
 
-# 1. Declaração das 8 variáveis, conforme a tarefa.
+# 1. Definição das 8 variáveis EXATAS que os testes esperam.
 # Tipos Imutáveis
-var_int = 10
-var_float = 3.14
-var_str = "Kodree"
-var_tuple = (1, 2, 3)
-var_bool = True
+lucky_number = 777
+pi = 3.14
+one_is_a_prime_number = False
+name = "Richard"
+profile_info = ("michel", "michel@gmail.com", "12345678")
 
 # Tipos Mutáveis
-var_list = [1, 2, 3]
-var_dict = {"key": "value"}
-var_set = {1, 2, 3}
+my_favourite_films = ["Inception", "The Matrix", "Interstellar"]
+marks = {"John": 4, "Sergio": 3}
+collection_of_coins = {1, 2, 25}
 
-# 2. Agrupar as 8 variáveis em uma lista.
+# 2. Agrupar todas as variáveis em uma lista para a classificação.
 all_variables = [
-    var_int, var_float, var_str, var_tuple,
-    var_bool, var_list, var_dict, var_set
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
 ]
 
-# 3. Definir os tipos mutáveis.
+# 3. Definir os tipos de dados que são considerados mutáveis.
 MUTABLE_TYPES = (list, dict, set, bytearray)
 
-# 4. Inicializar o dicionário de saída.
+# 4. Inicializar o dicionário de saída com listas vazias.
 sorted_variables = {
     "mutable": [],
-    "immutable": []
+    "immutable": [],
 }
 
-# 5. Iterar e classificar as variáveis.
+# 5. Iterar sobre cada variável, classificar e adicionar à lista apropriada.
 for item in all_variables:
     if isinstance(item, MUTABLE_TYPES):
         sorted_variables["mutable"].append(item)
