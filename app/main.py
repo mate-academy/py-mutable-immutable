@@ -29,12 +29,8 @@ sorted_variables = {
 }
 
 # 5. Iterar e classificar as variáveis.
-# CORREÇÃO 1: Renomeado 'variable' para 'item' para ser mais claro.
 for item in all_variables:
     if isinstance(item, MUTABLE_TYPES):
         sorted_variables["mutable"].append(item)
     else:
         sorted_variables["immutable"].append(item)
-        
-
-# CORREÇÃO 2: O arquivo agora termina com uma linha em branco.
