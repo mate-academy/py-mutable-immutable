@@ -15,5 +15,3 @@ sorted_variables = {
     "immutable" : [lucky_number, pi, one_is_a_prime_number, name, marks]
 }
 
-collection_of_coins.add(5)
-my_favourite_films[0] = "pushpa"
