@@ -9,12 +9,11 @@ var_tuple = (1, 2, 3)
 var_bool = True
 
 # Tipos Mutáveis
-var_list = []  # CORREÇÃO 1: Inicializada como lista vazia.
+var_list = [1, 2, 3]
 var_dict = {"key": "value"}
 var_set = {1, 2, 3}
 
 # 2. Agrupar as 8 variáveis em uma lista.
-# CORREÇÃO 3: Removido var_none para totalizar 8 variáveis.
 all_variables = [
     var_int, var_float, var_str, var_tuple,
     var_bool, var_list, var_dict, var_set
@@ -24,15 +23,17 @@ all_variables = [
 MUTABLE_TYPES = (list, dict, set, bytearray)
 
 # 4. Inicializar o dicionário de saída.
-# CORREÇÃO 2: Chaves inicializadas com listas vazias.
 sorted_variables = {
     "mutable": [],
     "immutable": []
 }
 
 # 5. Iterar e classificar as variáveis.
-for variable in all_variables:
-    if isinstance(variable, MUTABLE_TYPES):
-        sorted_variables["mutable"].append(variable)
+# CORREÇÃO 1: Renomeado 'variable' para 'item' para ser mais claro.
+for item in all_variables:
+    if isinstance(item, MUTABLE_TYPES):
+        sorted_variables["mutable"].append(item)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(item)
+
+# CORREÇÃO 2: O arquivo agora termina com uma linha em branco.
