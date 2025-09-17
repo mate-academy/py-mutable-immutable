@@ -7,7 +7,7 @@ profile_info = { "name": "lovely", "age":40 }
 marks = ( 100, 90, 20, 100 )
 collection_of_coins = { "dollar", "quarter", 10, 20, 100 }
 sorted_variables = {
-    "mutable" : [my_favourite_films, profile_info, collection_of_coins ],
+    "mutable" : [my_favourite_films, profile_info, collection_of_coins, {} ],
     "immutable" : [lucky_number, pi, one_is_a_prime_number, marks, name]
 }
 
