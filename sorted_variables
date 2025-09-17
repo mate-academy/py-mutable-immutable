@@ -4,14 +4,16 @@ my_dict = { "a":1, "b":"hello!", "c":3.5, "d":False }
 my_set_from_list = set(my_list)
 
 
-my_ints = 1
-my_strings = "hello!"
-my_tuples = ( 1, "hello!", 3.5, False, 1, 2)
-bools = True
+my_int = 1
+my_string = "hello!"
+my_tuple = ( 1, "hello!", 3.5, False, 1, 2)
+my_bool = True
 
-my_set_from_tuple = set(my_tuples)
+my_set_from_tuple = set(my_tuple)
+my_set_from_tuple.append("Exit")
+my_tuple[0] = 0
 
 sorted_variables = {
-    "mutables" : [ my_list, my_dict, my_set_from_list, my_set_from_tuple]
-    "immutables" : [ my_ints,  my_strings, my_tuples, bools]
+    "mutable" : [ my_list, my_dict, my_set_from_list, my_set_from_tuple],
+    "immutable" : [ my_int,  my_string, my_tuple, my_bool]
 }
