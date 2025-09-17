@@ -10,7 +10,7 @@ profile_info = ("michel", "michel@gmail.com", "12345678")
 
 # Tipos Mutáveis
 # ESTA É A LISTA CORRETA QUE O TESTE ESPERA:
-my_favourite_films = ["Inception", "The Matrix", "Interstellar"]
+my_favourite_films =
 marks = {"John": 4, "Sergio": 3}
 collection_of_coins = {1, 2, 25}
 
@@ -31,8 +31,8 @@ MUTABLE_TYPES = (list, dict, set, bytearray)
 
 # 4. Inicializar o dicionário de saída com listas vazias.
 sorted_variables = {
-    "mutable": [],
-    "immutable": [],
+    "mutable":,
+    "immutable":,
 }
 
 # 5. Iterar sobre cada variável, classificar e adicionar à lista apropriada.
