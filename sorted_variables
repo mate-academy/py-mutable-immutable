@@ -10,9 +10,7 @@ my_tuple = ( 1, "hello!", 3.5, False, 1, 2)
 my_bool = True
 my_float = 3.5
 
-my_set_from_tuple = set(my_tuple)
-
 sorted_variables = {
-    "mutable" : [ my_list, my_dict, my_set_from_list, my_set_from_tuple],
+    "mutable" : [ my_list, my_dict, my_set_from_list],
     "immutable" : [ my_int,  my_string, my_tuple, my_bool, my_float]
 }
