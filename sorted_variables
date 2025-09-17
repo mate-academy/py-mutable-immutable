@@ -1,12 +1,13 @@
 a = 123
 b = ["jghjgh",2]
 c = "Hi!"
-d = [1, 2]
+d = {1, 2}
 
-e = (1,"dsfghgdf",3.5)
-f = { 1, "dfhgdhfghd", 3.5}
+e = (1,"dsfghgdf",3.5, 1, 2)
+f = set(e)
 g = True
 h = [1, False, {1,2,3}]
+h[1] = True
 
 sorted_variables = {
     "mutable": [b, d, f, h],
