@@ -35,5 +35,6 @@ for item in all_variables:
         sorted_variables["mutable"].append(item)
     else:
         sorted_variables["immutable"].append(item)
+        
 
 # CORREÇÃO 2: O arquivo agora termina com uma linha em branco.
