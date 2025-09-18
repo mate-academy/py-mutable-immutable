@@ -1,18 +1,18 @@
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
-name = 'Richard'
+name = "Richard"
 my_favourite_films = [
-    'The Shawshank Redemption',
-    'The Lord of the Rings: The Return of the King',
-    'Pulp Fiction',
-    'The Good, the Bad and the Ugly',
-    'The Matrix',
+    "The Shawshank Redemption",
+    "The Lord of the Rings: The Return of the King",
+    "Pulp Fiction",
+    "The Good, the Bad and the Ugly",
+    "The Matrix",
 ]
-profile_info = ('michel', 'michel@gmail.com', '12345678')
+profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
-    'John': 4,
-    'Sergio': 3,
+    "John": 4,
+    "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
 
@@ -20,14 +20,14 @@ collection_of_coins = {1, 2, 25}
 def sorter_of_variables(*args: object) -> dict[str, list[object]]:
     mutable_types = (list, dict, set)
     sorted_variables = {
-        'mutable': [],
-        'immutable': []
+        "mutable": [],
+        "immutable": []
     }
     for obj in args:
         if type(obj) in mutable_types:
-            sorted_variables['mutable'].append(obj)
+            sorted_variables["mutable"].append(obj)
         else:
-            sorted_variables['immutable'].append(obj)
+            sorted_variables["immutable"].append(obj)
 
     return sorted_variables
 
