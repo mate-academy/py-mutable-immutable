@@ -1,5 +1,3 @@
-from flake8.processor import mutate_string
-
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False

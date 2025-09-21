@@ -4,8 +4,9 @@ import inspect
 import app.main
 
 
-@pytest.mark.parametrize([
+@pytest.mark.parametrize(
         "variable_name",
+    [
         "lucky_number",
         "pi",
         "one_is_a_prime_number",
@@ -15,7 +16,8 @@ import app.main
         "marks",
         "collection_of_coins",
         "sorted_variables"
-    ])
+    ]
+)
 
 def test_variables_should_be_defined(variable_name):
     assert hasattr(app.main, variable_name), f"Variable '{variable_name}' should be defined."
