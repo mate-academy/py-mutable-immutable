@@ -11,5 +11,3 @@ sorted_variables = {
     "mutable": [b, d, g, h],
     "immutable": [a, c, e, f]}
 
-print(sorted_variables)
-
