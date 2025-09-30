@@ -16,4 +16,15 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+mutable = []
+immutables = []
+
+lista_de_vari = [pi, lucky_number, one_is_a_prime_number, name,
+                 my_favourite_films, profile_info, marks, collection_of_coins]
+
+for item in lista_de_vari:
+    if isinstance(item, (list, dict, set, bytearray):   # <-- aqui tem erro de sintaxe
+        mutable.append(item)
+    else:
+        immutables.append(item)
+
