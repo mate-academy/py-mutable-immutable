@@ -31,10 +31,7 @@ all_variables = [
 
 # Iterate through the variables and sort them
 for var_name in all_variables:
-    if isinstance(var_name, (list, dict, set)):
+    if isinstance(var_name, (list, dict, set, bytearray)):
         sorted_variables["mutable"].append(var_name)
     else:
         sorted_variables["immutable"].append(var_name)
-
-# Print the resulting dictionary to verify
-print(sorted_variables)
