@@ -18,21 +18,12 @@ collection_of_coins = {1, 2, 25}
 
 sorted_variables = {"mutable": [], "immutable": []}
 
-variables = {
-    "lucky_number": lucky_number,
-    "pi": pi,
-    "one_is_a_prime_number": one_is_a_prime_number,
-    "name": name,
-    "my_favourite_films": my_favourite_films,
-    "profile_info": profile_info,
-    "marks": marks,
-    "collection_of_coins": collection_of_coins,
-}
+sorted_variables["immutable"].append(lucky_number)
+sorted_variables["immutable"].append(pi)
+sorted_variables["immutable"].append(one_is_a_prime_number)
+sorted_variables["immutable"].append(name)
+sorted_variables["immutable"].append(profile_info)
 
-for value in variables.values():
-    if type(value) in (list, dict, set):
-        sorted_variables["mutable"].append(value)
-    else:
-        sorted_variables["immutable"].append(value)
-
-print(sorted_variables)
+sorted_variables["mutable"].append(my_favourite_films)
+sorted_variables["mutable"].append(marks)
+sorted_variables["mutable"].append(collection_of_coins)
