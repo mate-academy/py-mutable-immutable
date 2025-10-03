@@ -22,8 +22,8 @@ all_vars = [lucky_number, pi, one_is_a_prime_number,
 
 
 sorted_variables = {"mutable": [], "immutable" : []}
-mutable_types = [list, dict, set]
-immutable_types = [int, float, str, bool, tuple]
-sorted_variables["mutable"] = [var for var in locals() if type(var) in mutable_types]
-sorted_variables["mutable"] = [var for var in locals() if type(var) in mutable_types]
+mutable_types = (list, dict, set)
+immutable_types = (int, float, str, bool, tuple)
+sorted_variables["mutable"] = [var for var in all_vars if isinstance(var, mutable_types)]
+sorted_variables["immutable"] = [var for var in all_vars if isinstance(var, immutable_types)]
 
