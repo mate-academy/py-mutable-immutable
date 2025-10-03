@@ -16,14 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-all_vars = [lucky_number, pi, one_is_a_prime_number,
-            name, my_favourite_films,
-            profile_info, marks, collection_of_coins]
-
 
 sorted_variables = {"mutable": [], "immutable" : []}
 mutable_types = (list, dict, set)
 immutable_types = (int, float, str, bool, tuple)
-sorted_variables["mutable"] = [var for var in all_vars if isinstance(var, mutable_types)]
-sorted_variables["immutable"] = [var for var in all_vars if isinstance(var, immutable_types)]
 
+for var_name, var_value in locals().copy().items():
+    if var_name.startswith("__") or var_name in ['sorted_variables',
+                                                 'mutable_types',
+                                                 'immutable_types']:
+        continue
+    if isinstance(var_value, mutable_types):
+        sorted_variables['mutable'].append(var_value)
+    elif isinstance(var_value, immutable_types):
+        sorted_variables['immutable'].append(var_value)
