@@ -22,11 +22,11 @@ mutable_types = (list, dict, set)
 immutable_types = (int, float, str, bool, tuple)
 
 for var_name, var_value in locals().copy().items():
-    if var_name.startswith("__") or var_name in ['sorted_variables',
-                                                 'mutable_types',
-                                                 'immutable_types']:
+    if var_name.startswith("__") or var_name in ["sorted_variables",
+                                                 "mutable_types",
+                                                 "immutable_types"]:
         continue
     if isinstance(var_value, mutable_types):
-        sorted_variables['mutable'].append(var_value)
+        sorted_variables["mutable"].append(var_value)
     elif isinstance(var_value, immutable_types):
-        sorted_variables['immutable'].append(var_value)
+        sorted_variables["immutable"].append(var_value)
