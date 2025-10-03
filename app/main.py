@@ -42,4 +42,4 @@ for char in list_of_variables:
         elif (type(value) == int or type(value) == float or type(value) == str
               or type(value) == bool or type(value) == tuple):
             sorted_variables["immutable"].append(value)
-print(sorted_variables)
+
