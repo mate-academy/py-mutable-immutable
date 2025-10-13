@@ -17,3 +17,20 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+# 8 variables of different data types
+a = 10                     # int
+b = 3.14                   # float
+c = "Hello"                # str
+d = (1, 2, 3)              # tuple
+e = [1, 2, 3]              # list
+f = {1, 2, 3}              # set
+g = {'x': 1, 'y': 2}       # dict
+h = True                   # bool
+
+# Grouping variables by mutability
+sorted_variables = {
+    "mutable": [e, f, g],
+    "immutable": [a, b, c, d, h]
+}
+
+print(sorted_variables)
