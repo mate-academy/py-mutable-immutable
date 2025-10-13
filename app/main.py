@@ -16,21 +16,20 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
-# 8 variables of different data types
-a = 10                     # int
-b = 3.14                   # float
-c = "Hello"                # str
-d = (1, 2, 3)              # tuple
-e = [1, 2, 3]              # list
-f = {1, 2, 3}              # set
-g = {'x': 1, 'y': 2}       # dict
-h = True                   # bool
+# 8 variáveis de diferentes tipos de dados
+idade = 25                     # int
+altura = 1.75                  # float
+mensagem = "Olá, mundo!"       # str
+coordenadas = (10, 20)         # tuple
+numeros = [1, 2, 3, 4]         # list
+conjunto_itens = {5, 6, 7}     # set
+dados_pessoa = {"nome": "Ana", "idade": 30}  # dict
+ativo = True                   # bool
 
-# Grouping variables by mutability
+# Dicionário separando variáveis mutáveis e imutáveis
 sorted_variables = {
-    "mutable": [e, f, g],
-    "immutable": [a, b, c, d, h]
+    "mutable": [numeros, conjunto_itens, dados_pessoa],
+    "immutable": [idade, altura, mensagem, coordenadas, ativo]
 }
 
 print(sorted_variables)
