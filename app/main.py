@@ -27,9 +27,12 @@ dados_pessoa = {"nome": "Ana", "idade": 30}  # dict
 ativo = True                   # bool
 
 # Dicionário separando variáveis mutáveis e imutáveis
+# Dicionário agrupando as variáveis originais por mutabilidade
+
 sorted_variables = {
-    "mutable": [numeros, conjunto_itens, dados_pessoa],
-    "immutable": [idade, altura, mensagem, coordenadas, ativo]
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
+
 
 print(sorted_variables)
