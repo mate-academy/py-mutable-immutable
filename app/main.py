@@ -18,8 +18,10 @@ collection_of_coins = {1, 2, 25}
 
 """
 There are 8 variables of different data types in the main module.
-Your task is to create dictionary sorted_variables with two keys: "mutable" and "immutable".
-Each value should be equal to a list that contains all variables of corresponding type.
+Your task is to create dictionary sorted_variables with two keys:
+"mutable" and "immutable". 
+Each value should be equal to a list that contains all variables of
+corresponding type.
 Example with other variables:
 a = 123
 b = []
