@@ -16,4 +16,21 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+def sorted_variables(variables) -> dict:
+    '''
+    Sorted variables to mutable and immutable.
+
+    :param variables: any
+    :return: dictionary
+    '''
+    immutable_types = (int, str, bool, float, tuple)
+    sorted_variable_result = {"immutable": [], "mutable": []}
+
+    if variables is None:
+        return sorted_variable_result
+    for variable in variables:
+        if isinstance(variables, immutable_types):
+            sorted_variable_result["immutable"].append(variable)
+        else:
+            sorted_variable_result["mutable"].append(variable)
+    return sorted_variable_result
