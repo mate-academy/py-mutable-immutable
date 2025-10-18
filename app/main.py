@@ -1,3 +1,9 @@
+"""
+Module: main
+Purpose: Defines several example variables of different Python data types and
+categorizes them as mutable or immutable in the dictionary `sorted_variables`.
+"""
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -20,3 +26,6 @@ sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
     "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
 }
+
+if __name__ == "__main__":
+    print(sorted_variables)
