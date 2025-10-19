@@ -16,4 +16,5 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = dict(immutable=[lucky_number, pi,profile_info, one_is_a_prime_number, name,],
+                        mutable=[my_favourite_films, marks, collection_of_coins])
