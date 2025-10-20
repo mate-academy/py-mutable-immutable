@@ -26,4 +26,3 @@ sorted_variables = {
         profile_info
     ]
 }
-print(sorted_variables)
