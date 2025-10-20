@@ -1,9 +1,11 @@
 from typing import Any, Dict
 
+
 def create_dictionary(*args) -> Dict[Any, int]:
     dic: Dict[Any, int] = {}
     for index, arg in enumerate(args):
-        if isinstance(arg, (int, float, str, bool, type(None), tuple)) or callable(arg):
+        if (isinstance(arg,(int,float,str,bool,type(None),tuple))
+                or callable(arg)):
             try:
                 dic[arg] = index
             except TypeError:
