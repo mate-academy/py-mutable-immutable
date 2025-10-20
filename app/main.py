@@ -21,11 +21,13 @@ sorted_variables = {
     "immutable": []
 }
 
-all_variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
-mutable_types = [dict, list, set]
+all_variables = [
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins
+]
 
-for variable in all_variables:
-    if type(variable) in mutable_types:
-        sorted_variables["mutable"].append(variable)
+for item in all_variables:
+    if isinstance(item, (dict, list, set, bytearray)):
+        sorted_variables["mutable"].append(item)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(item)
