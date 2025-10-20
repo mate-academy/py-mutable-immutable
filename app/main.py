@@ -17,7 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 """
-Create a dictionary that has mutable and immutable keyes with respective values
+Create a dictionary that has mutable and immutable keys with respective values
 """
 
 sorted_variables = {
