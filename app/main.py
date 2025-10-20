@@ -20,7 +20,10 @@ sorted_variables = {
     "mutable": [],
     "immutable": []
 }
-variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
+variables = [
+    lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+    profile_info, marks, collection_of_coins
+]
 
 for value in variables:
     if type(value) in (list, dict, set):
