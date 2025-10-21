@@ -1,0 +1,22 @@
+[33m1f07146[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m Solution
+[33me67b5ea[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update requirements.txt
+[33m7955c89[m Update .flake8
+[33mf299108[m improved `test_removed_comment`
+[33mb9bf72b[m Merge pull request #199 from mate-academy/add_test_about_comment
+[33m3dc5867[m added test whoch checks if the comment was removed
+[33m6daad60[m Update test.yml
+[33mce4915f[m Merge pull request #107 from mate-academy/add_timeout
+[33m3999a04[m add timeout on tests
+[33m8590d17[m Merge pull request #43 from mate-academy/add_exclude_vevn
+[33mb1f4077[m add blank line
+[33m397db34[m add exclude venv and tests in .flake8
+[33m44547eb[m Merge pull request #6 from mate-academy/readme-guideline
+[33m96a8dd4[m Update README.md
+[33m9b6abbd[m Merge pull request #4 from mate-academy/add-comment-message
+[33m5a0eeb0[m Update main.py
+[33m57ee9bd[m Merge pull request #2 from mate-academy/readme-fix
+[33m964bdee[m Update README.md
+[33mb797ff1[m Merge pull request #1 from mate-academy/create-mutable-immutable-task
+[33m118d31e[m Fix bugs
+[33m3bc601f[m Create mutable&immutable task
+[33m1380c12[m Initial commit
