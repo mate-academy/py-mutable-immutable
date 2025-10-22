@@ -16,4 +16,15 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variables = {"mutable": [my_favourite_films, marks, collection_of_coins], "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]}
+# lucky_number = int
+# pi = float
+# one_is_a_prime_number = boolean
+# name = string
+# my_favourite_films = list
+# profile_info = tuple
+# marks = dictionary
+# collection_of_coins = set
+
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]}
