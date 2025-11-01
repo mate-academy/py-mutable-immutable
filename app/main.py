@@ -40,3 +40,6 @@ sorted_variables = to_sort_variables({
     "marks": marks,
     "collection_of_coins": collection_of_coins
 })
+
+print(sorted_variables)
+sorted_variables = {'mutable': ['my_favourite_films', 'marks', 'collection_of_coins'], 'immutable': ['lucky_number', 'pi', 'one_is_a_prime_number', 'name', 'profile_info']}
