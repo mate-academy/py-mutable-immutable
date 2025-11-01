@@ -17,7 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def sorted_variables(*args) -> dict:
+def to_sort_variables(*args) -> dict:
     result_dict = {
         "mutable": [],
         "immutable": []
