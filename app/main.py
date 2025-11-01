@@ -17,14 +17,27 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def to_sort_variables(*args) -> dict:
+def to_sort_variables(variable: dict) -> dict:
     result_dict = {
         "mutable": [],
         "immutable": []
     }
-    for item in args:
-        if type(item) == dict or type(item) == list or type(item) == set:
-            result_dict["mutable"].append(item)
+    for name, value in variable.items():
+        if type(value) in (dict, list, set):
+            result_dict["mutable"].append(name)
         else:
-            result_dict["immutable"].append(item)
+            result_dict["immutable"].append(name)
     return result_dict
+
+sorted_variables = to_sort_variables({
+    "lucky_number": lucky_number,
+    "pi": pi,
+    "one_is_a_prime_number": one_is_a_prime_number,
+    "name": name,
+    "my_favourite_films": my_favourite_films,
+    "profile_info": profile_info,
+    "marks": marks,
+    "collection_of_coins": collection_of_coins
+})
+
+print(sorted_variables)
