@@ -17,17 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def to_sort_variables(variable: dict) -> dict:
+def to_sort_variables(variable_map: dict) -> dict:
     result_dict = {
         "mutable": [],
         "immutable": []
     }
-    for name, value in variable.items():
+    for name, value in variable_map.items():
         if type(value) in (dict, list, set):
             result_dict["mutable"].append(name)
         else:
             result_dict["immutable"].append(name)
     return result_dict
+
 
 sorted_variables = to_sort_variables({
     "lucky_number": lucky_number,
@@ -39,5 +40,3 @@ sorted_variables = to_sort_variables({
     "marks": marks,
     "collection_of_coins": collection_of_coins
 })
-
-print(sorted_variables)
