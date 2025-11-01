@@ -15,15 +15,17 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-def sorted_variables(*args):
+
+
+
+def sorted_variables(*args) -> dict:
     sorted_variables = {
         "mutable": [],
         "immutable": []
     }
-    for item  in args:
+    for item in args:
         if type(item) == dict or type(item) == list or type(item) == set:
             sorted_variables["mutable"].append(item)
         else:
             sorted_variables["immutable"].append(item)
     return sorted_variables
-
