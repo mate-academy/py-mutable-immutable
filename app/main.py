@@ -23,7 +23,7 @@ def to_sort_variables(variable_map: dict) -> dict:
         "immutable": []
     }
     for name, value in variable_map.items():
-        if isinstance(value,  (dict, list, set)):
+        if isinstance(value, (dict, list, set)):
             result_dict["mutable"].append(value)
         else:
             result_dict["immutable"].append(value)
@@ -40,4 +40,3 @@ sorted_variables = to_sort_variables({
     "marks": marks,
     "collection_of_coins": collection_of_coins
 })
-
