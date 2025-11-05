@@ -1,3 +1,5 @@
+from typing import List, Any, Dict
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -23,13 +25,13 @@ my_variables = [
 mutable_types = (list, dict, set)
 
 
-def sorted_variables(variables):
+def sorted_variables(variables: List[Any]) -> Dict[str, List[Any]]:
     sorted_variables_list = {"mutable": [], "immutable": []}
-    for var in variables:
-        if isinstance(var, mutable_types):
-            sorted_variables_list["mutable"].append(var)
+    for var_to_check in variables:
+        if isinstance(var_to_check, mutable_types):
+            sorted_variables_list["mutable"].append(var_to_check)
         else:
-            sorted_variables_list["immutable"].append(var)
+            sorted_variables_list["immutable"].append(var_to_check)
 
     return sorted_variables_list
 
