@@ -1,3 +1,5 @@
+from typing import List, Any, Dict
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +18,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+my_variables = [
+    lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+    profile_info, marks, collection_of_coins
+]
+mutable_types = (list, dict, set)
+
+
+def sorted_variables(variables: List[Any]) -> Dict[str, List[Any]]:
+    sorted_variables_list = {"mutable": [], "immutable": []}
+    for var_to_check in variables:
+        if isinstance(var_to_check, mutable_types):
+            sorted_variables_list["mutable"].append(var_to_check)
+        else:
+            sorted_variables_list["immutable"].append(var_to_check)
+
+    return sorted_variables_list
+
+
+sorted_variables = sorted_variables(my_variables)
