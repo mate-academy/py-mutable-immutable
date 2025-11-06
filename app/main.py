@@ -17,26 +17,5 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-def to_sort_variables(variable_map: dict) -> dict:
-    result_dict = {
-        "mutable": [],
-        "immutable": []
-    }
-    for name, value in variable_map.items():
-        if isinstance(value, (dict, list, set)):
-            result_dict["mutable"].append(value)
-        else:
-            result_dict["immutable"].append(value)
-    return result_dict
-
-
-sorted_variables = to_sort_variables({
-    "lucky_number": lucky_number,
-    "pi": pi,
-    "one_is_a_prime_number": one_is_a_prime_number,
-    "name": name,
-    "my_favourite_films": my_favourite_films,
-    "profile_info": profile_info,
-    "marks": marks,
-    "collection_of_coins": collection_of_coins
-})
+to_sort_variables = {"immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
+                     "mutable": [marks, collection_of_coins, my_favourite_films]}
