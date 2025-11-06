@@ -33,7 +33,7 @@ def to_sort_variables(variable_map: dict) -> dict:
 sorted_variables = to_sort_variables({
     "lucky_number": lucky_number,
     "pi": pi,
-    "one_is_a_prime_number": one_is_a_prime_number,
+    "one_is_a_prime_number":  one_is_a_prime_number,
     "name": name,
     "my_favourite_films": my_favourite_films,
     "profile_info": profile_info,
