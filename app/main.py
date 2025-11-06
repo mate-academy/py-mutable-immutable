@@ -17,7 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 
-to_sorted_variables = {
+sorted_variables = {
     "immutable": [
         lucky_number,
         pi,
