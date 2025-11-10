@@ -16,4 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+def sorted_variables(*args):
+    d = {}
+    for index, arg in enumerate(args):
+        if isinstance(arg, (int, float, str, bool, tuple, type(None))) or callable(arg):
+            d[arg] = index
+        else:
+            print(f"Cannot add {arg} to the dict!")
+    return d
+print(sorted_variables(lucky_number,pi,one_is_a_prime_number,name,my_favourite_films))
