@@ -20,18 +20,7 @@ marks = {
 
 collection_of_coins = {1, 2, 25}
 
-
-def sorted_variables(*args) -> dict:
-    """Повертає словник, де ключ — значення змінної, а значення — її індекс."""
-    variables_dict = {}
-
-    for index, arg in enumerate(args):
-        if isinstance(arg, (int,  str, bool, tuple, type(None))) or callable(arg):
-            variables_dict[arg] = index
-        else:
-            print(f"Cannot add {arg} to the dict!")
-
-    return variables_dict
-
-
-print(sorted_variables(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films))
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
+}
