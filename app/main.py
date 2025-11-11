@@ -23,4 +23,3 @@ for value in variables:
         sorted_variables["immutable"].append(value)
     else:
         sorted_variables["mutable"].append(value)
-print(sorted_variables)
