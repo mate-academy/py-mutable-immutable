@@ -68,8 +68,8 @@ def test_variables_values(variable, value):
 def test_variables_should_be_added_to_sorted_variables(variable_name):
     sorted_variables = getattr(app.main, "sorted_variables")
     assert (
-        getattr(app.main, variable_name) in sorted_variables["mutable"]
-        or getattr(app.main, variable_name) in sorted_variables["immutable"]
+        getattr(app.main, variable_name) in sorted_variables["mutable"] or
+        getattr(app.main, variable_name) in sorted_variables["immutable"]
     ), f"Variable '{variable_name}' should be added to 'sorted_variables'"
 
 
@@ -82,12 +82,14 @@ def is_immutable(obj):
 def test_variables_added_to_the_correct_list():
     sorted_variables = getattr(app.main, "sorted_variables")
     for variable in sorted_variables["mutable"]:
-        assert (
-            is_immutable(variable) is False
-        ), f"{variable} should be in 'immutable' list"
+        assert is_immutable(variable) is False, (
+            f"{variable} should be in 'immutable' list"
+        )
 
     for variable in sorted_variables["immutable"]:
-        assert is_immutable(variable) is True, f"{variable} should be in 'mutable' list"
+        assert is_immutable(variable) is True, (
+            f"{variable} should be in 'mutable' list"
+        )
 
 
 def test_removed_comment():
