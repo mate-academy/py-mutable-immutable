@@ -23,8 +23,8 @@ sorted_variables = {
         collection_of_coins,
     ],
     "immutable": [
-        lucky_number,
         profile_info,
+        lucky_number,
         pi,
         one_is_a_prime_number,
         name,
