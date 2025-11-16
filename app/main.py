@@ -16,10 +16,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 sorted_variables = {"mutable": [], "immutable":[]}
-variables =[lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
+variables ={'lucky_number': lucky_number, 'pi': pi, 'one_is_a_prime_number': one_is_a_prime_number, 'name': name,' my_favourite_films': my_favourite_films, 'profile_info': profile_info, 'marks': marks, 'collection_of_coins': collection_of_coins}
 immutable_types = (int, float, bool, str, tuple, frozenset, bytes, type(None))
-for value in variables:
+for name, value in variables.items():
     if isinstance(value, immutable_types):
-        sorted_variables["immutable"].append(value)
+        sorted_variables["immutable"].append(name)
     else:
-        sorted_variables["mutable"].append(value)
+        sorted_variables["mutable"].append(name)
