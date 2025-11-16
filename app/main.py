@@ -23,7 +23,7 @@ sorted_variables = {
         marks,
         collection_of_coins
     ],
-    "immutable":[
+    "immutable": [
         lucky_number,
         pi,
         one_is_a_prime_number,
@@ -31,4 +31,5 @@ sorted_variables = {
         profile_info
     ]
 }
+
 print(sorted_variables)
