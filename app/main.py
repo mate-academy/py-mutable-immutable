@@ -16,7 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-sorted_variable = {
+sorted_variables = {
     "mutable": [
         "marks",
         "my_favourite_films",
