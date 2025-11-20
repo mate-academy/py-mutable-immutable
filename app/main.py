@@ -30,7 +30,3 @@ sorted_variable = {
         "profile_info",
     ],
 }
-        
-        
-        
-        
