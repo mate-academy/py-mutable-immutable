@@ -1,7 +1,7 @@
-lucky_number = 777
-pi = 3.14
-one_is_a_prime_number = False
-name = "Richard"
+lucky_number: int = 777 #int
+pi: float = 3.14 #float
+one_is_a_prime_number: bool = False #bool
+name: str = "Richard" #str
 my_favourite_films = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
@@ -16,4 +16,25 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [],
+    "immutable": [],
+}
+
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]
+
+for var in variables:
+    if isinstance(var, (int, float, bool, str, tuple)):
+        sorted_variables["immutable"].append(var)
+    else:
+        sorted_variables["mutable"].append(var)
+
