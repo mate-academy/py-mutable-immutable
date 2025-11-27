@@ -1,7 +1,7 @@
-lucky_number: int = 777 #int
-pi: float = 3.14 #float
-one_is_a_prime_number: bool = False #bool
-name: str = "Richard" #str
+lucky_number = 777
+pi = 3.14
+one_is_a_prime_number = False
+name = "Richard"
 my_favourite_films = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
