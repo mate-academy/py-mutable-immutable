@@ -32,8 +32,8 @@ sorted_variables = {
     "immutable": []
 }
 variable_mutable = [list, dict, set]
-for v in variables:
-    if type(v) in variable_mutable:
-        sorted_variables["mutable"].append(v)
+for variable_created in variables:
+    if type(variable_created) in variable_mutable:
+        sorted_variables["mutable"].append(variable_created)
     else:
-        sorted_variables["immutable"].append(v)
+        sorted_variables["immutable"].append(variable_created)
