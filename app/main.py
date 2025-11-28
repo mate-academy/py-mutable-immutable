@@ -18,9 +18,9 @@ collection_of_coins = {1, 2, 25}
 
 # write your code here
 sorted_variables {
-    "mutable" = []
-    "immutable" = []
-}
+    "mutable" == [],
+    "immutable" == []
+};
 sorted_variables["mutable"].append(collection_of_coins)
 sorted_variables["mutable"].append(marks)
 sorted_variables["mutable"].append(profile_info)
