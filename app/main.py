@@ -1,3 +1,6 @@
+from typing import Any
+
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +19,26 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def is_immutable(obj: Any) -> bool:
+    if isinstance(obj, (int, str, bool, float, tuple)):
+        return True
+    return False
+
+
+def get_sorted_dict() -> dict:
+    variables = [lucky_number, pi, one_is_a_prime_number, name,
+                 my_favourite_films, profile_info, marks, collection_of_coins]
+    sorted_variables_result = {
+        "mutable": [],
+        "immutable": []
+    }
+    for variable_to_check in variables:
+        if is_immutable(variable_to_check):
+            sorted_variables["immutable"].append(variable_to_check)
+        else:
+            sorted_variables["mutable"].append(variable_to_check)
+    return sorted_variables_result
+
+
+sorted_variables = get_sorted_dict()
