@@ -35,9 +35,9 @@ def get_sorted_dict() -> dict:
     }
     for variable_to_check in variables:
         if is_immutable(variable_to_check):
-            sorted_variables["immutable"].append(variable_to_check)
+            sorted_variables_result["immutable"].append(variable_to_check)
         else:
-            sorted_variables["mutable"].append(variable_to_check)
+            sorted_variables_result["mutable"].append(variable_to_check)
     return sorted_variables_result
 
 
