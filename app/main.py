@@ -1,33 +1,24 @@
-# Variables
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
 
-my_favourite_films = ["Matrix", "Lord of the Rings", "Star Wars"]  # mutable (list)
-profile_info = {"age": 30, "country": "USA"}  # mutable (dict)
-marks = (5, 4, 3, 5, 5)  # immutable (tuple)
-collection_of_coins = {1, 2, 5, 10, 20, 50}  # mutable (set)
+my_favourite_films = [
+    "The Shawshank Redemption",
+    "The Lord of the Rings: The Return of the King",
+    "Pulp Fiction",
+    "The Good, the Bad and the Ugly",
+    "The Matrix",
+]
 
-# Diccionario requerido por los tests
+profile_info = ("michel", "michel@gmail.com", "12345678")
+
+marks = {"John": 4, "Sergio": 3}
+
+collection_of_coins = {1, 2, 25}
+
 sorted_variables = {
-    "mutable": [
-        my_favourite_films,
-        profile_info,
-        collection_of_coins,
-    ],
-    "immutable": [
-        lucky_number,
-        pi,
-        one_is_a_prime_number,
-        name,
-        marks,
-    ],
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
 }
-
-
-def count_occurrences(phrase: str, letter: str) -> int:
-    return phrase.lower().count(letter.lower())
-
-
 
