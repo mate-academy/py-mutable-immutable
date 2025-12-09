@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# 8 variáveis de diferentes tipos de dados
+idade = 25                     # int
+altura = 1.75                  # float
+mensagem = "Olá, mundo!"       # str
+coordenadas = (10, 20)         # tuple
+numeros = [1, 2, 3, 4]         # list
+conjunto_itens = {5, 6, 7}     # set
+dados_pessoa = {"nome": "Ana", "idade": 30}  # dict
+ativo = True                   # bool
+
+# Dicionário separando variáveis mutáveis e imutáveis
+# Dicionário agrupando as variáveis originais por mutabilidade
+
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
+
+
+print(sorted_variables)
