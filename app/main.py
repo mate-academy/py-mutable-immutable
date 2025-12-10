@@ -1,7 +1,8 @@
-numero_entero = 123
-lista_vacia = []
-saludo = "Hi!"
-lista_numeros = [1, 2]
+# app/main.py
+numero_entero = 123  # entero (immutable)
+lista_vacia = []  # Lista (mutable)
+saludo = "Hi!"  # cadena (immutable)
+lista_numeros = [1, 2]  # Lista (mutable)
 
 sorted_variables = {
     "mutable": [lista_vacia, lista_numeros],
