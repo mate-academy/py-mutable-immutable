@@ -16,4 +16,25 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+from collections import defaultdict
+
+sorted_variables = defaultdict(list)
+def sorting(*args):
+    for element in args:
+        try:
+            hash(element)
+            sorted_variables["immutable"].append(element)
+        except (TypeError, KeyError):
+            sorted_variables["mutable"].append(element)
+    return sorted_variables
+
+sorting(
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+)
