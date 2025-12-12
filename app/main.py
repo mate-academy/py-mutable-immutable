@@ -16,4 +16,29 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def mutable_or_inmutable(*args) -> dict:
+
+    mutable = []
+    immutable = []
+    mutable_colection = {set, list, dict}
+    immutable_colection = {int, float, bool, str, tuple}
+
+    for arg in args:
+        if type(arg) in mutable_colection:
+            mutable.append(arg)
+        elif type(arg) in immutable_colection:
+            immutable.append(arg)
+    return {"mutable": mutable, "immutable": immutable}
+
+
+sorted_variables = mutable_or_inmutable(
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+)
