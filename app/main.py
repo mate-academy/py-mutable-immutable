@@ -1,3 +1,5 @@
+from collections import defaultdict
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,10 +18,10 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-from collections import defaultdict
-
 sorted_variables = defaultdict(list)
-def sorting(*args):
+
+
+def sorting(*args) -> dict:
     for element in args:
         try:
             hash(element)
@@ -27,6 +29,7 @@ def sorting(*args):
         except (TypeError, KeyError):
             sorted_variables["mutable"].append(element)
     return sorted_variables
+
 
 sorting(
     lucky_number,
