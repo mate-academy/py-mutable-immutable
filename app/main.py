@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
+
+
+def sort_variables(**kwargs) -> dict:
+    for key, value in kwargs.items():
+        if isinstance(value, (list, dict, set)):
+            sorted_variables["mutable"].append(key)
+        else:
+            sorted_variables["immutable"].append(key)
+
+    return sorted_variables
