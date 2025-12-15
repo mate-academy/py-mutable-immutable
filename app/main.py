@@ -16,4 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+list1 = [my_favourite_films, marks, collection_of_coins]
+list2 = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+sorted_variables = {"mutable": list1, "immutable": list2}
