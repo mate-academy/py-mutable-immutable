@@ -19,7 +19,16 @@ collection_of_coins = {1, 2, 25}
 global_variables = globals().copy()
 sorted_variables = {"mutable": [],
                     "immutable": []}
-for var_name in global_variables:
+for var_name in [
+    "lucky_number",
+    "pi",
+    "one_is_a_prime_number",
+    "name",
+    "my_favourite_films",
+    "profile_info",
+    "marks",
+    "collection_of_coins"
+]:
     if not var_name.startswith("__"):
         if isinstance(global_variables[var_name],
                       (int, float, str, bool, tuple)):
