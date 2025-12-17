@@ -1,20 +1,20 @@
-lucky_number = 777 #int
-pi = 3.14   #float
-one_is_a_prime_number = False   #bool
-name = "Richard"    #str
+lucky_number = 777
+pi = 3.14
+one_is_a_prime_number = False
+name = "Richard"
 my_favourite_films = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
     "Pulp Fiction",
     "The Good, the Bad and the Ugly",
     "The Matrix",
-]   #list
-profile_info = ("michel", "michel@gmail.com", "12345678") #truple
+]
+profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
     "John": 4,
     "Sergio": 3,
-}      #dict
-collection_of_coins = {1, 2, 25}    #set
+}
+collection_of_coins = {1, 2, 25}
 
 sorted_variables = {
     "mutable": [my_favourite_films, collection_of_coins, marks],
