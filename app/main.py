@@ -16,4 +16,14 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+global_variables = globals().copy()
+sorted_variables = {"mutable": [],
+                    "immutable": []}
+for var_name in global_variables:
+    if not var_name.startswith("__"):
+        if isinstance(global_variables[var_name],
+                      (int, float, str, bool, tuple)):
+            sorted_variables["immutable"].append(global_variables[var_name])
+        else:
+            sorted_variables["mutable"].append(global_variables[var_name])
+print(sorted_variables)
