@@ -1,15 +1,21 @@
 # Mutable and Immutable
 
-- Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
-- Implement the task:
+## 📘 Task Description
 
-There are 8 variables of different data types in the main module.
+- Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before starting.
+- Implement the task described below.
 
-Your task is to create dictionary `sorted_variables` with two keys: 
+There are **8 variables** of different data types in the main module.
+
+Your task is to create a dictionary named `sorted_variables` with **two keys**:  
 `"mutable"` and `"immutable"`.
-Each value should be equal to a list that contains all variables of corresponding type.
 
-Example with other variables:
+Each value should be equal to a **list** that contains all variables of the corresponding type.
+
+---
+
+### 🧩 Example
+
 ```python
 a = 123
 b = []
@@ -20,4 +26,3 @@ sorted_variables = {
     "mutable": [b, d],
     "immutable": [a, c]
 }
-```
