@@ -36,4 +36,4 @@ sorted_variables = sorted_dictionary(lucky_number,
                                      profile_info,
                                      marks,
                                      collection_of_coins)
-print(sorted_variables)
+#print(sorted_variables)
