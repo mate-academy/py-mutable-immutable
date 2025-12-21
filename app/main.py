@@ -16,4 +16,24 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def sorted_dictionary(*args) -> dict:
+    result = {"mutable": [], "immutable": []}
+    for element in args:
+        if isinstance(element, (list, set, dict)):
+            result["mutable"].append(element)
+
+        else:
+            result["immutable"].append(element)
+    return result
+
+
+sorted_variables = sorted_dictionary(lucky_number,
+                                     pi,
+                                     one_is_a_prime_number,
+                                     name,
+                                     my_favourite_films,
+                                     profile_info,
+                                     marks,
+                                     collection_of_coins)
+print(sorted_variables)
