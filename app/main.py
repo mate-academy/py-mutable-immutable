@@ -1,3 +1,5 @@
+from typing import Any
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +18,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def sorted_dictionary(*args) -> dict:
+    sorted_variables = {"mutable": [], "immutable": []}
+    for element in args:
+        if isinstance(element, (list, set, dict)):
+            sorted_variables["mutable"].append(element)
+
+        else:
+            sorted_variables["immutable"].append(element)
+
+    return sorted_variables
+
+
