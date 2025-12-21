@@ -29,5 +29,6 @@ def sorted_dictionary(*args) -> dict:
             sorted_variables["immutable"].append(element)
 
     return sorted_variables
-
+sorted_variables = sorted_dictionary(lucky_number, pi, one_is_a_prime_number,name, my_favourite_films, profile_info, marks, collection_of_coins)
+print(sorted_variables)
 
