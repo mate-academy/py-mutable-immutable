@@ -16,7 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
 assert type(lucky_number) is int
 isinstance(lucky_number, int)
 assert type(pi) is float
