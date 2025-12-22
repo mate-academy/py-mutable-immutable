@@ -17,8 +17,17 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
-sorted_variables = {"mutable": [my_favourite_films, marks,
-                                collection_of_coins],
-                    "immutable": [lucky_number, pi,
-                                  one_is_a_prime_number,
-                                  name, profile_info]}
+assert type(lucky_number) == int
+assert type(pi) == float
+assert type(one_is_a_prime_number) == bool
+assert type(name) == str
+assert type(profile_info) == tuple
+
+assert type(my_favourite_films) == list
+assert type(marks) == dict
+assert type(collection_of_coins) == set
+
+sorted_variables = dict(mutable=[my_favourite_films, marks,
+                                 collection_of_coins], immutable=[lucky_number, pi,
+                                                                  one_is_a_prime_number,
+                                                                  name, profile_info])
