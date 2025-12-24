@@ -1,3 +1,6 @@
+from typing import Any
+
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +19,28 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+all_variables_array = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]
+
+
+def is_mutable(obj: Any) -> bool:
+    """
+    Return True if obj is mutable else - return False.
+    """
+    return isinstance(obj, (list, dict, set))
+
+
+sorted_variables = {"mutable": [], "immutable": []}
+
+
+for current_value in all_variables_array:
+    key = "mutable" if is_mutable(current_value) else "immutable"
+    sorted_variables[key].append(current_value)
