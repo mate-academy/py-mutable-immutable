@@ -11,7 +11,7 @@ import app.main
         "pi",
         "one_is_a_prime_number",
         "name",
-        "my_favourite_films",
+        "my_favorite_films",
         "profile_info",
         "marks",
         "collection_of_coins",
@@ -32,7 +32,7 @@ def test_variables_should_be_defined(variable_name):
         ("one_is_a_prime_number", False),
         ("name", "Richard"),
         (
-            "my_favourite_films",
+            "my_favorite_films",
             [
                 "The Shawshank Redemption",
                 "The Lord of the Rings: The Return of the King",
@@ -59,7 +59,7 @@ def test_variables_values(variable, value):
         "pi",
         "one_is_a_prime_number",
         "name",
-        "my_favourite_films",
+        "my_favorite_films",
         "profile_info",
         "marks",
         "collection_of_coins",
