@@ -12,12 +12,12 @@ Each value should be equal to a list that contains all variables of correspondin
 Example with other variables:
 ```python
 a = 123
-b = []
-c = "Hi!"
-d = [1, 2]
-
-sorted_variables = {
+b = []sorted_variables = {
     "mutable": [b, d],
     "immutable": [a, c]
 }
+c = "Hi!"
+d = [1, 2]
+
+
 ```
