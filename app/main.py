@@ -1,3 +1,4 @@
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,31 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for item in variables:
+    if isinstance(item, (list, dict, set)):
+        sorted_variables["mutable"].append(item)
+    else:
+        sorted_variables["immutable"].append(item)
+
+print(sorted_variables)
+
+print(f"Mutable count: {len(sorted_variables['mutable'])}")
+print(f"Immutable count: {len(sorted_variables['immutable'])}")
