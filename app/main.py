@@ -16,4 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
+}
+
+
+def print_sorted_variables() -> None:
+    print("Mutable variables:")
+    for mutable in sorted_variables["mutable"]:
+        print(f"- {mutable} (type: {type(mutable)})")
+    print("\nImmutable variables:")
+    for immutable in sorted_variables["immutable"]:
+        print(f"- {immutable} (type: {type(immutable)})")
+
+
+pass
