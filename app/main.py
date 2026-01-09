@@ -17,3 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+bunch = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]
+mutable = []
+immutable = []
+for item in bunch:
+    try:
+        bunch[item][0] = bunch[item][0]
+    except TypeError:
+        mutable.append(item)
+    else:
+        immutable.append(item)
+
+sorted_variables = {
+    "mutable": mutable,
+    "immutable": immutable
+}
