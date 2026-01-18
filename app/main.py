@@ -2,7 +2,7 @@ lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
-my_favourite_films = [
+my_favourite_films: list[str] = [
     "The Shawshank Redemption",
     "The Lord of the Rings: The Return of the King",
     "Pulp Fiction",
@@ -16,4 +16,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [name, pi, one_is_a_prime_number, lucky_number, profile_info]}
