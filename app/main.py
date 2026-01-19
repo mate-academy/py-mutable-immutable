@@ -17,6 +17,6 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 sorted_variables = {}
-sorted_variables["mutable"] = (my_favourite_films, collection_of_coins, marks)
-sorted_variables["immutable"] = (lucky_number, pi, one_is_a_prime_number,
-                                 profile_info, name)
+sorted_variables["mutable"] = [my_favourite_films, collection_of_coins, marks]
+sorted_variables["immutable"] = [lucky_number, pi, one_is_a_prime_number,
+                                 profile_info, name]
