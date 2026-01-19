@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Store all variables in a list
+variables = []
+
+# Mutable and immutable types
+mutable_types = (list, dict, set)
+immutable_types = (int, str, float, tuple, frozenset)
+
+# Classify using isinstance
+sorted_variables = {
+    "mutable": [var for var in variables if isinstance(var, mutable_types)],
+    "immutable": [var for var in variables if isinstance(var, immutable_types)]
+}
+
+print(sorted_variables)
