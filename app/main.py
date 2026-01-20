@@ -17,3 +17,13 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+
+totas_vareaveis = [ my_favourite_films, profile_info, marks, collection_of_coins, lucky_number, pi, one_is_a_prime_number, name]
+tipo_mutaveis= (list, dict, set)
+types_vareis = {"mutaveis":[], "immutaveis":[]}
+for item in totas_vareaveis:
+    if isinstance(item, tipo_mutaveis):
+        types_vareis["mutaveis"].append(type(item))
+    else:
+        types_vareis["immutaveis"].append(type(item))
+    print(types_vareis)
