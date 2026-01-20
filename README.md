@@ -7,7 +7,7 @@ There are 8 variables of different data types in the main module.
 
 Your task is to create dictionary `sorted_variables` with two keys: 
 `"mutable"` and `"immutable"`.
-Each value should be equal to a list that contains all variables of corresponding type.
+Each value should be equal to a list that contains all variables of corresponding (відповідного) type.
 
 Example with other variables:
 ```python
