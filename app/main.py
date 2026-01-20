@@ -16,4 +16,27 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+list_params = []
+list_params.append(lucky_number)
+list_params.append(pi)
+list_params.append(one_is_a_prime_number)
+list_params.append(name)
+list_params.append(my_favourite_films)
+list_params.append(profile_info)
+list_params.append(marks)
+list_params.append(collection_of_coins)
+
+sorted_variables = {"mutable" : None, "immutable" : None}
+
+for param in list_params:
+    if isinstance(param, (int, float, str, bool, tuple)):
+        if sorted_variables["immutable"] is None:
+            sorted_variables["immutable"] = [param]
+        else:
+            sorted_variables["immutable"] += [param]
+
+    else:
+        if sorted_variables["mutable"] is None:
+            sorted_variables["mutable"] = [param]
+        else:
+            sorted_variables["mutable"] += [param]
