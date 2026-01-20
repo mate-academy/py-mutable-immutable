@@ -15,5 +15,9 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-
-# write your code here
+# створюю список змінних
+mut = [my_favourite_films, marks, collection_of_coins]
+# створюю список незмінних
+immut = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+# створюю словник з ключами
+sorted_variables = {"mutable": mut, "immutable": immut}
