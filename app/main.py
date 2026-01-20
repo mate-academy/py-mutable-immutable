@@ -15,5 +15,20 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
+sorted_variables = {"mutable": [], "immutable": []}
 
-# write your code here
+
+def variable_type(variables: list[any]) -> None:
+    for ithem in variables:
+        if isinstance(ithem, (list, dict, set)):
+            sorted_variables["mutable"].append(ithem)
+        else:
+            sorted_variables["immutable"].append(ithem)
+
+
+variables_list = [
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins
+]
+variable_type(variables_list)
+print(sorted_variables)
