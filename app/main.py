@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# List of all variables
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+# Separate them into mutable and immutable
+sorted_variables = {
+    "mutable": [var for var in variables
+                if isinstance(var, (list, dict, set))],
+    "immutable": [var for var in variables
+                  if isinstance(var, (int, float, bool, str, tuple))]
+}
