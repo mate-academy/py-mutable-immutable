@@ -16,4 +16,24 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable": [],
+    "immutable": [],
+}
+
+if isinstance(lucky_number, int):
+    sorted_variables["immutable"].append(lucky_number)
+if isinstance(pi, float):
+    sorted_variables["immutable"].append(pi)
+if isinstance(one_is_a_prime_number, bool):
+    sorted_variables["immutable"].append(one_is_a_prime_number)
+if isinstance(name, str):
+    sorted_variables["immutable"].append(name)
+if isinstance(my_favourite_films, list):
+    sorted_variables["mutable"].append(my_favourite_films)
+if isinstance(profile_info, tuple):
+    sorted_variables["immutable"].append(profile_info)
+if isinstance(marks, dict):
+    sorted_variables["mutable"].append(marks)
+if isinstance(collection_of_coins, set):
+    sorted_variables["mutable"].append(collection_of_coins)
