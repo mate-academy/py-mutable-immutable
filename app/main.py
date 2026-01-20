@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+
+for item in [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films
+]:
+
+    if isinstance(item, (list, dict, set)):
+
+        sorted_variables["mutable"].append(item)
+
+    else:
+        sorted_variables["immutable"].append(item)
+
+sorted_variables["immutable"].append(profile_info)
+
+sorted_variables["mutable"].extend([marks, collection_of_coins])
