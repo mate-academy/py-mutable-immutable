@@ -16,4 +16,23 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Категоризація на змінні і незмінні
+mutable_variables = [
+    my_favourite_films,
+    marks,
+    collection_of_coins
+]
+immutable_variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    profile_info
+]
+
+# Створення словника sorted_variables, де ключ "mutable" відповідає змінним,
+# які можна змінювати, і ключ "immutable" - незмінним змінним
+sorted_variables = {
+    "mutable": mutable_variables,
+    "immutable": immutable_variables
+}
