@@ -1,3 +1,5 @@
+# from typing import Dict, List, Any
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +18,24 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def mutable_immutable_dict(*args) -> dict:
+
+    sorted_variables = {"immutable": [], "mutable": []}
+    immutable_types = (int, float, str, bool, tuple)
+
+    for element in args:
+        if isinstance(element, immutable_types):
+            sorted_variables["immutable"].append(element)
+        else:
+            sorted_variables["mutable"].append(element)
+
+    return sorted_variables
+
+
+variables = [
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins
+]
+
+sorted_variables = mutable_immutable_dict(*variables)
