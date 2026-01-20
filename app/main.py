@@ -16,4 +16,22 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+ls = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+sorted_variables = {"mutable": [], "immutable": []}
+for char in ls:
+    if type(char) is list or type(char) is dict or type(char) is set:
+        sorted_variables["mutable"].append(char)
+    else:
+        sorted_variables["immutable"].append(char)
+
+print(sorted_variables)
