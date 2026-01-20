@@ -16,4 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins,]
+
+# Словник для збереження змінних
+sorted_variables = {
+    "mutable": [],
+    "immutable": [],
+}
+# Функція для перевірки, чи змінна є immutable
+def is_immutable(obj):
+    return isinstance(obj, (int, str, bool, float, tuple))
+
+for var in variables:
+    if is_immutable(var):
+        sorted_variables["immutable"].append(var)
+    else:
+        sorted_variables["mutable"].append(var)
