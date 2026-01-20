@@ -16,4 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Classificação correta das variáveis
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],  # List, Dict, Set
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]  # Int, Float, Bool, Str, Tuple
+}
