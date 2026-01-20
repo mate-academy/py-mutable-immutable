@@ -1,3 +1,4 @@
+# from gettext import install
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,16 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+variables = [lucky_number, pi, one_is_a_prime_number,
+             name, my_favourite_films, profile_info,
+             marks, collection_of_coins]
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for one_variable in variables:
+    if isinstance(one_variable, (list, dict, set)):
+        sorted_variables["mutable"].append(one_variable)
+    else:
+        sorted_variables["immutable"].append(one_variable)
