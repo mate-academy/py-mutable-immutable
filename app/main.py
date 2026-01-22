@@ -16,4 +16,12 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# collection_of_coins[1] = 10
+# TypeError: 'set' object does not support item assignment is immutable
+# or
+# collection_of_coins.add(4) is mutable
+
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
