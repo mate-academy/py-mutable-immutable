@@ -16,4 +16,19 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+mutable = []
+immutable = []
+variables = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,
+             profile_info, marks, collection_of_coins]
+
+for data_item in variables:
+    if type(data_item) is dict:
+        mutable.append(data_item)
+    elif type(data_item) is list:
+        mutable.append(data_item)
+    elif type(data_item) is set:
+        mutable.append(data_item)
+    else:
+        immutable.append(data_item)
+
+sorted_variables = dict(mutable=mutable, immutable=immutable)
