@@ -17,3 +17,20 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+# 8 variáveis de diferentes tipos
+a = 42                  # int (imutável)
+b = "ChatGPT"           # str (imutável)
+c = [1, 2, 3]           # list (mutável)
+d = (4, 5)              # tuple (imutável)
+e = {"chave": "valor"}  # dict (mutável)
+f = {1, 2, 3}           # set (mutável)
+g = 3.14                # float (imutável)
+h = frozenset([4, 5])   # frozenset (imutável)
+
+# Separar variáveis por mutabilidade
+sorted_variables = {
+    "mutable": [c, e, f],
+    "immutable": [a, b, d, g, h]
+}
+
+print(sorted_variables)
