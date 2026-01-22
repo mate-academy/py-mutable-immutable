@@ -16,4 +16,11 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"immutable": [], "mutable": []}
+immutable_types = (int, float, str, tuple, bool)
+mutable_types = (list, set, dict)
+
+sorted_variables["immutable"] = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+sorted_variables["mutable"] = [my_favourite_films, collection_of_coins, marks]
+
+
