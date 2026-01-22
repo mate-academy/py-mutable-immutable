@@ -47,9 +47,7 @@ def test_variables_should_be_defined(variable_name):
     ],
 )
 def test_variables_values(variable, value):
-    assert (
-        getattr(app.main, variable) == value
-    ), f"Variable '{variable}' should be equal to {value}."
+    assert (getattr(app.main, variable) == value), f"Variable '{variable}' should be equal to {value}."
 
 
 @pytest.mark.parametrize(
