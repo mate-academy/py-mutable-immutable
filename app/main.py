@@ -22,6 +22,6 @@ number = 7
 greeting = "Hello"
 
 sorted_variables = {
-    "mutable": [empty_list, numbers, my_favourite_films, marks, collection_of_coins],
-    "immutable": [number, greeting, lucky_number, pi, one_is_a_prime_number, name, profile_info]
+"mutable": [empty_list, numbers, my_favourite_films, marks, collection_of_coins],
+"immutable": [number, greeting, lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
