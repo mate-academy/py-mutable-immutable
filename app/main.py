@@ -16,4 +16,14 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+mutable_types = (list, dict, set)
+immutable_types = (int, float, bool, str, tuple)
+sorted_variables = {"mutable": [], "immutable": []}
+for obj in [lucky_number, pi, one_is_a_prime_number,
+            name, my_favourite_films, profile_info, marks,
+            collection_of_coins]:
+    if isinstance(obj, mutable_types):
+        sorted_variables["mutable"].append(obj)
+    elif isinstance(obj, immutable_types):
+        sorted_variables["immutable"].append(obj)
+print(sorted_variables)
