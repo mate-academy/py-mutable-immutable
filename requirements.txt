@@ -1,6 +1,6 @@
 flake8
 flake8-annotations
 flake8-quotes
-flake8-objiables-names
+flake8-variables-names
 pep8-naming
 pytest
