@@ -14,7 +14,8 @@ marks = {
     "John": 4,
     "Sergio": 3,
 }
-# Definindo sorted_variables no escopo global
+collection_of_coins = {1, 2, 25}
+
 sorted_variables = {"mutable": [], "immutable": []}
 
 for var in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]:
