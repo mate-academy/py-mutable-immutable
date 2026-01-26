@@ -14,18 +14,11 @@ marks = {
     "John": 4,
     "Sergio": 3,
 }
-collection_of_coins = {1, 2, 25}
+# Definindo sorted_variables no escopo global
+sorted_variables = {"mutable": [], "immutable": []}
 
-def verify_mutable_and_immutable(*args):
-    sorted_variables = {"mutable": [], "immutable": []}
-
-    for arg in args:
-        if isinstance(arg, (list, dict, set, bytearray)):
-            sorted_variables["mutable"].append(arg)
-        else:
-            sorted_variables["immutable"].append(arg)
-
-    return sorted_variables
-
-
-print(verify_mutable_and_immutable(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins))
+for var in [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins]:
+    if isinstance(var, (list, dict, set, bytearray)):
+        sorted_variables["mutable"].append(var)
+    else:
+        sorted_variables["immutable"].append(var)
