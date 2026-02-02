@@ -24,8 +24,8 @@ sorted_variables = {
 
 def add_to_sorted(value: object) -> None:
 
-    mutable_types = (dict, list, set)
-    if isinstance(value, mutable_types):
+    mutable_type = (dict, list, set)
+    if isinstance(value, mutable_type):
         sorted_variables["mutable"].append(value)
     else:
         sorted_variables["immutable"].append(value)
