@@ -32,25 +32,5 @@ def create_dict(type_dict)-> dict :
     return sorted_variables
     
 create_dict(data_type_dict) 
-    
-
-"""
-def create_dict(*data_types)-> dict :
-    mutable_list = []
-    immutable_list = [] 
-    #Checks if data type is mutable or immutable then add to the relevant key
-    if type(data_types) in [ list or dict or set]:
-        #sorted_variables["mutable"].append(data_types)
-        mutable_list.append(data_types)
-    elif type(data_types) in [int, float, tuple, str, bool]:
-       #sorted_variables["immutable"].append(data_types)
-       immutable_list.append(data_types)
        
-    sorted_variables["mutable"] = mutable_list
-    sorted_variables["immutable"] = immutable_list
-   
-    
-    return(sorted_variables)
-""" 
-#create_dict(lucky_number, pi, one_is_a_prime_number, name, my_favourite_films, profile_info, marks, collection_of_coins)    
     
