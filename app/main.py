@@ -16,4 +16,18 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {"mutable": [], "immutable": []}
+for var_name, var_value in {
+    "lucky_number": lucky_number,
+    "pi": pi,
+    "one_is_a_prime_number": one_is_a_prime_number,
+    "name": name,
+    "my_favourite_films": my_favourite_films,
+    "profile_info": profile_info,
+    "marks": marks,
+    "collection_of_coins": collection_of_coins,
+}.items():
+    if type(var_value) in (int, float, bool, str, tuple):
+        sorted_variables["immutable"].append(var_value)
+    elif type(var_value) in (list, dict, set):
+        sorted_variables["mutable"].append(var_value)
