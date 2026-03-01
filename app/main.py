@@ -22,14 +22,14 @@ collection_of_coins = {1, 2, 25}
 # Each value should be equal to a list that contains all variables \
 # of corresponding type.
 
-variables = [lucky_number, pi, one_is_a_prime_number, name, 
+variables = [lucky_number, pi, one_is_a_prime_number, name,
              my_favourite_films, profile_info, marks, collection_of_coins]
 
 sorted_variables = {"mutable": [], "immutable": []}
 
-for var in variables:
+for variables in variables:
     try:
-        hash(var)
-        sorted_variables["immutable"].append(var)
+        hash(variables)
+        sorted_variables["immutable"].append(variables)
     except TypeError:
-        sorted_variables["mutable"].append(var)
+        sorted_variables["mutable"].append(variables)
