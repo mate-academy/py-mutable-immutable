@@ -1,4 +1,4 @@
-lucky_number = 777
+lucky_number: int = 777
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+sorted_variables = {
+    "mutable":
+        [my_favourite_films,
+         marks,
+         collection_of_coins
+         ],
+    "immutable":
+        [profile_info,
+         name,
+         one_is_a_prime_number,
+         pi,
+         lucky_number
+         ]
+}
