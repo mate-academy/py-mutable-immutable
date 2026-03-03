@@ -21,12 +21,10 @@ sorted_variables = {"mutable": [
     marks, collection_of_coins
 ],
     "immutable": [
-        777,
-        3.14,
-        False,
-        "Richard",
-        ("michel",
-         "michel@gmail.com",
-         "12345678")
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        profile_info
 ]
 }
