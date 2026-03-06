@@ -34,8 +34,22 @@ marks = {
 # set
 collection_of_coins = {1, 2, 25}
 
-# write your code here
-sorted_variables = {
-    "mutable": [my_favourite_films, marks, collection_of_coins],
-    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info],
-}
+variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+]
+mutable = []
+immutable = []
+
+mutable_types = (list, dict, set)
+
+mutable = [var for var in variables if isinstance(var, mutable_types)]
+immutable = [var for var in variables if not isinstance(var, mutable_types)]
+
+sorted_variables = {"mutable": mutable, "immutable": immutable}
