@@ -8,6 +8,7 @@ my_favourite_films = [
     "Pulp Fiction",
     "The Good, the Bad and the Ugly",
     "The Matrix",
+     "Harry Potter"
 ]
 profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
