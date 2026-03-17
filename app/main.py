@@ -8,7 +8,6 @@ my_favourite_films = [
     "Pulp Fiction",
     "The Good, the Bad and the Ugly",
     "The Matrix",
-     "Harry Potter"
 ]
 profile_info = ("michel", "michel@gmail.com", "12345678")
 marks = {
@@ -17,4 +16,25 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+
+a = 10
+b = "hello"
+c = [1, 2, 3]
+d = (1, 2, 3)
+e = {"x": 1}
+f = {1, 2, 3}
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+variables = [a, b, c, d, e, f]
+
+for var in variables:
+    if isinstance(var, (list, dict, set)):
+        sorted_variables["mutable"].append(var)
+    else:
+        sorted_variables["immutable"].append(var)
+        # write your code here
