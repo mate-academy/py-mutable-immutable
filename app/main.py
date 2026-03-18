@@ -1,3 +1,11 @@
+
+def ismutable(var_name) -> bool:
+
+    if isinstance(var_name, int | float | str | bool | tuple):
+        return False
+    return True
+
+
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -15,5 +23,16 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
 
-# write your code here
+variables_list = [lucky_number, pi, one_is_a_prime_number, name,
+                  my_favourite_films, profile_info, marks, collection_of_coins]
+
+for variable in variables_list:
+    if ismutable(variable):
+        sorted_variables["mutable"].append(variable)
+    else:
+        sorted_variables["immutable"].append(variable)
