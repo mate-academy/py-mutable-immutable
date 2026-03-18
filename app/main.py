@@ -23,43 +23,16 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
-mutable_list = []
-immutable_list = []
-
-if ismutable(lucky_number):
-    mutable_list.append(lucky_number)
-else:
-    immutable_list.append(lucky_number)
-if ismutable(pi):
-    mutable_list.append(pi)
-else:
-    immutable_list.append(pi)
-if ismutable(one_is_a_prime_number):
-    mutable_list.append(one_is_a_prime_number)
-else:
-    immutable_list.append(one_is_a_prime_number)
-if ismutable(name):
-    mutable_list.append(name)
-else:
-    immutable_list.append(name)
-if ismutable(my_favourite_films):
-    mutable_list.append(my_favourite_films)
-else:
-    immutable_list.append(my_favourite_films)
-if ismutable(profile_info):
-    mutable_list.append(profile_info)
-else:
-    immutable_list.append(profile_info)
-if ismutable(marks):
-    mutable_list.append(marks)
-else:
-    immutable_list.append(marks)
-if ismutable(collection_of_coins):
-    mutable_list.append(collection_of_coins)
-else:
-    immutable_list.append(collection_of_coins)
-
 sorted_variables = {
-    "mutable": mutable_list,
-    "immutable": immutable_list
+    "mutable": [],
+    "immutable": []
 }
+
+variables_list = [lucky_number, pi, one_is_a_prime_number, name,
+                  my_favourite_films, profile_info, marks, collection_of_coins]
+
+for variable in variables_list:
+    if ismutable(variable):
+        sorted_variables["mutable"].append(variable)
+    else:
+        sorted_variables["immutable"].append(variable)
