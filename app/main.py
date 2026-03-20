@@ -18,11 +18,11 @@ collection_of_coins = {1, 2, 25}
 
 mutable_list= []
 immutable_list = []
-elemets = [lucky_number, pi, one_is_a_prime_number, my_favourite_films, profile_info, marks, collection_of_coins]
+elemets = [lucky_number, pi, one_is_a_prime_number, my_favourite_films, profile_info, marks, collection_of_coins, name]
 
 def types_detection(): 
     for element in elemets: 
-        if type(element) == int or type(element) == float or type(element) == bool or type(element) == tuple:
+        if type(element) == int or type(element) == float or type(element) == bool or type(element) == tuple or type(element) == str:
             immutable_list.append(element)
         else:
             mutable_list.append(element)
