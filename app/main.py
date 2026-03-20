@@ -27,14 +27,15 @@ def types_detection():
         else:
             mutable_list.append(element)
     
-    return immutable_list, mutable_list
+    return [immutable_list, mutable_list]
 
-sorted_variable = { 
-    "immutable": types_detection()[0], 
-    "mutable": types_detection()[1]
+variables = types_detection()
+sorted_variables = { 
+    "immutable": variables[0], 
+    "mutable": variables[1]
 }
 
-for key, value in sorted_variable.items(): 
+for key, value in sorted_variables.items(): 
     print("\n")
     print(key, value)
     print("\n")
