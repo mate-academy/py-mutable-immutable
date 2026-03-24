@@ -16,4 +16,7 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+mutable_items = [my_favourite_films, marks, collection_of_coins]
+immutable_items = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+sorted_variables = {"mutable": mutable_items, "immutable": immutable_items}
+print(sorted_variables)
