@@ -30,8 +30,8 @@ total_variables = [
     collection_of_coins,
 ]
 
-for variable in total_variables:
-    if isinstance(variable, (int, float, bool, str, tuple)):
-        sorted_variables["immutable"].append(variable)
-    elif isinstance(variable, (list, dict, set)):
-        sorted_variables["mutable"].append(variable)
+for item in total_variables:
+    if isinstance(item, (int, float, bool, str, tuple)):
+        sorted_variables["immutable"].append(item)
+    elif isinstance(item, (list, dict, set)):
+        sorted_variables["mutable"].append(item)
