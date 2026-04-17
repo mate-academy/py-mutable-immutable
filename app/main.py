@@ -17,3 +17,12 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+def sortable (*args):
+    sorted_variables = {"mutable":[] , "immutable":[]}
+    mutable = {list, dict, set}
+    for i in args:
+     if type(i) in mutable:
+        sorted_variables["mutable"].append(i)
+     else:
+        sorted_variables["immutable"].append(i)
+    return sorted_variables
