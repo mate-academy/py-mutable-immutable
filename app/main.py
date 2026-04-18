@@ -1,3 +1,4 @@
+from typing import Any
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -16,4 +17,35 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+IMMUTABLE_TYPES = (int, float, str, tuple, bool, bytes, frozenset)
+MUTABLE_TYPES = (list, dict, set, bytearray)
+
+sorted_variables = {
+    "mutable" : [],
+    "immutable" : []
+}
+
+
+def check_mutability(obj : Any, sorted_dict : dict) -> None :
+    if isinstance(obj, IMMUTABLE_TYPES):
+        sorted_dict["immutable"].append(obj)
+    elif isinstance(obj, MUTABLE_TYPES):
+        sorted_dict["mutable"].append(obj)
+
+
+all_test_variables = [
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins
+]
+
+for test_variable in all_test_variables:
+    check_mutability(test_variable, sorted_variables)
+
+print(sorted_variables)
