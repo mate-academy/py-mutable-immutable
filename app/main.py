@@ -17,7 +17,6 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
 
 IMMUTABLE_TYPES = (int, float, str, tuple, bool, bytes, frozenset)
 MUTABLE_TYPES = (list, dict, set, bytearray)
