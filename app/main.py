@@ -35,7 +35,7 @@ def check_mutability(obj : Any, sorted_dict : dict) :
         sorted_dict["mutable"].append(obj)
 
 
-all_variables = [
+all_test_variables = [
     lucky_number,
     pi,
     one_is_a_prime_number,
@@ -46,7 +46,7 @@ all_variables = [
     collection_of_coins
 ]
 
-for variable in all_variables:
-    check_mutability(variable, sorted_variables)
+for test_variable in all_test_variables:
+    check_mutability(test_variable, sorted_variables)
 
 print(sorted_variables)
