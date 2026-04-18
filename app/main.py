@@ -28,7 +28,7 @@ sorted_variables = {
 }
 
 
-def check_mutability(obj : Any, sorted_dict : dict) :
+def check_mutability(obj : Any, sorted_dict : dict) -> None :
     if isinstance(obj, IMMUTABLE_TYPES):
         sorted_dict["immutable"].append(obj)
     elif isinstance(obj, MUTABLE_TYPES):
