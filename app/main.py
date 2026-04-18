@@ -17,3 +17,18 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+
+IMMUTABLE_TYPES = (int, float, str, tuple, bool, bytes, frozenset)
+MUTABLE_TYPES = (list, dict, set, bytearray)
+
+sorted_variables = {
+    "mutable" : [],
+    "immutable" : []
+}
+
+
+def check_mutability(obj, sorted_dict : dict) -> dict | None :
+    if isinstance(obj, IMMUTABLE_TYPES):
+        sorted_dict["immutable"].append(obj)
+    elif isinstance(obj, MUTABLE_TYPES):
+        sorted_dict["mutable"].append(obj)
