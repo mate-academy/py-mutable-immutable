@@ -1,4 +1,4 @@
-lucky_number = 777
+lucky_number: int = 777
 pi = 3.14
 one_is_a_prime_number = False
 name = "Richard"
@@ -16,4 +16,27 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+this_dict = {
+    "lucky_number": lucky_number,
+    "pi": pi,
+    "one_is_a_prime_number": one_is_a_prime_number,
+    "name": name,
+    "my_favourite_films": my_favourite_films,
+    "profile_info": profile_info,
+    "marks": marks,
+    "collection_of_coins": collection_of_coins,
+}
+
+list_mut = []
+list_immut = []
+
+for key, value in this_dict.items():
+    if type(value) in (list, dict, set):
+        list_mut.append(value)
+    else:
+        list_immut.append(value)
+
+sorted_variables = {
+    "mutable": list_mut,
+    "immutable": list_immut,
+}
