@@ -1,5 +1,6 @@
-import pytest
 import inspect
+
+import pytest
 
 import app.main
 
