@@ -16,4 +16,14 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+names = [item for item in dir() if not item.startswith('_')]
+mutable_types = [list, dict, set]
+sorted_variables = {"mutable": [], "immutable": []}
+for item in names:
+    value = globals()[item]
+    if type(value) in mutable_types:
+        sorted_variables["mutable"].append(value)
+    else:
+        sorted_variables["immutable"].append(value)
+
+
