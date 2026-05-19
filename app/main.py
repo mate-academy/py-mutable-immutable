@@ -23,13 +23,13 @@ sorted_variables = {
     "mutable": [],
     "immutable": []
 }
-
-all_item = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films,profile_info, marks, collection_of_coins]
+all_item = [lucky_number, pi, one_is_a_prime_number, name,
+            my_favourite_films, profile_info, marks, collection_of_coins]
 
 for item in all_item:
-    if isinstance(item,mutable_types):
+    if isinstance(item, mutable_types):
         sorted_variables["mutable"].append(item)
-    elif isinstance(item,immutable_types):
+    elif isinstance(item, immutable_types):
         sorted_variables["immutable"].append(item)
 
 
