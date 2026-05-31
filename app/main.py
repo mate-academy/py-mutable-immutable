@@ -16,4 +16,11 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# create dictionary sorted_variables with two keys: "mutable" and "immutable".
+# Each value should be equal to a list that contains
+# all variables of corresponding type.
+
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
