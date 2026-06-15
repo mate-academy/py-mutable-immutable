@@ -24,5 +24,4 @@ sorted_variables ["immutable"].append (profile_info),
 sorted_variables ["mutable"].append (marks),
 sorted_variables ["mutable"].append (collection_of_coins),
 sorted_variables ["mutable"].append (my_favourite_films)
-
 print (sorted_variables)
