@@ -20,11 +20,7 @@ sorted_variables = {
     "mutable": [my_favourite_films, marks, collection_of_coins],
     "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
 }
-sorted_variables = {"mutable": [], "immutable": []}
-def is_immutable(variable_name):
-    print(type(variable_name))
-    if type(variable_name) in (int, str, bool, float, tuple):
-        sorted_variables["immutable"].append(variable_name)
-    else:
-        sorted_variables["mutable"].append(variable_name)
-    return sorted_variables
+sorted_variables = {
+    "mutable": [my_favourite_films, marks, collection_of_coins],
+    "immutable": [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+}
