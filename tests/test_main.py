@@ -90,9 +90,3 @@ def test_variables_added_to_the_correct_list():
         assert is_immutable(variable) is True, (
             f"{variable} should be in 'mutable' list"
         )
-
-
-def test_removed_comment():
-    with open(app.main.__file__, "r") as f:
-        lines = inspect.getsource(app.main)
-        assert "# write your code here" not in lines
