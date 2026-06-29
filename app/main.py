@@ -16,4 +16,17 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+to_test = [lucky_number, pi, one_is_a_prime_number, name, my_favourite_films]
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": [],
+}
+
+to_test.extend([profile_info, marks, collection_of_coins])
+
+for item in to_test:
+    if type(item) is set or type(item) is list or type(item) is dict:
+        sorted_variables["mutable"].append(item)
+    else:
+        sorted_variables["immutable"].append(item)
