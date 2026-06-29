@@ -17,3 +17,7 @@ marks = {
 collection_of_coins = {1, 2, 25}
 
 # write your code here
+sorted_variables = {
+    "mutable": [list_var, dict_var, set_var, bytearray_var],
+    "immutable": [int_var, float_var, str_var, tuple_var]
+}
