@@ -18,6 +18,16 @@ collection_of_coins = {1, 2, 25}
 
 # write your code here
 sorted_variables = {
-    "mutable": [list_var, dict_var, set_var, bytearray_var],
-    "immutable": [int_var, float_var, str_var, tuple_var]
+    "mutable": [
+        my_favourite_films,
+        marks,
+        collection_of_coins,
+    ],
+    "immutable": [
+        lucky_number,
+        pi,
+        one_is_a_prime_number,
+        name,
+        profile_info,
+    ],
 }
