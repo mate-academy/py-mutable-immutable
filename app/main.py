@@ -1,6 +1,3 @@
-from tkinter import Variable
-
-
 lucky_number = 777
 pi = 3.14
 one_is_a_prime_number = False
@@ -43,5 +40,3 @@ sorted_variables = sorted_variable(
     marks,
     collection_of_coins,
 )
-
-
