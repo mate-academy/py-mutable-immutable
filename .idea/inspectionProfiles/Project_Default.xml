@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyArgumentListInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="flake8" />
+          <option value="flake8-annotations" />
+          <option value="flake8-quotes" />
+          <option value="flake8-variables-names" />
+          <option value="pep8-naming" />
+          <option value="pytest" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
