@@ -34,11 +34,11 @@ sorted_variables = {
 
 
 def sort_random_variables(var_list: list) -> None:
-    for value in var_list:
-        if isinstance(value, (int, float, str, bool, tuple)):
-            sorted_variables["immutable"].append(value)
-        elif isinstance(value, (list, dict, set)):
-            sorted_variables["mutable"].append(value)
+    for element in var_list:
+        if isinstance(element, (int, float, str, bool, tuple)):
+            sorted_variables["immutable"].append(element)
+        elif isinstance(element, (list, dict, set)):
+            sorted_variables["mutable"].append(element)
 
 
 sort_random_variables(unsorted_variables)
