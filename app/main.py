@@ -1,19 +1,14 @@
-lucky_number = 777
-pi = 3.14
-one_is_a_prime_number = False
-name = "Richard"
-my_favourite_films = [
-    "The Shawshank Redemption",
-    "The Lord of the Rings: The Return of the King",
-    "Pulp Fiction",
-    "The Good, the Bad and the Ugly",
-    "The Matrix",
-]
-profile_info = ("michel", "michel@gmail.com", "12345678")
-marks = {
-    "John": 4,
-    "Sergio": 3,
-}
-collection_of_coins = {1, 2, 25}
+var_int = 42
+var_str = "Hello, Mate!"
+var_tuple = (1, 2, 3)
+var_bool = True
 
-# write your code here
+var_list = []
+var_dict = {"name": "Alex"}
+var_set = {1, 2, 3}
+var_bytearray = bytearray(5)
+
+sorted_variables = {
+    "mutable": [var_list, var_dict, var_set, var_bytearray],
+    "immutable": [var_int, var_str, var_tuple, var_bool]
+}
