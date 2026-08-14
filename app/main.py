@@ -23,5 +23,3 @@ sorted_variables = {
 }
 
 
-
-
