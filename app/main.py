@@ -28,18 +28,15 @@ variables = [
 ]
 
 def check_mutability(variables: list):
-    
     sorted_variables = {
         "mutable": [],
         "immutable": []
     }
-
     for declared_variable in variables:
         if type(declared_variable, (list, dict, set)):
             sorted_variables["mutable"].append(declared_variable)
         else:
             sorted_variables["immutable"].append(declared_variable)
-
     return sorted_variables
 
 sorted_variables = check_mutability(variables)
