@@ -18,7 +18,7 @@ collection_of_coins = {1, 2, 25}
 
 variables = [
     lucky_number,
-    pi, 
+    pi,
     one_is_a_prime_number,
     name,
     my_favourite_films,
