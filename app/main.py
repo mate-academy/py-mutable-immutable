@@ -28,7 +28,7 @@ variables = [
 ]
 
 
-def check_mutability(variables: list):
+def check_mutability(variables: list) -> dict:
     sorted_variables = {
         "mutable": [],
         "immutable": []
@@ -40,5 +40,5 @@ def check_mutability(variables: list):
             sorted_variables["immutable"].append(declared_variable)
     return sorted_variables
 
+
 sorted_variables = check_mutability(variables)
-    
