@@ -27,6 +27,7 @@ variables = [
     collection_of_coins
 ]
 
+
 def check_mutability(variables: list):
     sorted_variables = {
         "mutable": [],
