@@ -35,7 +35,7 @@ def check_mutability(variables: list):
     }
 
     for declared_variable in variables:
-        if isinstance(declared_variable, (list, dict, set)):
+        if type(declared_variable, (list, dict, set)):
             sorted_variables["mutable"].append(declared_variable)
         else:
             sorted_variables["immutable"].append(declared_variable)
