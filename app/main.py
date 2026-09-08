@@ -16,4 +16,33 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+
+def sorted_def(*args: object) -> dict:
+    sorted_variables = {}
+
+    for item in args:
+
+        if isinstance(item, (int, float, str, bool, tuple)):
+            if "immutable" in sorted_variables:
+                sorted_variables["immutable"].append(item)
+            else:
+                sorted_variables["immutable"] = [item]
+        else:
+            if "mutable" in sorted_variables:
+                sorted_variables["mutable"].append(item)
+            else:
+                sorted_variables["mutable"] = [item]
+
+    return sorted_variables
+
+
+sorted_variables = sorted_def(
+    lucky_number,
+    pi,
+    one_is_a_prime_number,
+    name,
+    my_favourite_films,
+    profile_info,
+    marks,
+    collection_of_coins,
+)
