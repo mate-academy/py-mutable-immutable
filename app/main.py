@@ -13,4 +13,3 @@ sorted_variables = {
     ],
 }
 
-# write your code here
