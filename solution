@@ -1,0 +1,4 @@
+sorted_variables = {
+    "mutable": [/* mutable variable names */],
+    "immutable": [/* immutable variable names */],
+}
