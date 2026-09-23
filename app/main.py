@@ -16,4 +16,14 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# Rename single-letter variables to descriptive names
+first_number = 10
+second_number = 20
+third_number = 30
+fourth_number = 40
+result1 = second_number + fourth_number
+result2 = first_number + third_number
+sorted_variables = {
+    "mutable": [],
+    "immutable": [first_number, second_number, third_number, fourth_number]
+}
