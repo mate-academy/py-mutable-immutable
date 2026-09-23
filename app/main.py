@@ -16,4 +16,18 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+# 1. Define the variables first (lines 1-4)
+first_number = 10
+second_number = 20
+third_number = 30
+fourth_number = 40
+
+# 2. Use them in your calculations
+result1 = second_number + fourth_number
+result2 = first_number + third_number
+
+# 3. Use them in your dictionary
+sorted_variables = {
+    "mutable": [],
+    "immutable": [first_number, second_number, third_number, fourth_number]
+}
