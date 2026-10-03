@@ -1,0 +1,19 @@
+def main():
+    # 1. Definindo as 8 variáveis com diferentes tipos em Python
+    a = 42          # int (imutável)
+    b = 3.14        # float (imutável)
+    c = "Python"    # str (imutável)
+    d = (1, 2, 3)   # tuple (imutável)
+    e = True        # bool (imutável)
+    f = [1, 2, 3]   # list (mutável)
+    g = {"x": 10}   # dict (mutável)
+    h = {1, 2, 3}   # set (mutável)
+
+    # 2. Agrupando as variáveis em uma lista para iterar
+    todas_as_variaveis = [a, b, c, d, e, f, g, h]
+
+    # 3. Dicionário que vai armazenar os resultados da classificação
+    resultado = {
+        "mutaveis": [],
+        "imutaveis": []
+    }
