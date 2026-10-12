@@ -16,4 +16,8 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+print(dir())
+sorted_variables = {
+    "mutable": [list_name, dict_name, set_name],
+    "immutable": [int_name, float_name, bool_name, str_name, tuple_name]
+}
