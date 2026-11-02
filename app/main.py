@@ -22,12 +22,12 @@ sorted_variables = {
         my_favourite_films,
         marks,
         collection_of_coins,
+        profile_info,
     ],
     "immutable": [
         lucky_number,
         pi,
         one_is_a_prime_number,
         name,
-        profile_info,
     ],
 }
