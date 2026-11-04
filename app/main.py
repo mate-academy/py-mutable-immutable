@@ -34,8 +34,8 @@ all_variables = [
     collection_of_coins,
 ]
 
-for variable in all_variables:
-    if isinstance(variable, mutable_types):
-        sorted_variables["mutable"].append(variable)
+for current_value in all_variables:
+    if isinstance(current_value, mutable_types):
+        sorted_variables["mutable"].append(current_value)
     else:
-        sorted_variables["immutable"].append(variable)
+        sorted_variables["immutable"].append(current_value)
