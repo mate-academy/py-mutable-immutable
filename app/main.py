@@ -15,5 +15,8 @@ marks = {
     "Sergio": 3,
 }
 collection_of_coins = {1, 2, 25}
+immutable_types = [lucky_number, pi, one_is_a_prime_number, name, profile_info]
+mutable_types = [my_favourite_films, marks, collection_of_coins]
 
-# write your code here
+for obj in immutable_types + mutable_types:
+    print(type(obj).__name__)
