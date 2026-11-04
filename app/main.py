@@ -21,4 +21,3 @@ mutable_types = [my_favourite_films, marks, collection_of_coins]
 
 for obj in immutable_types + mutable_types:
     print(type(obj).__name__)
-
