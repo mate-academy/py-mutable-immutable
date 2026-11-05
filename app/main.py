@@ -30,3 +30,4 @@ sorted_variables = {
         name,                  # Strings are immutable
         profile_info           # Tuples are immutable
     ]
+}
