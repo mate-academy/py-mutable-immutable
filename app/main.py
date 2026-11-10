@@ -16,4 +16,20 @@ marks = {
 }
 collection_of_coins = {1, 2, 25}
 
-# write your code here
+IMMUTABLE_TYPES = (int, float, complex, bool, str, tuple, frozenset, bytes)
+
+all_variables = [
+    lucky_number, pi, one_is_a_prime_number, name,
+    my_favourite_films, profile_info, marks, collection_of_coins
+]
+
+sorted_variables = {
+    "mutable": [],
+    "immutable": []
+}
+
+for obj in all_variables:
+    if isinstance(obj, IMMUTABLE_TYPES):
+        sorted_variables["immutable"].append(obj)
+    else:
+        sorted_variables["mutable"].append(obj)
