@@ -1,0 +1,19 @@
+import types
+
+IMMUTABLE_TYPES = (int, float, complex, bool, str, bytes, tuple, frozenset, range, type(None))
+SKIP_TYPES = (types.ModuleType, types.FunctionType, types.BuiltinFunctionType, type)
+
+sorted_variables = {"mutable": [], "immutable": []}
+
+for name, value in list(globals().items()):
+    if name.startswith("_") or name in ("IMMUTABLE_TYPES", "SKIP_TYPES", "types"):
+        continue
+    if isinstance(value, SKIP_TYPES):
+        continue
+    key = "immutable" if isinstance(value, IMMUTABLE_TYPES) else "mutable"
+    sorted_variables[key].append(value)
+
+sorted_variables = {
+    "mutable": [var1, var2, var3],
+    "immutable": [var4, var5, var6, var7, var8],
+}
