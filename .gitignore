@@ -5,3 +5,9 @@
 .DS_Store
 venv/
 .pytest_cache/
+*.ini
+*.bak
+*.pyc
+*.pyc
+*.pyc
+app/__pycache__/main.cpython-310.pyc
